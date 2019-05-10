@@ -1,0 +1,388 @@
+@import url("https://fonts.googleapis.com/css?family=Dosis:300,400,600|Open+Sans:400,600");
+
+:root {
+  --background-color: hsl(83, 5%, 96%);
+  --background-color-overlay: hsla(0, 0%, 0%, 0.85);
+  --font-headline: "Dosis", sans-serif;
+  --font-copy: "Open Sans", sans-serif;
+  --color: hsla(0, 0%, 7%, 0.9);
+  --color-light: hsla(0, 0%, 7%, 0.6);
+  --color-reverse: hsl(83, 5%, 96%);
+  --color-reverse-light: hsla(83, 5%, 96%, 0.54);
+  --color-black: hsla(0, 0%, 0%, 0.8);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-family: inherit;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  scroll-behavior: smooth;
+}
+
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.scroll-up {
+  background-color: hsla(100, 100%, 100%, 1);
+  position: fixed;
+  bottom: 1rem;
+  z-index: -1;
+  opacity: 0;
+  transition: all 0.4s ease;
+  width: 1.618rem;
+  right: 0.618rem;
+  display: flex;
+  justify-content: center;
+  width: 2rem;
+  padding: 0.116rem;
+}
+
+.scroll-up .chevron {
+  width: 0.618rem;
+}
+
+html:not([data-scroll="0"]) .scroll-up {
+  opacity: 0.6;
+  transition: all 0.4s ease;
+  z-index: 999;
+}
+
+body {
+  font-family: var(--font-copy);
+  color: var(--color);
+  background-color: var(--background-color);
+  line-height: 1.45;
+  overflow-x: hidden;
+}
+
+body:before {
+  content: "mobile";
+  display: none;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a:visited {
+  color: var(--color);
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+  outline: none;
+}
+
+.nav-displayed {
+  overflow: hidden;
+}
+
+.asset--blur {
+  -webkit-filter: blur(0.625rem);
+  filter: blur(0.625rem);
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.asset--no-blur {
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.page-loader {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 9998;
+}
+
+.loader {
+  background-color: #ddd;
+  position: absolute;
+  display: inline-block;
+  height: 2.5rem;
+  width: 2.5rem;
+  left: 50%;
+  top: 50%;
+  margin: -1.25rem 0 0 -1.25rem;
+  text-indent: -9999rem;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation: ball-scale 1s 0s ease-in-out infinite;
+  animation: ball-scale 1s 0s ease-in-out infinite;
+}
+
+.container {
+  background-color: #fff;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 100%;
+}
+
+nav {
+  background-color: transparent;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  margin: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.headline {
+  font-family: var(--font-headline);
+  color: var(--color);
+  text-transform: uppercase;
+  letter-spacing: 0.136rem;
+}
+
+.headline-sub {
+  font-weight: 400;
+  font-size: 0.75rem;
+  letter-spacing: 0.25rem;
+}
+
+.logo {
+  flex: 1;
+  transform: translateY(0);
+  transition: all 0.4s ease;
+  transition-delay: 0.2s;
+}
+
+.logo--a:after {
+  content: "llied Jiu Jitsu";
+}
+
+.logo-a--cap {
+  background-color: var(--background-color-overlay);
+  color: var(--color-reverse);
+  padding-left: 0.382rem;
+  padding-right: 0.226rem;
+  margin-right: 0.236rem;
+}
+
+.logo--close {
+  transform: translateY(-10rem);
+}
+
+.nav-toggle {
+  position: absolute;
+  right: 0;
+  z-index: 2;
+  width: 1.618rem;
+  height: 1.618rem;
+  opacity: 0;
+}
+
+.hamburger {
+  width: 1.618rem;
+  height: 1.618rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hamburger .lines {
+  position: relative;
+  width: 100%;
+  height: 0.116rem;
+  background-color: var(--color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+
+.hamburger .lines:before,
+.hamburger .lines:after {
+  content: "";
+  position: absolute;
+  top: -0.618rem;
+  z-index: 1;
+  width: 100%;
+  height: 0.116rem;
+  background-color: inherit;
+}
+
+.hamburger .lines:after {
+  top: 0.618rem;
+}
+
+.nav-toggle:checked {
+  z-index: 12;
+}
+
+.nav-toggle:checked ~ .hamburger {
+  z-index: 11;
+}
+
+.nav-toggle:checked + .hamburger .lines {
+  background-color: var(--background-color);
+  transform: rotate(135deg);
+}
+
+.nav-toggle:checked + .hamburger .lines:before,
+.nav-toggle:checked + .hamburger .lines:after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+.nav-toggle:checked:hover + .hamburger .lines {
+  transform: rotate(225deg);
+}
+
+.nav-toggle:checked ~ .menu {
+  visibility: visible;
+}
+
+.nav-toggle:checked ~ .menu .overlay {
+  opacity: 1;
+  transition: all 0.4s ease;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+}
+
+.menu .items .item {
+  list-style: none;
+}
+
+.menu .items .item .nav-link,
+.menu .items .item .nav-link:hover,
+.menu .items .item .nav-link:focus,
+.menu .items .item .nav-link:active,
+.menu .items .item .nav-link:visited {
+  color: var(--color-reverse);
+  font-family: var(--font-headline);
+  font-size: 1.618rem;
+  letter-spacing: 0.236rem;
+}
+
+.menu .overlay {
+  background-color: var(--background-color-overlay);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+  opacity: 0;
+}
+
+.menu .overlay .overlay-inner {
+  vertical-align: middle;
+  text-align: center;
+  transition: opacity 0.4s ease;
+}
+
+nav footer {
+  color: var(--color-reverse-light);
+  font-family: var(--font-headline);
+  position: fixed;
+  bottom: 1.618rem;
+  text-align: center;
+  font-size: 0.628rem;
+  background-color: transparent;
+  text-transform: uppercase;
+  letter-spacing: 0.236rem;
+  padding: 0 1rem;
+}
+
+.marquee {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: var(--background-color);
+  color: var(--color-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 1.618rem;
+  letter-spacing: 0.382rem !important;
+  margin: 1.618rem 0.618rem;
+}
+
+footer {
+  background-color: var(--background-color);
+  color: var(--color-light);
+  display: flex;
+  height: 11.089rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 1rem;
+  text-align: center;
+}
+
+.social-media-links {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  width: 100vw;
+  align-items: center;
+}
+
+.social-media-link {
+  font-family: var(--font-headline);
+  color: var(--color-light);
+  letter-spacing: 0.136rem;
+  transition: all 0.4s ease;
+  outline: none;
+}
+
+.social-media-link:hover,
+.social-media-link:focus,
+.social-media-link:active,
+.social-media-link:visited {
+  color: var(--color);
+}
+
+.copyright {
+  font-size: 0.618rem;
+  margin-top: 1rem;
+}
+
+@media only screen and (min-width: 48rem) {
+  .logo--a:after {
+    content: "llied Jiu Jitsu & Fitness";
+  }
+}
