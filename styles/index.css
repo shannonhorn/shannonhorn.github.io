@@ -3,6 +3,7 @@
 :root {
   --background-color: hsl(83, 5%, 96%);
   --background-color-overlay: hsla(0, 0%, 0%, 0.85);
+  --background-color-button: hsla(0, 0%, 7%, 0.8);
   --font-headline: "Dosis", sans-serif;
   --font-copy: "Open Sans", sans-serif;
   --color: hsla(0, 0%, 7%, 0.9);
@@ -389,13 +390,14 @@ h1 {
 
 input {
   border-style: solid;
-  border-color: #414141;
+  border-color: var(--background-color-button);
   border-width: 0.1px;
   padding: 0.382rem;
+  outline: none;
 }
 
 .btn-default {
-  background-color: var(--background-color-overlay);
+  background-color: var(--background-color-button);
   color: var(--color-reverse);
   text-transform: uppercase;
   font-family: var(--font-copy);
@@ -414,13 +416,14 @@ input {
   white-space: nowrap;
   user-select: none;
   font-size: 0.75rem;
-  padding: 0.54rem 2.375rem;
+  padding: 0.54rem 1.618rem;
 }
 
 .newsletter--sign-up {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
+  max-width: calc(100vw - 1.236rem);
 }
 
 footer {
