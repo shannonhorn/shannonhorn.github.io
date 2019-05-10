@@ -46,10 +46,25 @@ html {
   justify-content: center;
   width: 2rem;
   padding: 0.116rem;
+  outline: none;
+}
+
+.scroll-up a {
+  border-radius: 0.125rem;
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scroll-up a::selection {
+  background-color: hsla(100, 100%, 100%, 1);
 }
 
 .scroll-up .chevron {
   width: 0.618rem;
+  outline: none;
 }
 
 html:not([data-scroll="0"]) .scroll-up {
