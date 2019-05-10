@@ -20,6 +20,7 @@
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
   scroll-behavior: smooth;
+  line-height: 1.45;
 }
 
 *:before,
@@ -353,6 +354,73 @@ h1 {
   font-size: 1.618rem;
   letter-spacing: 0.382rem !important;
   margin: 1.618rem 0.618rem;
+}
+
+.module {
+  margin: 2.618rem 0.618rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.module--headline {
+  margin: 1rem;
+  font-size: 0.875rem;
+  letter-spacing: 0.375rem;
+  line-height: 1.4;
+}
+
+.lnr {
+  font-size: 2.618rem;
+}
+
+.blurb--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 1rem 0;
+}
+
+.blurb--copy {
+  line-height: 1.8;
+  margin-bottom: 0.382rem;
+}
+
+input {
+  border-style: solid;
+  border-color: #414141;
+  border-width: 0.1px;
+  padding: 0.382rem;
+}
+
+.btn-default {
+  background-color: var(--background-color-overlay);
+  color: var(--color-reverse);
+  text-transform: uppercase;
+  font-family: var(--font-copy);
+  letter-spacing: 0.125rem;
+  border-radius: 0;
+  box-shadow: none;
+  transition: all 0.3s cubic-bezier(0.3, 0.1, 0.58, 1);
+  line-height: 1.3333333;
+  font-weight: normal;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  border: 0.063rem solid transparent;
+  white-space: nowrap;
+  user-select: none;
+  font-size: 0.75rem;
+  padding: 0.54rem 2.375rem;
+}
+
+.newsletter--sign-up {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 footer {
