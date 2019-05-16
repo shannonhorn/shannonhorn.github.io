@@ -474,8 +474,7 @@ footer {
   margin-top: 1rem;
 }
 
-@media only screen and (min-device-width: 30rem) 
-                   and (max-device-width: 52.5rem)
+@media only screen and (max-device-width: 52.5rem)
                    and (orientation: landscape) {
   body:before {
     content: "mobileLandscape";
