@@ -345,6 +345,8 @@ nav footer {
   background-color: var(--background-color);
   color: var(--color-light);
   height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
 .marquee--copy {
@@ -353,7 +355,7 @@ nav footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: .618rem;
+  padding: .238rem;
   border-radius: .238rem;
 }
 
