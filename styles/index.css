@@ -475,6 +475,6 @@ footer {
 
 @media only screen and (min-width: 50rem) and (orientation: landscape) {
   body:before {
-    content: "mobile-landscape";
+    content: "mobileLandscape";
   }
 }

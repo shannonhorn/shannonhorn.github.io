@@ -62,7 +62,7 @@ const assetRegistry = {
       ".marquee": "https://i.ibb.co/Xtkr62r/marquee-mobile-420-2x-v1-squashed.jpg"
     }
   },
-  mobile-landscape: {
+  mobileLandscape: {
     priorityAssets: {},
     assets: {
       ".marquee": "https://i.ibb.co/bBgSmWJ/marquee-mobile-800-2x-v1-squashed.jpg"
