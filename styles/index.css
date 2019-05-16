@@ -351,6 +351,10 @@ nav footer {
   height: 100vh;
 }
 
+.marquee--copy {
+  background-color: var(--color-reverse-light);
+}
+
 h1 {
   font-weight: 400;
   font-size: 1.618rem;
