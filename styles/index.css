@@ -344,15 +344,17 @@ nav footer {
   background-size: cover;
   background-color: var(--background-color);
   color: var(--color-light);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   height: 100vh;
 }
 
 .marquee--copy {
   background-color: var(--color-reverse-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: .618rem;
+  border-radius: .238rem;
 }
 
 h1 {
