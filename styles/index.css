@@ -347,6 +347,7 @@ nav footer {
   height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .marquee--copy {
@@ -489,5 +490,9 @@ footer {
 @media only screen and (max-width: 52.5rem) and (orientation: landscape) {
   body:before {
     content: "mobileLandscape";
+  }
+
+  .marquee {
+    justify-content: flex-start;
   }
 }
