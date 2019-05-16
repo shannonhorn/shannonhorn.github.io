@@ -67,8 +67,15 @@ const assetRegistry = {
       ".marquee": "https://i.ibb.co/phLvgcL/marquee-mobile-landscape-2x.jpg"
     }
   },
-  tablet: {
-    assets: {}
+  tabletPortrait: {
+    assets: {
+      ".marquee": "https://i.ibb.co/n6yXZWS/marquee-tablet-portrait-2x.jpg"
+    }
+  },
+  tabletLandscape: {
+    assets: {
+      ".marquee": "https://i.ibb.co/pWRrKXS/marquee-tablet-landscape-2x.jpg"
+    }
   },
   desktop: {
     assets: {}
