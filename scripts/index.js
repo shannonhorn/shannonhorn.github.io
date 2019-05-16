@@ -78,7 +78,9 @@ const assetRegistry = {
     }
   },
   desktop: {
-    assets: {}
+    assets: {
+      ".marquee": "https://i.ibb.co/ynGSgQS/marquee-d3sktop-2x.jpg"
+    }
   }
 };
 
