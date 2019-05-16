@@ -59,7 +59,7 @@ const assetRegistry = {
   mobile: {
     priorityAssets: {},
     assets: {
-      ".marquee": "https://i.ibb.co/B2HKghR/marquee-mobile-480-2x-v1-squashed.jpg"
+      ".marquee": "https://i.ibb.co/B2HKghR/marquee-mobile-480-2x-v2-squashed.jpg"
     }
   },
   allBreakpoints: {
