@@ -58,27 +58,19 @@ function fetchAssets(breakpoint, assetLevel) {
 let breakpoint = { value: undefined };
 const assetRegistry = {
   mobile: {
-    priorityAssets: {},
     assets: {
       ".marquee": "https://i.ibb.co/Xtkr62r/marquee-mobile-420-2x-v1-squashed.jpg"
     }
   },
   mobileLandscape: {
-    priorityAssets: {},
     assets: {
       ".marquee": "https://i.ibb.co/bBgSmWJ/marquee-mobile-800-2x-v1-squashed.jpg"
     }
   },
   tablet: {
-    priorityAssets: {},
     assets: {}
   },
   desktop: {
-    priorityAssets: {},
-    assets: {}
-  },
-  allBreakpoints: {
-    priorityAssets: {},
     assets: {}
   }
 };
@@ -90,10 +82,7 @@ breakpoint.refreshValue = function(event) {
     .replace(/\"/g, "");
   if (breakpoint.value !== this.value) {
     breakpoint.value = this.value;
-    fetchAssets(this.value, "priorityAssets");
-    fetchAssets("allBreakpoints", "priorityAssets");
     fetchAssets(this.value, "assets");
-    fetchAssets("allBreakpoints", "assets");
   }
 };
 
