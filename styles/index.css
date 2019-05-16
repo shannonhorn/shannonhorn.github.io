@@ -503,7 +503,7 @@ footer {
   }
 }
 
-@media only screen and (min-width: 64rem) {
+@media only screen and (min-width: 64.063rem) {
   body:before {
     content: "desktop";
   }
