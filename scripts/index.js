@@ -59,12 +59,12 @@ let breakpoint = { value: undefined };
 const assetRegistry = {
   mobile: {
     assets: {
-      ".marquee": "https://i.ibb.co/Xtkr62r/marquee-mobile-420-2x-v1-squashed.jpg"
+      ".marquee": "https://i.ibb.co/VwVvdq9/marquee-mobile-portrait-2x.jpg"
     }
   },
   mobileLandscape: {
     assets: {
-      ".marquee": "https://i.ibb.co/bBgSmWJ/marquee-mobile-800-2x-v1-squashed.jpg"
+      ".marquee": "https://i.ibb.co/phLvgcL/marquee-mobile-landscape-2x.jpg"
     }
   },
   tablet: {
