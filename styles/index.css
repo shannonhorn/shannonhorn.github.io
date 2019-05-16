@@ -474,17 +474,9 @@ footer {
   margin-top: 1rem;
 }
 
-@media only screen and (min-width: 48rem) {
-  body:before {
-    content: "tablet";
-  }
-
-  .logo--a:after {
-    content: "llied Jiu Jitsu & Fitness";
-  }
-}
-
-@media only screen and (max-width: 52.5rem) and (orientation: landscape) {
+@media only screen and (min-device-width: 30rem) 
+                   and (max-device-width: 52.5rem)
+                   and (orientation: landscape) {
   body:before {
     content: "mobileLandscape";
   }
@@ -495,5 +487,15 @@ footer {
 
   .marquee--copy {
     margin-left: .618rem;
+  }
+}
+
+@media only screen and (min-width: 48rem) {
+  body:before {
+    content: "tablet";
+  }
+
+  .logo--a:after {
+    content: "llied Jiu Jitsu & Fitness";
   }
 }
