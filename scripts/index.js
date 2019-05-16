@@ -27,6 +27,7 @@ function loadImage(domElement, image, type) {
 
 // fetch assets
 function fetchAssets(breakpoint, assetLevel) {
+  console.log(breakpoint);
   for (let asset in assetRegistry[breakpoint][assetLevel]) {
     if (assetRegistry[breakpoint][assetLevel].hasOwnProperty(asset)) {
       let domElements = document.querySelectorAll(asset);
@@ -67,6 +68,14 @@ const assetRegistry = {
     assets: {
       ".marquee": "https://i.ibb.co/bBgSmWJ/marquee-mobile-800-2x-v1-squashed.jpg"
     }
+  },
+  tablet: {
+    priorityAssets: {},
+    assets: {}
+  },
+  desktop: {
+    priorityAssets: {},
+    assets: {}
   },
   allBreakpoints: {
     priorityAssets: {},
