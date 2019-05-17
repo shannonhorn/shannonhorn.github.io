@@ -529,16 +529,9 @@ footer {
   .nav-link a:active,
   .nav-link a:visited {
     font-size: .618rem;
+    padding: .618rem;
   }
 
-  .marquee {
-    justify-content: flex-start;
-  }
-
-  .marquee--copy {
-    margin-left: .618rem;
-  }
-  
   h1 {
     font-size: 1.625rem;
     letter-spacing: 1.5rem !important;
@@ -583,6 +576,7 @@ footer {
   .nav-link a:active,
   .nav-link a:visited {
     font-size: .618rem;
+    padding: .618rem;
   }
 
   .marquee {
@@ -637,23 +631,21 @@ footer {
   .nav-link a:active,
   .nav-link a:visited {
     font-size: .618rem;
+    padding: .618rem;
   }
-
-  .marquee {
-    justify-content: flex-start;
-  }
-
+  
   .marquee--copy {
-    margin-left: .618rem;
+    margin-left: 0;
   }
   
   h1 {
-    font-size: 1.625rem;
-    letter-spacing: 1.5rem !important;
+    font-size: 1.875rem;
+    letter-spacing: 3.125rem !important;
+    opacity: .9;
   }
   
   .headline-sub {
     font-size: 1rem;
-    letter-spacing: .5rem;
+    letter-spacing: .625rem;
   }
 }
