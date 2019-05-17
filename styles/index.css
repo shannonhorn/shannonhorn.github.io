@@ -177,6 +177,7 @@ nav {
   font-weight: 400;
   font-size: 0.75rem;
   letter-spacing: 0.25rem;
+  opacity: .6;
 }
 
 .logo {
@@ -506,6 +507,13 @@ footer {
   
   .nav-links {
     display: block;
+    list-style-type: none;
+    margin-right: 1rem;
+  }
+  
+  .nav-link {
+    display: inline;
+    margin: 0 .238rem;
   }
 
   .marquee {
