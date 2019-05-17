@@ -101,6 +101,10 @@ a:visited {
   overflow: hidden;
 }
 
+.nav-links {
+  display: none;
+}
+
 .asset--blur {
   -webkit-filter: blur(0.625rem);
   filter: blur(0.625rem);
@@ -480,6 +484,10 @@ footer {
 
   .logo--a:after {
     content: "llied Jiu Jitsu & Fitness";
+  }
+  
+  .nav-links {
+    display: block;
   }
 
   .marquee {
