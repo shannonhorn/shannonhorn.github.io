@@ -514,6 +514,18 @@ footer {
   .nav-link {
     display: inline;
     margin: 0 .238rem;
+    font-family: var(--font-copy);
+    color: var(--color);
+    text-transform: uppercase;
+    letter-spacing: .136rem;
+  }
+  
+  .nav-link a,
+  .nav-link a:hover,
+  .nav-link a:focus,
+  .nav-link a:active,
+  .nav-link a:visited {
+    font-size: .618rem;
   }
 
   .marquee {
@@ -546,6 +558,25 @@ footer {
   
   .nav-links {
     display: block;
+    list-style-type: none;
+    margin-right: 1rem;
+  }
+  
+  .nav-link {
+    display: inline;
+    margin: 0 .238rem;
+    font-family: var(--font-copy);
+    color: var(--color);
+    text-transform: uppercase;
+    letter-spacing: .136rem;
+  }
+  
+  .nav-link a,
+  .nav-link a:hover,
+  .nav-link a:focus,
+  .nav-link a:active,
+  .nav-link a:visited {
+    font-size: .618rem;
   }
 
   .marquee {
@@ -578,6 +609,25 @@ footer {
   
   .nav-links {
     display: block;
+    list-style-type: none;
+    margin-right: 1rem;
+  }
+  
+  .nav-link {
+    display: inline;
+    margin: 0 .238rem;
+    font-family: var(--font-copy);
+    color: var(--color);
+    text-transform: uppercase;
+    letter-spacing: .136rem;
+  }
+  
+  .nav-link a,
+  .nav-link a:hover,
+  .nav-link a:focus,
+  .nav-link a:active,
+  .nav-link a:visited {
+    font-size: .618rem;
   }
 
   .marquee {
