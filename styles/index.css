@@ -489,6 +489,16 @@ footer {
   .marquee--copy {
     margin-left: .618rem;
   }
+  
+  h1 {
+    font-size: 1.625rem;
+    letter-spacing: 1.5rem !important;
+  }
+  
+  .headline-sub {
+    font-size: 1rem;
+    letter-spacing: .5rem;
+  }
 }
 
 @media only screen and (min-device-width: 48rem) and (max-device-width: 64rem) and (orientation: portrait) {
