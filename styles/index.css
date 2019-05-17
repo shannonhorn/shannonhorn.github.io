@@ -398,6 +398,7 @@ input {
   border-width: 0.1px;
   padding: 0.382rem;
   outline: none;
+  min-width: 40vw;
 }
 
 .btn-default {
