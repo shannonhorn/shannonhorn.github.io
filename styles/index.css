@@ -513,7 +513,7 @@ footer {
   
   .nav-link {
     display: inline;
-    margin: 0 .238rem;
+    margin: 0 1rem;
     font-family: var(--font-copy);
     color: var(--color);
     text-transform: uppercase;
@@ -564,7 +564,7 @@ footer {
   
   .nav-link {
     display: inline;
-    margin: 0 .238rem;
+    margin: 0 1rem;
     font-family: var(--font-copy);
     color: var(--color);
     text-transform: uppercase;
@@ -615,7 +615,7 @@ footer {
   
   .nav-link {
     display: inline;
-    margin: 0 .238rem;
+    margin: 0 1rem;
     font-family: var(--font-copy);
     color: var(--color);
     text-transform: uppercase;
