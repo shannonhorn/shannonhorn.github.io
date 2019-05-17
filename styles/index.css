@@ -485,6 +485,24 @@ footer {
   .logo--a:after {
     content: "llied Jiu Jitsu & Fitness";
   }
+
+  .marquee {
+    justify-content: flex-start;
+  }
+
+  .marquee--copy {
+    margin-left: .618rem;
+  }
+}
+
+@media only screen and (min-device-width: 48rem) and (max-device-width: 64rem) and (orientation: portrait) {
+  body:before {
+    content: "tabletPortrait";
+  }
+
+  .logo--a:after {
+    content: "llied Jiu Jitsu & Fitness";
+  }
   
   .nav-links {
     display: block;
@@ -509,24 +527,6 @@ footer {
   }
 }
 
-@media only screen and (min-device-width: 48rem) and (max-device-width: 64rem) and (orientation: portrait) {
-  body:before {
-    content: "tabletPortrait";
-  }
-
-  .logo--a:after {
-    content: "llied Jiu Jitsu & Fitness";
-  }
-
-  .marquee {
-    justify-content: flex-start;
-  }
-
-  .marquee--copy {
-    margin-left: .618rem;
-  }
-}
-
 @media only screen and (min-device-width: 48rem) and (max-device-width: 64rem) and (orientation: landscape) {
   body:before {
     content: "tabletLandscape";
@@ -535,6 +535,10 @@ footer {
   .logo--a:after {
     content: "llied Jiu Jitsu & Fitness";
   }
+  
+  .nav-links {
+    display: block;
+  }
 
   .marquee {
     justify-content: flex-start;
@@ -542,6 +546,16 @@ footer {
 
   .marquee--copy {
     margin-left: .618rem;
+  }
+  
+  h1 {
+    font-size: 1.625rem;
+    letter-spacing: 1.5rem !important;
+  }
+  
+  .headline-sub {
+    font-size: 1rem;
+    letter-spacing: .5rem;
   }
 }
 
@@ -553,6 +567,10 @@ footer {
   .logo--a:after {
     content: "llied Jiu Jitsu & Fitness";
   }
+  
+  .nav-links {
+    display: block;
+  }
 
   .marquee {
     justify-content: flex-start;
@@ -560,5 +578,15 @@ footer {
 
   .marquee--copy {
     margin-left: .618rem;
+  }
+  
+  h1 {
+    font-size: 1.625rem;
+    letter-spacing: 1.5rem !important;
+  }
+  
+  .headline-sub {
+    font-size: 1rem;
+    letter-spacing: .5rem;
   }
 }
