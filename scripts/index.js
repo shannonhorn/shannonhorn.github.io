@@ -79,7 +79,7 @@ const assetRegistry = {
   },
   desktop: {
     assets: {
-      ".marquee": "https://i.ibb.co/ynGSgQS/marquee-d3sktop-2x.jpg"
+      ".marquee": "https://i.ibb.co/QMbFF1j/marquee-d3sktop-2x.jpg"
     }
   }
 };
