@@ -4,6 +4,7 @@ document
   .addEventListener("change", function(event) {
     const navDisplayed = document.querySelector(".nav-toggle").checked;
     document.querySelector(".logo").classList.toggle("logo--close");
+    document.querySelector(".nav-links").classList.toggle("logo--close");
     document.body.classList.toggle("nav-displayed", navDisplayed);
   });
 
