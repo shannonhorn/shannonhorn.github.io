@@ -395,6 +395,7 @@ input {
   border-style: solid;
   border-color: var(--background-color-button);
   border-width: 0.1px;
+  border-radius: 0;
   padding: 0.382rem;
   outline: none;
   min-width: 40vw;
