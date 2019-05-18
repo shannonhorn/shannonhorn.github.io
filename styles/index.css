@@ -342,7 +342,6 @@ nav footer {
 .marquee {
   background-repeat: no-repeat;
   background-position: bottom right;
-  background-attachment: fixed;
   background-size: cover;
   background-color: var(--background-color);
   color: var(--color-light);
@@ -641,6 +640,10 @@ footer {
   .nav-link a:visited {
     font-size: .618rem;
     padding: .618rem;
+  }
+  
+  .marquee {
+    background-attachment: fixed;
   }
   
   .marquee--copy {
