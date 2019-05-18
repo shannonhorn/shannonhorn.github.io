@@ -420,7 +420,7 @@ input {
   white-space: nowrap;
   user-select: none;
   font-size: 0.75rem;
-  padding: 0.54rem 1.618rem;
+  padding: 0.58rem 1.618rem;
 }
 
 .newsletter {
@@ -535,6 +535,10 @@ footer {
     padding: .618rem;
   }
 
+  .newsletter {
+    margin: 2.618rem 0;
+  }
+
   h1 {
     font-size: 1.625rem;
     letter-spacing: 1.5rem !important;
@@ -588,6 +592,10 @@ footer {
 
   .marquee--copy {
     margin-left: .618rem;
+  }
+
+  .newsletter {
+    margin: 2.618rem 0;
   }
   
   h1 {
@@ -648,6 +656,10 @@ footer {
   
   .marquee--copy {
     margin-left: 0;
+  }
+
+  .newsletter {
+    margin: 2.618rem 0;
   }
   
   h1 {
