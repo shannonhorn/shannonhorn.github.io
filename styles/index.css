@@ -409,14 +409,13 @@ input {
   border-radius: 0;
   box-shadow: none;
   transition: all 0.3s cubic-bezier(0.3, 0.1, 0.58, 1);
-  line-height: 1.3333333;
   font-weight: normal;
   display: inline-block;
   text-align: center;
   vertical-align: middle;
   touch-action: manipulation;
   cursor: pointer;
-  border: 0.063rem solid transparent;
+  border: none;
   white-space: nowrap;
   user-select: none;
   font-size: 0.75rem;
