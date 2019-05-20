@@ -676,6 +676,6 @@ footer {
   .social-media-links {
     grid-template-columns: repeat(4, 11.089rem);
     grid-template-rows: 1fr;
-    width: 100vw;
+    width: auto;
   }
 }
