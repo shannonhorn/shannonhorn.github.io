@@ -70,12 +70,12 @@ const assetRegistry = {
   },
   tabletPortrait: {
     assets: {
-      ".marquee": "https://i.ibb.co/n6yXZWS/marquee-tablet-portrait-2x.jpg"
+      ".marquee": "https://i.ibb.co/xYNHVCB/marquee-tablet-portrait-2x.jpg"
     }
   },
   tabletLandscape: {
     assets: {
-      ".marquee": "https://i.ibb.co/pWRrKXS/marquee-tablet-landscape-2x.jpg"
+      ".marquee": "https://i.ibb.co/dfr0Qm4/marquee-tablet-landscape-2x.jpg"
     }
   },
   desktop: {
