@@ -65,7 +65,7 @@ const assetRegistry = {
   },
   mobileLandscape: {
     assets: {
-      ".marquee": "https://i.ibb.co/phLvgcL/marquee-mobile-landscape-2x.jpg"
+      ".marquee": "https://i.ibb.co/bKtQcTr/marquee-mobile-landscape-2x.jpg"
     }
   },
   tabletPortrait: {
