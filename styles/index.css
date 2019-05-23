@@ -4,12 +4,14 @@
   --background-color: hsl(83, 5%, 96%);
   --background-color-overlay: hsla(0, 0%, 0%, 0.85);
   --background-color-button: hsla(0, 0%, 7%, 0.8);
+  --border-color-input: hsl(0, 0%, 93.3%);
   --font-headline: "Dosis", sans-serif;
   --font-copy: "Open Sans", sans-serif;
   --color: hsla(0, 0%, 7%, 0.9);
   --color-light: hsla(0, 0%, 7%, 0.6);
   --color-reverse: hsl(83, 5%, 96%);
   --color-reverse-light: hsla(83, 5%, 96%, 0.54);
+  --color-input: hsl(0, 0%, 33.3%);
   --color-black: hsla(0, 0%, 0%, 0.8);
 }
 
@@ -188,6 +190,10 @@ nav {
   transition-delay: 0.2s;
 }
 
+.logo--a {
+  letter-spacing: .236rem;
+}
+
 .logo--a:after {
   content: "llied Jiu Jitsu";
 }
@@ -195,8 +201,10 @@ nav {
 .logo-a--cap {
   background-color: var(--background-color-overlay);
   color: var(--color-reverse);
-  padding-left: 0.382rem;
-  padding-right: 0.226rem;
+  padding-left: 0.618rem;
+  padding-right: 0.382rem;
+  padding-top: .382rem;
+  padding-bottom: .382rem;
   margin-right: 0.236rem;
 }
 
@@ -392,13 +400,27 @@ h1 {
 }
 
 input {
+  border-color: var(--border-color-input);
+  font-family: var(--font-headline);
+  color: var(--color-input);
+  text-transform: uppercase;
+  letter-spacing: .125rem;
+  font-size: .688rem;
   border-style: solid;
-  border-color: var(--background-color-button);
-  border-width: 0.1px;
-  border-radius: 0;
-  padding: 0.382rem;
+  border-width: 0.125rem;
+  border-radius: .125rem;
+  padding: 0.375rem .75rem;
+  line-height: 1.42857143;
+  width: 100%;
   outline: none;
-  min-width: 40vw;
+  height: 2.063rem;
+  transition: all .3s cubic-bezier(.300, .100, .580, 1.0);
+  box-shadow: none;
+  margin: 0;
+}
+
+input:focus {
+  border-color: var(--color);
 }
 
 .btn-default {
@@ -407,7 +429,7 @@ input {
   text-transform: uppercase;
   font-family: var(--font-copy);
   letter-spacing: 0.125rem;
-  border-radius: 0;
+  border-radius: .125rem;
   box-shadow: none;
   transition: all 0.3s cubic-bezier(0.3, 0.1, 0.58, 1);
   font-weight: normal;
@@ -419,8 +441,10 @@ input {
   border: none;
   white-space: nowrap;
   user-select: none;
-  font-size: 0.75rem;
-  padding: 0.58rem 1.618rem;
+  font-size: 0.688rem;
+  padding: 0.5rem 2.313rem;
+  margin: 0;
+  line-height: 1.42857143;
 }
 
 .newsletter {
