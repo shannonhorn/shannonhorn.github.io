@@ -414,10 +414,12 @@ input {
   line-height: 1.42857143;
   width: 100%;
   outline: none;
-  height: 2.063rem;
   transition: all .3s cubic-bezier(.300, .100, .580, 1.0);
   box-shadow: none;
   margin: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right-style: none;
 }
 
 input:focus {
@@ -446,6 +448,8 @@ input:focus {
   padding: 0.5rem 2.313rem;
   margin: 0;
   line-height: 1.42857143;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .newsletter {
