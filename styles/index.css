@@ -397,6 +397,7 @@ h1 {
 .blurb--copy {
   line-height: 1.8;
   margin-bottom: 0.382rem;
+  font-size: .875rem;
 }
 
 input {
@@ -448,7 +449,8 @@ input:focus {
 }
 
 .newsletter {
-  margin: 1rem 0;
+  margin: 1rem .382rem;
+  width: 100%;
 }
 
 .newsletter--container {
@@ -462,6 +464,7 @@ input:focus {
   align-items: flex-start;
   justify-content: flex-start;
   max-width: calc(100vw - 1.236rem);
+  width: 100%;
 }
 
 footer {
