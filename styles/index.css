@@ -453,7 +453,7 @@ input:focus {
 }
 
 .newsletter {
-  margin: 1rem .382rem;
+  margin: 1rem 0;
   width: 100%;
 }
 
@@ -469,6 +469,11 @@ input:focus {
   justify-content: flex-start;
   max-width: calc(100vw - 1.236rem);
   width: 100%;
+}
+
+.program {
+  width: 100%;
+  margin: 1.618rem 0;
 }
 
 footer {
