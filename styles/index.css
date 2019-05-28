@@ -180,7 +180,7 @@ nav {
   font-weight: 400;
   font-size: 0.75rem;
   letter-spacing: 0.25rem;
-  opacity: .6;
+  opacity: .8;
 }
 
 .logo {
@@ -476,6 +476,11 @@ input:focus {
   margin: 1.618rem 0;
 }
 
+.program--marquee {
+  height: 13.625rem;
+  
+}
+
 footer {
   background-color: var(--background-color);
   color: var(--color-light);
@@ -684,10 +689,6 @@ footer {
   .nav-link a:visited {
     font-size: .618rem;
     padding: .618rem;
-  }
-  
-  .marquee {
-    background-attachment: fixed;
   }
   
   .marquee--copy {
