@@ -485,7 +485,7 @@ input:focus {
   font-family: var(--font-headline);
   color: var(--color);
   margin: 1.618rem 0;
-  text-tranform: uppercase;
+  text-transform: uppercase;
   letter-spacing: .236rem;
   font-weight: 400;
 }
