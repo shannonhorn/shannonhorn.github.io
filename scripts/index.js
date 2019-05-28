@@ -60,7 +60,9 @@ let breakpoint = { value: undefined };
 const assetRegistry = {
   mobile: {
     assets: {
-      ".marquee": "https://i.ibb.co/fDYbHF6/marquee-mobile-portrait-2x.jpg"
+      ".marquee": "https://i.ibb.co/fDYbHF6/marquee-mobile-portrait-2x.jpg",
+      ".program--bjj": "https://i.ibb.co/hLM06cv/card-image-bjj-2x.jpg",
+      ".program--fitness": "https://i.ibb.co/647p1Mg/card-image-personal-training-2x.jpg"
     }
   },
   mobileLandscape: {
