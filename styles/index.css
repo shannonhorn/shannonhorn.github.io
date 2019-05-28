@@ -97,6 +97,7 @@ a:visited {
   text-decoration: none;
   text-transform: uppercase;
   outline: none;
+  transition: all .3s cubic-bezier(.300, .100, .580, 1.0);
 }
 
 .nav-displayed {
@@ -483,10 +484,30 @@ input:focus {
 .program-headline {
   font-family: var(--font-headline);
   color: var(--color);
-  margin: .618rem 0;
-  text-tranformation: uppercase;
+  margin: 1.618rem 0;
+  text-tranform: uppercase;
   letter-spacing: .236rem;
   font-weight: 400;
+}
+
+.program-copy {
+  color: var(--color-light);
+  line-height: 1.8;
+  font-size: .875rem;
+  margin: 1.25rem 0;
+}
+
+.program-link,
+.program-link:hover,
+.program-link:focus,
+.program-link:active,
+.program-link:visited {
+  font-family: var(--font-headline);
+  color: var(--color-light);
+  letter-spacing: .236rem;
+  line-height: 1.8;
+  display: block;
+  font-size: .875rem;
 }
 
 footer {
