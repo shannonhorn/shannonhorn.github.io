@@ -478,7 +478,15 @@ input:focus {
 
 .program--marquee {
   height: 13.625rem;
-  
+}
+
+.program-headline {
+  font-family: var(--font-headline);
+  color: var(--color);
+  margin: .618rem 0;
+  text-tranformation: uppercase;
+  letter-spacing: .236rem;
+  font-weight: 400;
 }
 
 footer {
