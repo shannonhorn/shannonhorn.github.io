@@ -552,30 +552,6 @@ footer {
   margin-top: 1rem;
 }
 
-@media only screen and (orientation: landscape) {  
-  body:before {
-    content: "mobileLandscape";
-  }
-
-  .logo--a:after {
-    content: "llied Jiu Jitsu & Fitness";
-  }
-
-  .marquee {
-    background-image: url('https://i.ibb.co/RBdvF0k/marquee-mobile-landscape-2x.jpg');
-    justify-content: flex-start;
-    background-position: top right;
-  }
-
-  .marquee--copy {
-    margin-left: .618rem;
-  }
-  
-  .program--marquee {
-    height: 17.942rem;
-  }  
-}
-
 @media only screen and (max-device-width: 33.75rem) and (orientation: landscape) {
   body:before {
     content: "mobileLandscape";
@@ -596,7 +572,7 @@ footer {
   }
   
   .program--marquee {
-    height: 29.03rem;
+    height: 17.942rem;
   }  
 }
 
