@@ -468,6 +468,18 @@ input:focus {
 
 .program--marquee {
   height: 13.625rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  width: 100%;
+}
+
+.program--bjj {
+  background-image: url('https://i.ibb.co/hLM06cv/card-image-bjj-2x.jpg');
+}
+
+.program--fitness {
+  background-image: url('https://i.ibb.co/647p1Mg/card-image-personal-training-2x.jpg');
 }
 
 .program-headline {
