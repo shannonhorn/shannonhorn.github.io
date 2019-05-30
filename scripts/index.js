@@ -8,84 +8,8 @@ document
     document.body.classList.toggle("nav-displayed", navDisplayed);
   });
 
-// load image
-function loadImage(domElement, image, type) {
-  let backgroundImage = new Image();
-  backgroundImage.onload = function() {
-    let elements = document.querySelectorAll(domElement);
-    Array.prototype.slice.call(elements).forEach(function(element) {
-      if (type === "background") {
-        element.style.backgroundImage = "url(" + backgroundImage.src + ")";
-        element.classList.remove("asset--blur");
-        element.classList.add("asset--no-blur");
-      } else if (type === "source") {
-        element.src = backgroundImage.src;
-      }
-    });
-  };
-  backgroundImage.src = image;
-}
-
-// fetch assets
-function fetchAssets(breakpoint, assetLevel) {
-  console.log(breakpoint);
-  for (let asset in assetRegistry[breakpoint][assetLevel]) {
-    if (assetRegistry[breakpoint][assetLevel].hasOwnProperty(asset)) {
-      let domElements = document.querySelectorAll(asset);
-      Array.prototype.slice.call(domElements).forEach(function(domElement) {
-        if (
-          domElement.nodeName === "DIV" ||
-          domElement.nodeName === "SECTION" ||
-          domElement.nodeName === "A"
-        ) {
-          loadImage(
-            asset,
-            assetRegistry[breakpoint][assetLevel][asset],
-            "background"
-          );
-        } else if (domElement.nodeName === "IMG") {
-          loadImage(
-            asset,
-            assetRegistry[breakpoint][assetLevel][asset],
-            "source"
-          );
-        }
-      });
-    }
-  }
-}
-
 // track breakpoints
 let breakpoint = { value: undefined };
-const assetRegistry = {
-  mobile: {
-    assets: {
-      ".marquee": "https://i.ibb.co/fDYbHF6/marquee-mobile-portrait-2x.jpg",
-      ".program--bjj": "https://i.ibb.co/hLM06cv/card-image-bjj-2x.jpg",
-      ".program--fitness": "https://i.ibb.co/647p1Mg/card-image-personal-training-2x.jpg"
-    }
-  },
-  mobileLandscape: {
-    assets: {
-      ".marquee": "https://i.ibb.co/bKtQcTr/marquee-mobile-landscape-2x.jpg"
-    }
-  },
-  tabletPortrait: {
-    assets: {
-      ".marquee": "https://i.ibb.co/xYNHVCB/marquee-tablet-portrait-2x.jpg"
-    }
-  },
-  tabletLandscape: {
-    assets: {
-      ".marquee": "https://i.ibb.co/dfr0Qm4/marquee-tablet-landscape-2x.jpg"
-    }
-  },
-  desktop: {
-    assets: {
-      ".marquee": "https://i.ibb.co/qkYB2f1/marquee-d3sktop-2x.jpg"
-    }
-  }
-};
 
 breakpoint.refreshValue = function(event) {
   this.value = window
@@ -94,7 +18,6 @@ breakpoint.refreshValue = function(event) {
     .replace(/\"/g, "");
   if (breakpoint.value !== this.value) {
     breakpoint.value = this.value;
-    fetchAssets(this.value, "assets");
   }
 };
 

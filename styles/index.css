@@ -108,18 +108,6 @@ a:visited {
   display: none;
 }
 
-.asset--blur {
-  -webkit-filter: blur(0.625rem);
-  filter: blur(0.625rem);
-  -webkit-transition: all 0.25s;
-  transition: all 0.25s;
-}
-
-.asset--no-blur {
-  -webkit-transition: all 0.25s;
-  transition: all 0.25s;
-}
-
 .page-loader {
   background-color: #fff;
   position: fixed;
@@ -349,11 +337,12 @@ nav footer {
 }
 
 .marquee {
+  background-color: var(--background-color);
+  color: var(--color-light);
+  background-image: url('https://i.ibb.co/B3C3dYp/marquee-mobile-portrait-2x.jpg');
   background-repeat: no-repeat;
   background-position: bottom right;
   background-size: cover;
-  background-color: var(--background-color);
-  color: var(--color-light);
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -561,6 +550,7 @@ footer {
   }
 
   .marquee {
+    background-image: url('https://i.ibb.co/RBdvF0k/marquee-mobile-landscape-2x.jpg');
     justify-content: flex-start;
   }
 
@@ -603,6 +593,11 @@ footer {
   .nav-link a:visited {
     font-size: .618rem;
     padding: .618rem;
+  }
+  
+  .marquee {
+    background-image: url('https://i.ibb.co/cxPKWNY/marquee-tablet-portrait-2x.jpg');
+    justify-content: flex-start;
   }
 
   .newsletter {
@@ -655,8 +650,9 @@ footer {
     font-size: .618rem;
     padding: .618rem;
   }
-
+  
   .marquee {
+    background-image: url('https://i.ibb.co/pRpRLP1/marquee-tablet-landscape-2x.jpg');
     justify-content: flex-start;
   }
 
@@ -718,6 +714,11 @@ footer {
   .nav-link a:visited {
     font-size: .618rem;
     padding: .618rem;
+  }
+  
+  .marquee {
+    background-image: url('https://i.ibb.co/qkYB2f1/marquee-d3sktop-2x.jpg');
+    justify-content: flex-start;
   }
   
   .marquee--copy {
