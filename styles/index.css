@@ -41,7 +41,6 @@ html {
   z-index: -1;
   opacity: 0;
   transition: all 0.4s ease;
-  width: 1.618rem;
   right: 0.618rem;
   display: flex;
   justify-content: center;
@@ -552,7 +551,7 @@ footer {
   margin-top: 1rem;
 }
 
-@media only screen and (max-device-width: 33.75rem) and (orientation: landscape) {
+@media only screen and (max-width: 33.75rem) and (orientation: landscape) {
   body:before {
     content: "mobileLandscape";
   }
@@ -570,13 +569,13 @@ footer {
   .marquee--copy {
     margin-left: .618rem;
   }
-  
+
   .program--marquee {
     height: 17.942rem;
-  }  
+  }
 }
 
-@media only screen and (min-device-width: 33.75rem) and (max-device-width: 50rem) and (orientation: landscape) {
+@media only screen and (min-width: 33.75rem) and (max-width: 50rem) and (orientation: landscape) {
   body:before {
     content: "mobileLandscape";
   }
@@ -594,13 +593,13 @@ footer {
   .marquee--copy {
     margin-left: .618rem;
   }
-  
+
   .program--marquee {
     height: 29.03rem;
-  }  
+  }
 }
 
-@media only screen and (min-device-width: 48rem) and (max-device-width: 64rem) and (orientation: portrait) {
+@media only screen and (min-width: 48rem) and (max-width: 64rem) and (orientation: portrait) {
   body:before {
     content: "tabletPortrait";
   }
@@ -608,7 +607,7 @@ footer {
   .logo--a:after {
     content: "llied Jiu Jitsu & Fitness";
   }
-  
+
   .nav-links {
     display: block;
     list-style-type: none;
@@ -617,7 +616,7 @@ footer {
     transition: all 0.4s ease;
     transition-delay: 0.2s;
   }
-  
+
   .nav-link {
     display: inline;
     margin: 0 1rem;
@@ -626,7 +625,7 @@ footer {
     text-transform: uppercase;
     letter-spacing: .136rem;
   }
-  
+
   .nav-link a,
   .nav-link a:hover,
   .nav-link a:focus,
@@ -635,7 +634,7 @@ footer {
     font-size: .618rem;
     padding: .618rem;
   }
-  
+
   .marquee {
     background-image: url('https://i.ibb.co/n0zGpcS/marquee-mobile-landscape-2x.jpg');
     justify-content: flex-start;
@@ -649,14 +648,14 @@ footer {
     font-size: 1.625rem;
     letter-spacing: 1.5rem !important;
   }
-  
+
   .headline-sub {
     font-size: 1rem;
     letter-spacing: .5rem;
   }
 }
 
-@media only screen and (min-device-width: 48rem) and (max-device-width: 64rem) and (orientation: landscape) {
+@media only screen and (min-width: 48rem) and (max-width: 64rem) and (orientation: landscape) {
   body:before {
     content: "tabletLandscape";
   }
@@ -664,7 +663,7 @@ footer {
   .logo--a:after {
     content: "llied Jiu Jitsu & Fitness";
   }
-  
+
   .nav-links {
     display: block;
     list-style-type: none;
@@ -673,7 +672,7 @@ footer {
     transition: all 0.4s ease;
     transition-delay: 0.2s;
   }
-  
+
   .nav-link {
     display: inline;
     margin: 0 1rem;
@@ -682,7 +681,7 @@ footer {
     text-transform: uppercase;
     letter-spacing: .136rem;
   }
-  
+
   .nav-link a,
   .nav-link a:hover,
   .nav-link a:focus,
@@ -691,7 +690,7 @@ footer {
     font-size: .618rem;
     padding: .618rem;
   }
-  
+
   .marquee {
     background-image: url('https://i.ibb.co/Z8M68YF/marquee-tablet-landscape-2x.jpg');
     justify-content: flex-start;
@@ -704,12 +703,12 @@ footer {
   .newsletter {
     margin: 2.618rem 0;
   }
-  
+
   h1 {
     font-size: 1.625rem;
     letter-spacing: 1.5rem !important;
   }
-  
+
   .headline-sub {
     font-size: 1rem;
     letter-spacing: .5rem;
@@ -720,7 +719,7 @@ footer {
   body:before {
     content: "desktop";
   }
-  
+
   nav {
     width: 50vw;
     margin: 1rem auto;
@@ -729,7 +728,7 @@ footer {
   .logo--a:after {
     content: "llied Jiu Jitsu & Fitness";
   }
-  
+
   .nav-links {
     display: block;
     list-style-type: none;
@@ -738,7 +737,7 @@ footer {
     transition: all 0.4s ease;
     transition-delay: 0.2s;
   }
-  
+
   .nav-link {
     display: inline;
     margin: 0 1rem;
@@ -747,7 +746,7 @@ footer {
     text-transform: uppercase;
     letter-spacing: .136rem;
   }
-  
+
   .nav-link a,
   .nav-link a:hover,
   .nav-link a:focus,
@@ -756,12 +755,12 @@ footer {
     font-size: .618rem;
     padding: .618rem;
   }
-  
+
   .marquee {
     background-image: url('https://i.ibb.co/mt6StZh/marquee-desktop-2x.jpg');
     justify-content: flex-start;
   }
-  
+
   .marquee--copy {
     margin-left: 0;
   }
@@ -769,13 +768,13 @@ footer {
   .newsletter {
     margin: 2.618rem 0;
   }
-  
+
   h1 {
     font-size: 1.875rem;
     letter-spacing: 3.125rem !important;
     opacity: .9;
   }
-  
+
   .headline-sub {
     font-size: 1rem;
     letter-spacing: .625rem;
