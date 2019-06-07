@@ -640,8 +640,12 @@ footer {
     justify-content: flex-start;
   }
 
-  .newsletter {
-    margin: 2.618rem 0;
+  .module {
+    margin: 2.618rem;
+  }
+
+  .program--marquee {
+      height: 29.03rem;
   }
 
   h1 {
@@ -705,7 +709,7 @@ footer {
   }
 
   .program--marquee {
-      height: 29.03rem;
+      height: 34.03rem;
   }
 
   h1 {
