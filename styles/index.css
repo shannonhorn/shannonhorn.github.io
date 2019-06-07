@@ -338,7 +338,7 @@ nav footer {
 .marquee {
   background-color: var(--background-color);
   color: var(--color-light);
-  background-image: url('https://i.ibb.co/VL6TB2L/marquee-mobile-portrait-2x.jpg');
+  background-image: url('https://i.ibb.co/4KQ7FW3/marquee-mobile-portrait-2x.jpg');
   background-repeat: no-repeat;
   background-position: bottom right;
   background-size: cover;
@@ -566,7 +566,7 @@ footer {
   }
 
   .marquee {
-    background-image: url('https://i.ibb.co/n0zGpcS/marquee-mobile-landscape-2x.jpg');
+    background-image: url('https://i.ibb.co/GkYPQpH/marquee-mobile-landscape-2x.jpg');
     justify-content: flex-start;
     background-position: top right;
   }
@@ -590,7 +590,7 @@ footer {
   }
 
   .marquee {
-    background-image: url('https://i.ibb.co/n0zGpcS/marquee-mobile-landscape-2x.jpg');
+    background-image: url('https://i.ibb.co/GkYPQpH/marquee-mobile-landscape-2x.jpg');
     justify-content: flex-start;
     background-position: top right;
   }
@@ -618,7 +618,7 @@ footer {
     }
 
   .marquee {
-    background-image: url('https://i.ibb.co/hL52Q3g/marquee-tablet-portrait-2x.jpg');
+    background-image: url('https://i.ibb.co/j8MvQjJ/marquee-tablet-portrait-2x.jpg');
     justify-content: flex-start;
   }
 
@@ -700,7 +700,7 @@ footer {
   }
 
   .marquee {
-    background-image: url('https://i.ibb.co/Z8M68YF/marquee-tablet-landscape-2x.jpg');
+    background-image: url('https://i.ibb.co/RCqfwBg/marquee-tablet-landscape-2x.jpg');
     justify-content: flex-start;
   }
 
@@ -799,7 +799,7 @@ footer {
   }
 
   .marquee {
-    background-image: url('https://i.ibb.co/CM3y7FK/marquee-125x.jpg');
+    background-image: url('https://i.ibb.co/gTRJBTg/marquee-desktop-2x.jpg');
     justify-content: center;
       transition: all 0.4s ease;
       background-attachment: fixed;
@@ -958,7 +958,7 @@ footer {
   }
 
   .marquee {
-    background-image: url('https://i.ibb.co/Z8M68YF/marquee-tablet-landscape-2x.jpg');
+    background-image: url('https://i.ibb.co/j8MvQjJ/marquee-tablet-portrait-2x.jpg');
     justify-content: flex-start;
       background-attachment: scroll;
   }
@@ -1050,7 +1050,7 @@ footer {
   }
 
   .marquee {
-    background-image: url('https://i.ibb.co/Z8M68YF/marquee-tablet-landscape-2x.jpg');
+    background-image: url('https://i.ibb.co/RCqfwBg/marquee-tablet-landscape-2x.jpg');
     justify-content: flex-start;
       background-attachment: scroll;
   }
