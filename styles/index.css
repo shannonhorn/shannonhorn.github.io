@@ -745,9 +745,84 @@ footer {
   }
 }
 
+@media only screen and (min-width: 64rem) {
+  body:before {
+    content: "desktop";
+  }
+
+  .logo--a:after {
+    content: "llied Jiu Jitsu & Fitness";
+  }
+
+    nav {
+        margin: 1rem 2.618rem;
+    }
+
+  .nav-links {
+    display: block;
+    list-style-type: none;
+    margin-right: 1rem;
+    transform: translateY(0);
+    transition: all 0.4s ease;
+    transition-delay: 0.2s;
+  }
+
+  .nav-link {
+    display: inline;
+    margin: 0 1rem;
+    font-family: var(--font-copy);
+    color: var(--color);
+    text-transform: uppercase;
+    letter-spacing: .136rem;
+  }
+
+  .nav-link a,
+  .nav-link a:hover,
+  .nav-link a:focus,
+  .nav-link a:active,
+  .nav-link a:visited {
+    font-size: .618rem;
+    padding: .618rem;
+  }
+
+  .marquee {
+    background-image: url('https://i.ibb.co/CM3y7FK/marquee-125x.jpg');
+    justify-content: center;
+  }
+
+  .marquee--copy {
+    width: calc(100vw - 2.618rem);
+  }
+
+  .module {
+    margin: 2.618rem;
+  }
+
+  .program--marquee {
+      height: 34.03rem;
+  }
+
+  h1 {
+    font-size: 1.875rem;
+    letter-spacing: 2.925rem !important;
+    opacity: .9;
+  }
+
+  .headline-sub {
+    font-size: 1rem;
+    letter-spacing: .625rem;
+  }
+
+  .social-media-links {
+    grid-template-columns: repeat(4, 11.089rem);
+    grid-template-rows: 1fr;
+    width: auto;
+  }
+}
+
 @media only screen 
-  and (min-width: 1024px) 
-  and (max-height: 1366px) 
+  and (min-width: 64rem) 
+  and (max-height: 85.375rem) 
   and (orientation: portrait) 
   and (-webkit-min-device-pixel-ratio: 1.5) {
   body:before {
@@ -836,8 +911,8 @@ footer {
 }
 
 @media only screen 
-  and (min-width: 1024px) 
-  and (max-height: 1366px) 
+  and (min-width: 64rem) 
+  and (max-height: 85.375rem) 
   and (orientation: landscape) 
   and (-webkit-min-device-pixel-ratio: 1.5) {
   body:before {
@@ -924,82 +999,6 @@ footer {
     letter-spacing: .5rem;
   }
 }
-
-@media only screen and (min-width: 64rem) {
-  body:before {
-    content: "desktop";
-  }
-
-  .logo--a:after {
-    content: "llied Jiu Jitsu & Fitness";
-  }
-
-    nav {
-        margin: 1rem 2.618rem;
-    }
-
-  .nav-links {
-    display: block;
-    list-style-type: none;
-    margin-right: 1rem;
-    transform: translateY(0);
-    transition: all 0.4s ease;
-    transition-delay: 0.2s;
-  }
-
-  .nav-link {
-    display: inline;
-    margin: 0 1rem;
-    font-family: var(--font-copy);
-    color: var(--color);
-    text-transform: uppercase;
-    letter-spacing: .136rem;
-  }
-
-  .nav-link a,
-  .nav-link a:hover,
-  .nav-link a:focus,
-  .nav-link a:active,
-  .nav-link a:visited {
-    font-size: .618rem;
-    padding: .618rem;
-  }
-
-  .marquee {
-    background-image: url('https://i.ibb.co/CM3y7FK/marquee-125x.jpg');
-    justify-content: center;
-  }
-
-  .marquee--copy {
-    width: calc(100vw - 2.618rem);
-  }
-
-  .module {
-    margin: 2.618rem;
-  }
-
-  .program--marquee {
-      height: 34.03rem;
-  }
-
-  h1 {
-    font-size: 1.875rem;
-    letter-spacing: 2.925rem !important;
-    opacity: .9;
-  }
-
-  .headline-sub {
-    font-size: 1rem;
-    letter-spacing: .625rem;
-  }
-
-  .social-media-links {
-    grid-template-columns: repeat(4, 11.089rem);
-    grid-template-rows: 1fr;
-    width: auto;
-  }
-}
-
 @media only screen and (min-width: 85.375rem) {
   body:before {
     content: "wide";
