@@ -723,7 +723,7 @@ footer {
   }
 }
 
-@media only screen and (min-width: 64.063rem) {
+@media only screen and (min-width: 64rem) {
   body:before {
     content: "desktop";
   }
@@ -770,11 +770,15 @@ footer {
   }
 
   .marquee--copy {
-    margin-left: 0;
+    margin-left: 2.618rem;
   }
 
-  .newsletter {
-    margin: 2.618rem 0;
+  .module {
+    margin: 2.618rem;
+  }
+
+  .program--marquee {
+      height: 34.03rem;
   }
 
   h1 {
