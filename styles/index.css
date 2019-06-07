@@ -762,7 +762,7 @@ footer {
 html:not([data-scroll="0"]) nav {
   transition: all 0.4s ease;
   background-color: hsl(0, 0%, 100%);
-  margin: .926rem 2.618rem;
+  margin: .618rem 2.618rem;
 }
 
   .nav-links {
