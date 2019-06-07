@@ -721,8 +721,16 @@ footer {
     margin: 2.618rem;
   }
 
+  .programs {
+      flex-direction: row;
+  }
+
+  .program {
+      margin: 1.618rem .618rem;
+  }
+
   .program--marquee {
-      height: 34.03rem;
+      height: 13.625rem;
   }
 
   h1 {
