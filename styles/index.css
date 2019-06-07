@@ -460,6 +460,11 @@ input:focus {
   width: 100%;
 }
 
+.programs {
+    display: flex;
+    flex-direction: column;
+}
+
 .program {
   width: 100%;
   margin: 1.618rem 0;
@@ -644,8 +649,16 @@ footer {
     margin: 2.618rem;
   }
 
+  .programs {
+      flex-direction: row;
+  }
+
+  .program {
+      margin: 1.618rem .618rem;
+  }
+
   .program--marquee {
-      height: 29.03rem;
+      height: 13.625rem;
   }
 
   h1 {
