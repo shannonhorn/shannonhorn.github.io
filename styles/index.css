@@ -798,8 +798,26 @@ footer {
     margin: 2.618rem;
   }
 
+    .newsletter--container {
+    flex-direction: row;
+    justify-content: space-between;
+    }
+
+    .newsletter--sign-up {
+        flex: 1;
+        margin-left: 1rem;
+    }
+
+  .programs {
+      flex-direction: row;
+  }
+
+  .program {
+      margin: 1.618rem .618rem;
+  }
+
   .program--marquee {
-      height: 34.03rem;
+      height: 29.03rem;
   }
 
   h1 {
@@ -826,7 +844,7 @@ footer {
   }
 
     nav {
-        margin: 1rem 4.236rem;
+        margin: 1rem auto;
         max-width: 87.5rem;
     }
 
@@ -839,8 +857,26 @@ footer {
     max-width: 87.5rem;
   }
 
+    .newsletter--container {
+    flex-direction: row;
+    justify-content: space-between;
+    }
+
+    .newsletter--sign-up {
+        flex: 1;
+        margin-left: 1rem;
+    }
+
+  .programs {
+      flex-direction: row;
+  }
+
+  .program {
+      margin: 1.618rem .618rem;
+  }
+
   .program--marquee {
-      height: 34.03rem;
+      height: 29.03rem;
   }
 
   h1 {
