@@ -632,7 +632,8 @@ footer {
     }
 
     .newsletter--sign-up {
-        width: 60%;
+        flex: 1;
+        margin-left: 1rem;
     }
 
   .programs {
@@ -711,6 +712,16 @@ footer {
     margin: 2.618rem;
   }
 
+    .newsletter--container {
+    flex-direction: row;
+    justify-content: space-between;
+    }
+
+    .newsletter--sign-up {
+        flex: 1;
+        margin-left: 1rem;
+    }
+
   .programs {
       flex-direction: row;
   }
@@ -720,7 +731,7 @@ footer {
   }
 
   .program--marquee {
-      height: 13.625rem;
+      height: 29.03rem;
   }
 
   h1 {
