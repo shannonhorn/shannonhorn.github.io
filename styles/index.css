@@ -745,6 +745,186 @@ footer {
   }
 }
 
+@media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+  body:before {
+    content: "iPadProPortrait";
+  }
+
+  .logo--a:after {
+    content: "llied Jiu Jitsu & Fitness";
+  }
+
+    nav {
+        margin: 1rem 2.618rem;
+    }
+
+  .nav-links {
+    display: block;
+    list-style-type: none;
+    margin-right: 1rem;
+    transform: translateY(0);
+    transition: all 0.4s ease;
+    transition-delay: 0.2s;
+  }
+
+  .nav-link {
+    display: inline;
+    margin: 0 1rem;
+    font-family: var(--font-copy);
+    color: var(--color);
+    text-transform: uppercase;
+    letter-spacing: .136rem;
+  }
+
+  .nav-link a,
+  .nav-link a:hover,
+  .nav-link a:focus,
+  .nav-link a:active,
+  .nav-link a:visited {
+    font-size: .618rem;
+    padding: .618rem;
+  }
+
+  .marquee {
+    background-image: url('https://i.ibb.co/Z8M68YF/marquee-tablet-landscape-2x.jpg');
+    justify-content: flex-start;
+  }
+
+  .marquee--copy {
+    margin-left: .618rem;
+  }
+
+  .module {
+    margin: 2.618rem;
+  }
+
+    .newsletter--container {
+    flex-direction: row;
+    justify-content: space-between;
+    }
+
+    .newsletter--sign-up {
+        flex: 1;
+        margin-left: 1rem;
+    }
+
+  .programs {
+      flex-direction: row;
+  }
+
+  .program {
+      margin: 1.618rem .618rem;
+  }
+
+  .program--marquee {
+      height: 29.03rem;
+  }
+
+  h1 {
+    font-size: 1.625rem;
+    letter-spacing: 1.5rem !important;
+  }
+
+  .headline-sub {
+    font-size: 1rem;
+    letter-spacing: .5rem;
+  }
+}
+
+@media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+  body:before {
+    content: "iPadProLandscape";
+  }
+
+  .logo--a:after {
+    content: "llied Jiu Jitsu & Fitness";
+  }
+
+    nav {
+        margin: 1rem 2.618rem;
+    }
+
+  .nav-links {
+    display: block;
+    list-style-type: none;
+    margin-right: 1rem;
+    transform: translateY(0);
+    transition: all 0.4s ease;
+    transition-delay: 0.2s;
+  }
+
+  .nav-link {
+    display: inline;
+    margin: 0 1rem;
+    font-family: var(--font-copy);
+    color: var(--color);
+    text-transform: uppercase;
+    letter-spacing: .136rem;
+  }
+
+  .nav-link a,
+  .nav-link a:hover,
+  .nav-link a:focus,
+  .nav-link a:active,
+  .nav-link a:visited {
+    font-size: .618rem;
+    padding: .618rem;
+  }
+
+  .marquee {
+    background-image: url('https://i.ibb.co/Z8M68YF/marquee-tablet-landscape-2x.jpg');
+    justify-content: flex-start;
+  }
+
+  .marquee--copy {
+    margin-left: .618rem;
+  }
+
+  .module {
+    margin: 2.618rem;
+  }
+
+    .newsletter--container {
+    flex-direction: row;
+    justify-content: space-between;
+    }
+
+    .newsletter--sign-up {
+        flex: 1;
+        margin-left: 1rem;
+    }
+
+  .programs {
+      flex-direction: row;
+  }
+
+  .program {
+      margin: 1.618rem .618rem;
+  }
+
+  .program--marquee {
+      height: 29.03rem;
+  }
+
+  h1 {
+    font-size: 1.625rem;
+    letter-spacing: 1.5rem !important;
+  }
+
+  .headline-sub {
+    font-size: 1rem;
+    letter-spacing: .5rem;
+  }
+}
+
 @media only screen and (min-width: 64rem) {
   body:before {
     content: "desktop";
