@@ -626,6 +626,15 @@ footer {
     margin: 2.618rem;
   }
 
+    .newsletter--container {
+    flex-direction: row;
+    justify-content: space-between;
+    }
+
+    .newsletter--sign-up {
+        width: 60%;
+    }
+
   .programs {
       flex-direction: row;
   }
