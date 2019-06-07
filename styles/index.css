@@ -168,7 +168,7 @@ nav {
   font-weight: 400;
   font-size: 0.75rem;
   letter-spacing: 0.25rem;
-  opacity: .8;
+  opacity: .6;
 }
 
 .logo {
@@ -728,11 +728,6 @@ footer {
     content: "desktop";
   }
 
-  nav {
-    width: 50vw;
-    margin: 1rem auto;
-  }
-
   .logo--a:after {
     content: "llied Jiu Jitsu & Fitness";
   }
@@ -766,11 +761,11 @@ footer {
 
   .marquee {
     background-image: url('https://i.ibb.co/mt6StZh/marquee-desktop-2x.jpg');
-    justify-content: flex-start;
+    justify-content: center;
   }
 
   .marquee--copy {
-    margin-left: 2.618rem;
+    width: calc(100vw - 2.618rem);
   }
 
   .module {
@@ -783,7 +778,7 @@ footer {
 
   h1 {
     font-size: 1.875rem;
-    letter-spacing: 3.125rem !important;
+    letter-spacing: 2.925rem !important;
     opacity: .9;
   }
 
