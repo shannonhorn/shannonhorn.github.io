@@ -940,6 +940,17 @@ footer {
         margin: 1rem 2.618rem;
         position: absolute;
     }
+      
+  html:not([data-scroll="0"]) .nav-—container {
+      background-color: transparent;
+      height: 56px;
+      position: absolute;
+      z-index: 1;
+      }
+      
+  html:not([data-scroll="0"]) nav {
+        margin: 1rem 2.618rem;
+      }
 
   .nav-links {
     display: block;
@@ -1031,6 +1042,17 @@ footer {
         margin: 1rem 2.618rem;
         position: absolute;
     }
+      
+  html:not([data-scroll="0"]) .nav-—container {
+      background-color: transparent;
+      height: 56px;
+      position: absolute;
+      z-index: 1;
+      }
+      
+  html:not([data-scroll="0"]) nav {
+        margin: 1rem 2.618rem;
+      }
 
   .nav-links {
     display: block;
