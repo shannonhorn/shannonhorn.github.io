@@ -800,6 +800,7 @@ footer {
   }
 
     nav {
+        margin: 1rem 4.236rem;
         max-width: 87.5rem;
     }
 
@@ -809,7 +810,7 @@ footer {
 
   .module {
     margin: 4.236rem auto;
-    max-width: 75rem;
+    max-width: 87.5rem;
   }
 
   .program--marquee {
