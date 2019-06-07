@@ -770,20 +770,6 @@ footer {
       position: fixed;
       transition: all 0.4s ease;
       }
-      
-  html:not([data-scroll="0"]) .nav-—container {
-      transition: all 0.4s ease;
-      background-color: hsla(0, 0%, 100%, .9);
-      box-shadow: 0 1px 0 rgba(0,0,0,.05);
-      height: 50px;
-      position: fixed;
-      z-index: 1;
-      }
-      
-  html:not([data-scroll="0"]) nav {
-      transition: all 0.4s ease;
-      margin: .618rem auto;
-      }
 
   .nav-links {
     display: block;
@@ -813,7 +799,7 @@ footer {
   }
 
   .marquee {
-    background-image: url('https://i.ibb.co/CM3y7FK/marquee-125x.jpg');
+    background-image: url('https://i.ibb.co/Z8M68YF/marquee-tablet-landscape-2x.jpg');
     justify-content: center;
       transition: all 0.4s ease;
       background-attachment: fixed;
@@ -926,10 +912,10 @@ footer {
   }
 }
 
-@media only screen 
-  and (min-width: 64rem) 
-  and (max-height: 85.375rem) 
-  and (orientation: portrait) 
+@media only screen
+  and (min-width: 64rem)
+  and (max-height: 85.375rem)
+  and (orientation: portrait)
   and (-webkit-min-device-pixel-ratio: 1.5) {
   body:before {
     content: "iPadProPortrait";
@@ -943,17 +929,6 @@ footer {
         margin: 1rem 2.618rem;
         position: absolute;
     }
-      
-  html:not([data-scroll="0"]) .nav-—container {
-      background-color: transparent;
-      height: 56px;
-      position: absolute;
-      z-index: 1;
-      }
-      
-  html:not([data-scroll="0"]) nav {
-        margin: 1rem 2.618rem;
-      }
 
   .nav-links {
     display: block;
@@ -1029,10 +1004,10 @@ footer {
   }
 }
 
-@media only screen 
-  and (min-width: 64rem) 
-  and (max-height: 85.375rem) 
-  and (orientation: landscape) 
+@media only screen
+  and (min-width: 64rem)
+  and (max-height: 85.375rem)
+  and (orientation: landscape)
   and (-webkit-min-device-pixel-ratio: 1.5) {
   body:before {
     content: "iPadProLandscape";
@@ -1046,17 +1021,6 @@ footer {
         margin: 1rem 2.618rem;
         position: absolute;
     }
-      
-  html:not([data-scroll="0"]) .nav-—container {
-      background-color: transparent;
-      height: 56px;
-      position: absolute;
-      z-index: 1;
-      }
-      
-  html:not([data-scroll="0"]) nav {
-        margin: 1rem 2.618rem;
-      }
 
   .nav-links {
     display: block;
