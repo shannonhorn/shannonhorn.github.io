@@ -107,35 +107,6 @@ a:visited {
   display: none;
 }
 
-.page-loader {
-  background-color: #fff;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  z-index: 9998;
-}
-
-.loader {
-  background-color: #ddd;
-  position: absolute;
-  display: inline-block;
-  height: 2.5rem;
-  width: 2.5rem;
-  left: 50%;
-  top: 50%;
-  margin: -1.25rem 0 0 -1.25rem;
-  text-indent: -9999rem;
-  -webkit-border-radius: 100%;
-  -moz-border-radius: 100%;
-  border-radius: 100%;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation: ball-scale 1s 0s ease-in-out infinite;
-  animation: ball-scale 1s 0s ease-in-out infinite;
-}
-
 .container {
   background-color: #fff;
   overflow: hidden;
