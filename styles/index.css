@@ -126,6 +126,14 @@ a:visited {
   transition: all .3s cubic-bezier(.300, .100, .580, 1.0);
 }
 
+a:hover {
+    color: #809090;
+}
+
+a:visited {
+    color: #334D4D;
+}
+
 .nav-displayed {
   overflow: hidden;
 }
