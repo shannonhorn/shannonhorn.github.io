@@ -26,6 +26,22 @@
     }
 }
 
+@keyframes pop-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-4rem) scale(.8);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.animate-pop-in {
+    opacity: 0;
+    animation: pop-in .6s cubic-bezier(0,.9,.3,1.2) forwards;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -144,6 +160,7 @@ nav {
   color: var(--color);
   text-transform: uppercase;
   letter-spacing: 0.136rem;
+  animation-delay: .6s;
 }
 
 .headline-sub {
@@ -151,6 +168,7 @@ nav {
   font-size: 0.75rem;
   letter-spacing: 0.25rem;
   opacity: .6;
+  animation-delay: .8s;
 }
 
 .logo {
