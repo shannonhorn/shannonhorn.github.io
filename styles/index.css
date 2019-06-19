@@ -32,7 +32,7 @@
         transform: translateY(-4rem) scale(.8);
     }
     100% {
-        opacity: 1;
+        opacity: .8;
         transform: none;
     }
 }
@@ -167,7 +167,6 @@ nav {
   font-weight: 400;
   font-size: 0.75rem;
   letter-spacing: 0.25rem;
-  opacity: .6;
   animation-delay: .8s;
 }
 
