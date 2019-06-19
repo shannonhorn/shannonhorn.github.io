@@ -15,6 +15,17 @@
   --color-black: hsla(0, 0%, 0%, 0.8);
 }
 
+@keyframes fade-slide-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-4rem);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
 html {
   box-sizing: border-box;
 }
@@ -307,6 +318,7 @@ nav footer {
 }
 
 .marquee {
+    animation: fade-slide-down .5s ease-out forwards;
   background-color: var(--background-color);
   color: var(--color-light);
   background-image: url('https://i.ibb.co/23FRVG2/marquee-mobile-portrait-2x.jpg');
@@ -318,6 +330,7 @@ nav footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  transform-style: preserve-3d;
 }
 
 .marquee--copy {
