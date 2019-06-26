@@ -1296,25 +1296,8 @@
       window.addEventListener("load", breakpoint.refreshValue, false);
       window.addEventListener("resize", breakpoint.refreshValue, false);
 
-      // store scroll position
-      const scrollDebounce = function(fn) {
-        let frame;
-        return function(params) {
-          if (frame) {
-            cancelAnimationFrame(frame);
-          }
-          frame = requestAnimationFrame(function() {
-            fn(params);
-          });
-        };
-      };
-      const storeScroll = function() {
-        document.documentElement.dataset.scroll = window.scrollY;
-      };
-      document.addEventListener("scroll", scrollDebounce(storeScroll), {
-        passive: true
-      });
-      storeScroll();
+      // update display when scrolling down
+      const intersectionObserver = new IntersectionObserver();
     </script>
   </body>
 </html>
