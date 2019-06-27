@@ -371,13 +371,10 @@
 
       .marquee:before {
         content: "";
-        background: linear-gradient(
-            to bottom,
-            var(--background-color),
-            var(--background-color)
-          ),
-          url("https://i.ibb.co/23FRVG2/marquee-mobile-portrait-2x.jpg")
-            no-repeat bottom right;
+        background-color: var(--background-color);
+        background-image: url("https://i.ibb.co/23FRVG2/marquee-mobile-portrait-2x.jpg");
+        background-repeat: no-repeat;
+        background-position: bottom right;
         background-size: cover;
         position: absolute;
         top: 0;
