@@ -144,6 +144,11 @@
         color: #334d4d;
       }
 
+      .nav-—container {
+        z-index: 1;
+        background-color: transparent;
+      }
+
       .nav-displayed {
         overflow: hidden;
       }
@@ -153,6 +158,7 @@
       }
 
       .container {
+        position: relative;
         background-color: #fff;
         overflow: hidden;
         margin: 0 auto;
@@ -776,7 +782,7 @@
         }
 
         .nav-—container {
-          position: absolute;
+          position: fixed;
           top: 0;
           left: 0;
           right: 0;
@@ -1110,53 +1116,49 @@
 
   <body>
     <div class="nav-—container">
-      <div class="nav--wrapper">
-        <nav>
-          <div class="logo headline">
-            <a href="../index.html">
-              <span class="logo--a"><span class="logo-a--cap">A</span></span>
-            </a>
-          </div>
-          <ul class="nav-links">
-            <li class="nav-link"><a href="../programs.html">Programs</a></li>
-            <li class="nav-link"><a href="../schedule.html">Schedule</a></li>
-            <li class="nav-link"><a href="../contact.html">Contact</a></li>
-          </ul>
-          <input type="checkbox" class="nav-toggle" />
-          <div class="hamburger"><div class="lines"></div></div>
-          <div class="menu">
-            <div class="overlay">
-              <div class="overlay-inner">
-                <ul class="items">
-                  <li class="item">
-                    <a href="../index.html" class="nav-link">Home</a>
-                  </li>
-                  <li class="item">
-                    <a href="../programs.html" class="nav-link">Programs</a>
-                  </li>
-                  <li class="item">
-                    <a href="../schedule.html" class="nav-link">Schedule</a>
-                  </li>
-                  <li class="item">
-                    <a href="../instructors.html" class="nav-link"
-                      >Instructors</a
-                    >
-                  </li>
-                  <li class="item">
-                    <a href="../academy.html" class="nav-link">The Academy</a>
-                  </li>
-                  <li class="item">
-                    <a href="../contact.html" class="nav-link">Contact</a>
-                  </li>
-                </ul>
-              </div>
-              <footer>
-                &copy; 2019 Allied Athletics, LLC. All rights reserved.
-              </footer>
+      <nav>
+        <div class="logo headline">
+          <a href="../index.html">
+            <span class="logo--a"><span class="logo-a--cap">A</span></span>
+          </a>
+        </div>
+        <ul class="nav-links">
+          <li class="nav-link"><a href="../programs.html">Programs</a></li>
+          <li class="nav-link"><a href="../schedule.html">Schedule</a></li>
+          <li class="nav-link"><a href="../contact.html">Contact</a></li>
+        </ul>
+        <input type="checkbox" class="nav-toggle" />
+        <div class="hamburger"><div class="lines"></div></div>
+        <div class="menu">
+          <div class="overlay">
+            <div class="overlay-inner">
+              <ul class="items">
+                <li class="item">
+                  <a href="../index.html" class="nav-link">Home</a>
+                </li>
+                <li class="item">
+                  <a href="../programs.html" class="nav-link">Programs</a>
+                </li>
+                <li class="item">
+                  <a href="../schedule.html" class="nav-link">Schedule</a>
+                </li>
+                <li class="item">
+                  <a href="../instructors.html" class="nav-link">Instructors</a>
+                </li>
+                <li class="item">
+                  <a href="../academy.html" class="nav-link">The Academy</a>
+                </li>
+                <li class="item">
+                  <a href="../contact.html" class="nav-link">Contact</a>
+                </li>
+              </ul>
             </div>
+            <footer>
+              &copy; 2019 Allied Athletics, LLC. All rights reserved.
+            </footer>
           </div>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </div>
     <section class="container">
       <section class="content">
