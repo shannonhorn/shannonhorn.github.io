@@ -82,6 +82,7 @@
         bottom: 1rem;
         z-index: -1;
         opacity: 0;
+        transition: all 0.4s ease;
         right: 0.618rem;
         display: flex;
         justify-content: center;
@@ -782,11 +783,13 @@
           width: auto;
           margin: 0;
           height: 56px;
+          transition: all 0.4s ease;
         }
 
         nav {
           margin: 1rem 2.618rem;
           position: fixed;
+          transition: all 0.4s ease;
         }
 
         .nav-links {
@@ -1107,49 +1110,53 @@
 
   <body>
     <div class="nav-—container">
-      <nav>
-        <div class="logo headline">
-          <a href="../index.html">
-            <span class="logo--a"><span class="logo-a--cap">A</span></span>
-          </a>
-        </div>
-        <ul class="nav-links">
-          <li class="nav-link"><a href="../programs.html">Programs</a></li>
-          <li class="nav-link"><a href="../schedule.html">Schedule</a></li>
-          <li class="nav-link"><a href="../contact.html">Contact</a></li>
-        </ul>
-        <input type="checkbox" class="nav-toggle" />
-        <div class="hamburger"><div class="lines"></div></div>
-        <div class="menu">
-          <div class="overlay">
-            <div class="overlay-inner">
-              <ul class="items">
-                <li class="item">
-                  <a href="../index.html" class="nav-link">Home</a>
-                </li>
-                <li class="item">
-                  <a href="../programs.html" class="nav-link">Programs</a>
-                </li>
-                <li class="item">
-                  <a href="../schedule.html" class="nav-link">Schedule</a>
-                </li>
-                <li class="item">
-                  <a href="../instructors.html" class="nav-link">Instructors</a>
-                </li>
-                <li class="item">
-                  <a href="../academy.html" class="nav-link">The Academy</a>
-                </li>
-                <li class="item">
-                  <a href="../contact.html" class="nav-link">Contact</a>
-                </li>
-              </ul>
-            </div>
-            <footer>
-              &copy; 2019 Allied Athletics, LLC. All rights reserved.
-            </footer>
+      <div class="nav--wrapper">
+        <nav>
+          <div class="logo headline">
+            <a href="../index.html">
+              <span class="logo--a"><span class="logo-a--cap">A</span></span>
+            </a>
           </div>
-        </div>
-      </nav>
+          <ul class="nav-links">
+            <li class="nav-link"><a href="../programs.html">Programs</a></li>
+            <li class="nav-link"><a href="../schedule.html">Schedule</a></li>
+            <li class="nav-link"><a href="../contact.html">Contact</a></li>
+          </ul>
+          <input type="checkbox" class="nav-toggle" />
+          <div class="hamburger"><div class="lines"></div></div>
+          <div class="menu">
+            <div class="overlay">
+              <div class="overlay-inner">
+                <ul class="items">
+                  <li class="item">
+                    <a href="../index.html" class="nav-link">Home</a>
+                  </li>
+                  <li class="item">
+                    <a href="../programs.html" class="nav-link">Programs</a>
+                  </li>
+                  <li class="item">
+                    <a href="../schedule.html" class="nav-link">Schedule</a>
+                  </li>
+                  <li class="item">
+                    <a href="../instructors.html" class="nav-link"
+                      >Instructors</a
+                    >
+                  </li>
+                  <li class="item">
+                    <a href="../academy.html" class="nav-link">The Academy</a>
+                  </li>
+                  <li class="item">
+                    <a href="../contact.html" class="nav-link">Contact</a>
+                  </li>
+                </ul>
+              </div>
+              <footer>
+                &copy; 2019 Allied Athletics, LLC. All rights reserved.
+              </footer>
+            </div>
+          </div>
+        </nav>
+      </div>
     </div>
     <section class="container">
       <section class="content">
