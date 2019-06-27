@@ -1303,7 +1303,7 @@
       const marqueeObserver = new IntersectionObserver(
         (entries, marqueeObserver) => {
           entries.forEach(entry => {
-            console.log(entry.target);
+            console.log(entry);
           });
         },
         marqueeObserverOptions
