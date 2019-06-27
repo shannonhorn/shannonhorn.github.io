@@ -123,11 +123,6 @@
         overflow-x: hidden;
       }
 
-      body:before {
-        content: "mobile";
-        display: none;
-      }
-
       a,
       a:hover,
       a:focus,
@@ -593,10 +588,6 @@
       }
 
       @media only screen and (max-width: 33.75rem) and (orientation: landscape) {
-        body:before {
-          content: "mobileLandscape";
-        }
-
         .logo--a:after {
           content: "llied Jiu Jitsu & Fitness";
         }
@@ -619,10 +610,6 @@
       }
 
       @media only screen and (min-width: 33.75rem) and (max-width: 50rem) and (orientation: landscape) {
-        body:before {
-          content: "mobileLandscape";
-        }
-
         .logo--a:after {
           content: "llied Jiu Jitsu & Fitness";
         }
@@ -645,10 +632,6 @@
       }
 
       @media only screen and (min-width: 48rem) and (max-width: 64rem) and (orientation: portrait) {
-        body:before {
-          content: "tabletPortrait";
-        }
-
         .logo--a:after {
           content: "llied Jiu Jitsu & Fitness";
         }
@@ -703,10 +686,6 @@
       }
 
       @media only screen and (min-width: 48rem) and (max-width: 64rem) and (orientation: landscape) {
-        body:before {
-          content: "tabletLandscape";
-        }
-
         .logo--a:after {
           content: "llied Jiu Jitsu & Fitness";
         }
@@ -792,10 +771,6 @@
       }
 
       @media only screen and (min-width: 64rem) {
-        body:before {
-          content: "desktop";
-        }
-
         .logo--a:after {
           content: "llied Jiu Jitsu & Fitness";
         }
@@ -903,10 +878,6 @@
       }
 
       @media only screen and (min-width: 85.375rem) {
-        body:before {
-          content: "wide";
-        }
-
         nav {
           margin: 1rem auto;
           max-width: 87.5rem;
@@ -962,10 +933,6 @@
       }
 
       @media only screen and (min-width: 64rem) and (max-height: 85.375rem) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
-        body:before {
-          content: "iPadProPortrait";
-        }
-
         .logo--a:after {
           content: "llied Jiu Jitsu & Fitness";
         }
@@ -1053,10 +1020,6 @@
       }
 
       @media only screen and (min-width: 64rem) and (max-height: 85.375rem) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5) {
-        body:before {
-          content: "iPadProLandscape";
-        }
-
         .logo--a:after {
           content: "llied Jiu Jitsu & Fitness";
         }
@@ -1311,22 +1274,6 @@
           document.querySelector(".nav-links").classList.toggle("logo--close");
           document.body.classList.toggle("nav-displayed", navDisplayed);
         });
-
-      // track breakpoints
-      let breakpoint = { value: undefined };
-
-      breakpoint.refreshValue = function(event) {
-        this.value = window
-          .getComputedStyle(document.querySelector("body"), ":before")
-          .getPropertyValue("content")
-          .replace(/\"/g, "");
-        if (breakpoint.value !== this.value) {
-          breakpoint.value = this.value;
-        }
-      };
-
-      window.addEventListener("load", breakpoint.refreshValue, false);
-      window.addEventListener("resize", breakpoint.refreshValue, false);
 
       // update display when scrolling down
       const intersectionObserverOptions = {
