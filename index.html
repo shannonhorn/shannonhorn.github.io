@@ -1301,7 +1301,7 @@
       // update display when scrolling down
       const navContainer = document.querySelector(".nav-—container");
       const marquee = document.querySelector(".marquee");
-      const marqueeObserverOptions = {};
+      const marqueeObserverOptions = { rootMargin: "-98% 0px 0px 0px" };
       const marqueeObserver = new IntersectionObserver(
         (entries, marqueeObserver) => {
           entries.forEach(entry => {
