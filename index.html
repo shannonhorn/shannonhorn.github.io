@@ -146,11 +146,11 @@
       }
 
       a:hover {
-        color: #809090;
+        color: hsl(180, 6.7%, 53.3%);
       }
 
       a:visited {
-        color: #334d4d;
+        color: hsl(180, 20.3%, 25.1%);
       }
 
       .nav-—container {
@@ -803,6 +803,12 @@
           transition: all 0.4s ease;
         }
 
+        .nav-—container-light {
+          background: rgba(255, 255, 255, 0.95);
+          box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+          transition: all 0.3s cubic-bezier(0.3, 0.1, 0.58, 1);
+        }
+
         nav {
           margin: 1rem 2.618rem;
           position: fixed;
@@ -1293,24 +1299,18 @@
         });
 
       // update display when scrolling down
-      const intersectionObserverOptions = {
-        root: null,
-        rootMargin: "10px",
-        threshold: 1
-      };
-      function intersectionObserverCallback(entries, observer) {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
+      const marqueeObserverOptions = {};
+      const marqueeObserver = new IntersectionObserver(
+        (entries, marqueeObserver) => {
+          entries.forEach(entry => {
             console.log(entry.target);
-          }
-        });
-      }
-      const intersectionObserver = new IntersectionObserver(
-        intersectionObserverCallback,
-        intersectionObserverOptions
+          });
+        },
+        marqueeObserverOptions
       );
-      const target = document.querySelector("section.container");
-      intersectionObserver.observe(target);
+      const navContainer = document.querySelector(".nav-—container");
+      const marquee = document.querySelector(".marquee");
+      marqueeObserver.observe(marquee);
     </script>
   </body>
 </html>
