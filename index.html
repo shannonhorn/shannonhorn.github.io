@@ -358,7 +358,6 @@
       }
 
       .marquee {
-        animation: fade-slide-down 2s 0.5s cubic-bezier(0, 0.5, 0, 1) forwards;
         color: var(--color-light);
         height: 100vh;
         width: 100vw;
@@ -370,6 +369,7 @@
       }
 
       .marquee:before {
+        animation: fade-slide-down 2s 0.5s cubic-bezier(0, 0.5, 0, 1) forwards;
         content: "";
         background-color: var(--background-color);
         background-image: url("https://i.ibb.co/23FRVG2/marquee-mobile-portrait-2x.jpg");
@@ -602,8 +602,11 @@
         }
 
         .marquee {
-          background-image: url("https://i.ibb.co/tYHWrn1/marquee-mobile-landscape-2x.jpg");
           justify-content: flex-start;
+        }
+
+        .marquee:before {
+          background-image: url("https://i.ibb.co/tYHWrn1/marquee-mobile-landscape-2x.jpg");
         }
 
         .marquee--copy {
@@ -625,8 +628,11 @@
         }
 
         .marquee {
-          background-image: url("https://i.ibb.co/tYHWrn1/marquee-mobile-landscape-2x.jpg");
           justify-content: flex-start;
+        }
+
+        .marquee:before {
+          background-image: url("https://i.ibb.co/tYHWrn1/marquee-mobile-landscape-2x.jpg");
         }
 
         .marquee--copy {
@@ -652,8 +658,11 @@
         }
 
         .marquee {
-          background-image: url("https://i.ibb.co/HhRs3P8/marquee-tablet-portrait-2x.jpg");
           justify-content: flex-start;
+        }
+
+        .marquee:before {
+          background-image: url("https://i.ibb.co/HhRs3P8/marquee-tablet-portrait-2x.jpg");
         }
 
         .module {
@@ -734,8 +743,11 @@
         }
 
         .marquee {
-          background-image: url("https://i.ibb.co/dKS9bC2/marquee-tablet-landscape-2x.jpg");
           justify-content: flex-start;
+        }
+
+        .marquee:before {
+          background-image: url("https://i.ibb.co/dKS9bC2/marquee-tablet-landscape-2x.jpg");
         }
 
         .marquee--copy {
@@ -833,9 +845,11 @@
         }
 
         .marquee {
-          background-image: url("https://i.ibb.co/d7XdL5j/marquee-desktop-2x.jpg");
           justify-content: center;
-          transition: all 0.4s ease;
+        }
+
+        .marquee:before {
+          background-image: url("https://i.ibb.co/d7XdL5j/marquee-desktop-2x.jpg");
           background-attachment: fixed;
           background-position: top right;
         }
@@ -989,8 +1003,11 @@
         }
 
         .marquee {
-          background-image: url("https://i.ibb.co/HhRs3P8/marquee-tablet-portrait-2x.jpg");
           justify-content: flex-start;
+        }
+
+        .marquee:before {
+          background-image: url("https://i.ibb.co/HhRs3P8/marquee-tablet-portrait-2x.jpg");
           background-attachment: scroll;
         }
 
@@ -1077,8 +1094,11 @@
         }
 
         .marquee {
-          background-image: url("https://i.ibb.co/dKS9bC2/marquee-tablet-landscape-2x.jpg");
           justify-content: flex-start;
+        }
+
+        .marquee:before {
+          background-image: url("https://i.ibb.co/dKS9bC2/marquee-tablet-landscape-2x.jpg");
           background-attachment: scroll;
         }
 
