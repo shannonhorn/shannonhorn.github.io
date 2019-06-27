@@ -1310,9 +1310,10 @@
       const marqueeObserver = new IntersectionObserver(
         (entries, marqueeObserver) => {
           entries.forEach(entry => {
-            if (!entry.isIntersecting) {
-              navContainer.classList.add("nav-—container-light");
-            }
+            navContainer.classList.toggle(
+              "nav-—container-light",
+              !entry.isIntersecting
+            );
           });
         },
         marqueeObserverOptions
