@@ -52,14 +52,12 @@
         }
       }
 
-      @keyframes slide-down {
+      @keyframes fade-in {
         0% {
           opacity: 0;
-          transform: translateY(-4rem);
         }
         100% {
           opacity: 1;
-          transform: translateY(0);
         }
       }
 
@@ -173,7 +171,7 @@
         width: auto;
         z-index: 1;
         opacity: 0;
-        animation: slide-down 0.6s ease-in forwards;
+        animation: fade-in 0.6s ease-in forwards;
       }
 
       .nav-displayed {
