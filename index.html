@@ -1297,7 +1297,24 @@
       window.addEventListener("resize", breakpoint.refreshValue, false);
 
       // update display when scrolling down
-      const intersectionObserver = new IntersectionObserver();
+      const intersectionObserverOptions = {
+        root: null,
+        rootMargin: "10px",
+        threshold: 1
+      };
+      function intersectionObserverCallback(entries, observer) {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            console.log(entry.target);
+          }
+        });
+      }
+      const intersectionObserver = new IntersectionObserver(
+        intersectionObserverCallback,
+        intersectionObserverOptions
+      );
+      const target = document.querySelector("section.container");
+      observer.observe(target);
     </script>
   </body>
 </html>
