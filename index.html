@@ -917,6 +917,19 @@
         .program-marquee--copy-headline,
         .program-marquee--copy-tags {
           display: block;
+          font-family: var(--font-headline);
+          text-transform: uppercase;
+          letter-spacing: 3px;
+          transition: all 0.3s cubic-bezier(0.3, 0.1, 0.58, 1);
+          color: var(--color);
+          font-size: 0.875rem;
+          line-height: 1.4;
+          font-weight: 400;
+        }
+
+        .program-marquee--copy-tags {
+          font-size: 0.688rem;
+          opacity: 0.75;
         }
 
         h1 {
