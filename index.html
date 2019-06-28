@@ -30,6 +30,17 @@
         --color-black: hsla(0, 0%, 0%, 0.8);
       }
 
+      @keyframes ball-scale {
+        0% {
+          transform: scale(0);
+        }
+
+        100% {
+          opacity: 0;
+          transform: scale(1);
+        }
+      }
+
       @keyframes fade-slide-down {
         0% {
           opacity: 0;
@@ -61,9 +72,45 @@
         }
       }
 
+      @keyframes fade-out {
+        100% {
+          opacity: 0;
+          visibility: hidden;
+        }
+      }
+
       .animate-pop-in {
         opacity: 0;
         animation: pop-in 0.6s cubic-bezier(0, 0.9, 0.3, 1.2) forwards;
+      }
+
+      .page-loader {
+        background: hsl(0, 0%, 100%);
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: 9998;
+      }
+
+      .page-loader--hidden {
+        animation: fade-out 1s forwards;
+      }
+
+      .loader {
+        background: hsl(0, 0%, 86.7%);
+        position: absolute;
+        display: inline-block;
+        height: 2.5rem;
+        width: 2.5rem;
+        left: 50%;
+        top: 50%;
+        margin: -1.25rem 0 0 -1.25rem;
+        text-indent: -9999em;
+        border-radius: 100%;
+        animation-fill-mode: both;
+        animation: ball-scale 1s 0s ease-in-out infinite;
       }
 
       html {
@@ -381,7 +428,7 @@
       }
 
       .marquee:before {
-        animation: fade-slide-down 2s 0.5s cubic-bezier(0, 0.5, 0, 1) forwards;
+        animation: fade-in 2s 0.5s cubic-bezier(0, 0.5, 0, 1) forwards;
         content: "";
         background-color: var(--background-color);
         background-image: url("https://i.ibb.co/23FRVG2/marquee-mobile-portrait-2x.jpg");
@@ -898,6 +945,14 @@
 
         .program {
           margin: 1.618rem 0.618rem;
+          pointer-events: none;
+        }
+
+        .program--link {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
         }
 
         .program--marquee {
@@ -907,6 +962,7 @@
           flex-direction: column;
           align-items: center;
           justify-content: center;
+          pointer-events: auto;
         }
 
         .program--marquee:hover {
@@ -915,18 +971,20 @@
         }
 
         .program-marquee--copy {
+          position: absolute;
           display: flex;
           flex-direction: column;
           align-items: center;
           justify-content: center;
           transition: all 200ms ease-in-out;
-          transform: translateY(14rem);
+          transform: translateY(22rem);
           opacity: 0;
         }
 
-        .program--marquee:hover .program-marquee--copy {
+        .program:hover .program-marquee--copy {
           opacity: 1;
           cursor: pointer;
+          transform: none;
         }
 
         .program-marquee--copy-headline,
@@ -937,7 +995,6 @@
           letter-spacing: 3px;
           transition: all 0.3s cubic-bezier(0.3, 0.1, 0.58, 1);
           color: var(--color);
-          font-size: 0.875rem;
           line-height: 1.4;
           font-weight: 400;
         }
@@ -950,7 +1007,6 @@
         h1 {
           font-size: 1.875rem;
           letter-spacing: 2.925rem !important;
-          opacity: 0.9;
         }
 
         .headline-sub {
@@ -979,45 +1035,6 @@
           margin: 4.236rem auto;
           max-width: 87.5rem;
         }
-
-        .newsletter--container {
-          flex-direction: row;
-          justify-content: space-between;
-        }
-
-        .newsletter--sign-up {
-          flex: 1;
-          margin-left: 1rem;
-        }
-
-        .programs {
-          flex-direction: row;
-        }
-
-        .program {
-          margin: 1.618rem 0.618rem;
-        }
-
-        .program--marquee {
-          height: 29.03rem;
-        }
-
-        h1 {
-          font-size: 1.875rem;
-          letter-spacing: 2.925rem !important;
-          opacity: 0.9;
-        }
-
-        .headline-sub {
-          font-size: 1rem;
-          letter-spacing: 0.625rem;
-        }
-
-        .social-media-links {
-          grid-template-columns: repeat(4, 11.089rem);
-          grid-template-rows: 1fr;
-          width: auto;
-        }
       }
 
       @media only screen and (min-width: 64rem) and (max-height: 85.375rem) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
@@ -1026,39 +1043,7 @@
         }
 
         nav {
-          margin: 1rem 2.618rem;
           position: absolute;
-        }
-
-        .nav-links {
-          display: block;
-          list-style-type: none;
-          margin-right: 1rem;
-          transform: translateY(0);
-          transition: all 0.4s ease;
-          transition-delay: 0.2s;
-        }
-
-        .nav-link {
-          display: inline;
-          margin: 0 1rem;
-          font-family: var(--font-copy);
-          color: var(--color);
-          text-transform: uppercase;
-          letter-spacing: 0.136rem;
-        }
-
-        .nav-link a,
-        .nav-link a:hover,
-        .nav-link a:focus,
-        .nav-link a:active,
-        .nav-link a:visited {
-          font-size: 0.618rem;
-          padding: 0.618rem;
-        }
-
-        .marquee {
-          justify-content: flex-start;
         }
 
         .marquee:before {
@@ -1070,34 +1055,18 @@
           margin-left: 0.618rem;
         }
 
-        .module {
-          margin: 2.618rem;
+        .program:hover .program-marquee--copy {
+          opacity: 0;
+          cursor: none;
+          transform: translateY(22rem);
         }
 
-        .newsletter--container {
-          flex-direction: row;
-          justify-content: space-between;
+        .program--marquee:hover {
+          opacity: 1;
+          cursor: none;
         }
 
-        .newsletter--sign-up {
-          flex: 1;
-          margin-left: 1rem;
-        }
-
-        .programs {
-          flex-direction: row;
-        }
-
-        .program {
-          margin: 1.618rem 0.618rem;
-        }
-
-        .program--marquee {
-          height: 29.03rem;
-        }
-
-        .program-marquee--copy-headline,
-        .program-marquee--copy-tags {
+        .program-marquee--copy {
           display: none;
         }
 
@@ -1122,37 +1091,6 @@
           position: absolute;
         }
 
-        .nav-links {
-          display: block;
-          list-style-type: none;
-          margin-right: 1rem;
-          transform: translateY(0);
-          transition: all 0.4s ease;
-          transition-delay: 0.2s;
-        }
-
-        .nav-link {
-          display: inline;
-          margin: 0 1rem;
-          font-family: var(--font-copy);
-          color: var(--color);
-          text-transform: uppercase;
-          letter-spacing: 0.136rem;
-        }
-
-        .nav-link a,
-        .nav-link a:hover,
-        .nav-link a:focus,
-        .nav-link a:active,
-        .nav-link a:visited {
-          font-size: 0.618rem;
-          padding: 0.618rem;
-        }
-
-        .marquee {
-          justify-content: flex-start;
-        }
-
         .marquee:before {
           background-image: url("https://i.ibb.co/dKS9bC2/marquee-tablet-landscape-2x.jpg");
           background-attachment: scroll;
@@ -1162,34 +1100,22 @@
           margin-left: 0.618rem;
         }
 
+        .program:hover .program-marquee--copy {
+          opacity: 0;
+          cursor: none;
+          transform: translateY(22rem);
+        }
+
         .module {
           margin: 2.618rem;
         }
 
-        .newsletter--container {
-          flex-direction: row;
-          justify-content: space-between;
+        .program--marquee:hover {
+          opacity: 1;
+          cursor: none;
         }
 
-        .newsletter--sign-up {
-          flex: 1;
-          margin-left: 1rem;
-        }
-
-        .programs {
-          flex-direction: row;
-        }
-
-        .program {
-          margin: 1.618rem 0.618rem;
-        }
-
-        .program--marquee {
-          height: 29.03rem;
-        }
-
-        .program-marquee--copy-headline,
-        .program-marquee--copy-tags {
+        .program-marquee--copy {
           display: none;
         }
 
@@ -1207,6 +1133,7 @@
   </head>
 
   <body>
+    <div class="page-loader"><div class="loader">Loading...</div></div>
     <div class="nav-—container">
       <nav>
         <div class="logo headline">
@@ -1296,12 +1223,13 @@
           <div class="headline headline-sub module--headline">Programs</div>
           <div class="programs">
             <div class="program">
-              <div class="program--marquee program--bjj">
+              <a class="program--link" href="../programs.html#bjj">
+                <div class="program--marquee program--bjj"></div>
                 <div class="program-marquee--copy">
                   <div
                     class="program-marquee--copy-headline program-bjj--copy-headline"
                   >
-                    Brazilian Jiu Jitus
+                    Brazilian Jiu Jitsu
                   </div>
                   <div
                     class="program-marquee--copy-tags program-bjj--copy-tags"
@@ -1309,7 +1237,7 @@
                     Self Defense / Competition / Adults / Women / Kids
                   </div>
                 </div>
-              </div>
+              </a>
               <h3 class="program-headline">Brazilian Jiu Jitsu</h3>
               <p class="program-copy">
                 Looking to train to compete at a high level, learn practical,
@@ -1319,20 +1247,21 @@
               <a href="../programs.html#bjj" class="program-link">Read More</a>
             </div>
             <div class="program">
-              <div class="program--marquee program--fitness">
+              <a class="program--link" href="../programs.html#fitness">
+                <div class="program--marquee program--fitness"></div>
                 <div class="program-marquee--copy">
                   <div
-                    class="program-marquee--copy-headline program-bjj--copy-headline"
+                    class="program-marquee--copy-headline program-fitness--copy-headline"
                   >
                     Fitness &amp; Personal Training
                   </div>
                   <div
-                    class="program-marquee--copy-tags program-bjj--copy-tags"
+                    class="program-marquee--copy-tags program-fitness--copy-tags"
                   >
                     Cardio Kickboxing / Weight Lifting / Private Training
                   </div>
                 </div>
-              </div>
+              </a>
               <h3 class="program-headline">Fitness &amp; Personal Training</h3>
               <p class="program-copy">
                 Looking to get strong and fit to be better in everyday life and
@@ -1392,6 +1321,16 @@
     </div>
 
     <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelector(".nav-toggle").checked = false;
+        document.querySelector(".logo").classList.remove("logo--close");
+        document.querySelector(".nav-links").classList.remove("logo--close");
+        document.body.classList.remove("nav-displayed");
+        document
+          .querySelector(".page-loader")
+          .classList.add("page-loader--hidden");
+      });
+
       // update styles we aren’t able to hit with CSS
       document
         .querySelector(".nav-toggle")
