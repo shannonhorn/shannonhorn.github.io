@@ -184,7 +184,7 @@
 
       .container {
         position: relative;
-        background-color: #fff;
+        background-color: hsl(0, 0%, 100%);
         overflow: hidden;
         margin: 0 auto;
         width: 100%;
@@ -526,6 +526,11 @@
         width: 100%;
       }
 
+      .program-marquee--copy-headline,
+      .program-marquee--copy-tags {
+        display: none;
+      }
+
       .program--bjj {
         background-image: url("https://i.ibb.co/wSbSGNT/card-image-bjj-mobile-landscape-2x.jpg");
       }
@@ -561,6 +566,20 @@
         line-height: 1.8;
         display: block;
         font-size: 0.875rem;
+      }
+
+      .programs--footer {
+        color: var(--color-light);
+        background-color: hsl(0, 0%, 100%);
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        height: 100%;
+        line-height: 1.8;
+        font-size: 0.875rem;
+        padding: 0;
       }
 
       footer {
@@ -884,11 +903,20 @@
         .program--marquee {
           height: 29.03rem;
           transition: opacity 200ms ease-in-out;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
         }
 
         .program--marquee:hover {
           opacity: 0.25;
           cursor: pointer;
+        }
+
+        .program-marquee--copy-headline,
+        .program-marquee--copy-tags {
+          display: block;
         }
 
         h1 {
@@ -1040,6 +1068,11 @@
           height: 29.03rem;
         }
 
+        .program-marquee--copy-headline,
+        .program-marquee--copy-tags {
+          display: none;
+        }
+
         h1 {
           font-size: 1.625rem;
           letter-spacing: 1.5rem !important;
@@ -1125,6 +1158,11 @@
 
         .program--marquee {
           height: 29.03rem;
+        }
+
+        .program-marquee--copy-headline,
+        .program-marquee--copy-tags {
+          display: none;
         }
 
         h1 {
