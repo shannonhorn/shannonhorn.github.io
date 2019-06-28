@@ -919,8 +919,14 @@
           flex-direction: column;
           align-items: center;
           justify-content: center;
+          transition: all 200ms ease-in-out;
           transform: translateY(14rem);
           opacity: 0;
+        }
+
+        .program--marquee:hover .program-marquee--copy {
+          opacity: 1;
+          cursor: pointer;
         }
 
         .program-marquee--copy-headline,
