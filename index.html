@@ -559,7 +559,7 @@
         border-bottom-left-radius: 0;
       }
 
-      .newsletter {
+      .newsletter--form {
         margin: 1rem 0;
         width: 100%;
       }
@@ -620,7 +620,6 @@
         margin-top: 0;
         text-transform: uppercase;
         letter-spacing: 0.236rem;
-        font-weight: 600;
         transition: all 0.3s cubic-bezier(0.3, 0.1, 0.58, 1);
       }
 
@@ -1251,21 +1250,32 @@
         <section class="module">
           <div class="module--icon"><span class="lnr lnr-envelope"></span></div>
           <div class="headline headline-sub module--headline">Newsletter</div>
-          <form class="newsletter">
+          <form
+            class="newsletter--form"
+            action="https://gem.godaddy.com/signups/subscribe/485b8312912441fcab1bad5eb66ce330"
+            method="post"
+            accept-charset="UTF-8"
+          >
             <div class="newsletter--container">
               <label class="blurb--copy newsletter--blurb" for="newsletterEmail"
                 >Sign up for news, events, and seminars.</label
               >
-              <div class="newsletter--sign-up">
-                <input
-                  type="email"
-                  required
-                  id="newsletterEmail"
-                  placeholder="Email address*"
-                  title="Provide a valid email address."
-                  pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$"
-                />
-                <button class="btn btn-default" type="submit">Submit</button>
+              <div class="newsletter--sign-up-wrapper">
+                <div class="newsletter--sign-up">
+                  <input
+                    type="email"
+                    required
+                    id="signup_email"
+                    name="signup[email]"
+                    placeholder="Email address*"
+                    title="Provide a valid email address."
+                    pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$"
+                  />
+                  <button class="btn btn-default" type="submit">Submit</button>
+                </div>
+                <div class="newsletter—-confirmation">
+                  You’re all signed up, thank you!
+                </div>
               </div>
             </div>
           </form>
@@ -1387,6 +1397,15 @@
           .querySelector(".page-loader")
           .classList.add("page-loader--hidden");
       });
+
+      document
+        .querySelector(".newsletter--form")
+        .addEventListener("submit", event => {
+          event.preventDefault();
+          const emailAddressInput = document.querySelector("#signup_email");
+          const emailAddress = emailAddressInput.value;
+          emailAddressInput.value = "";
+        });
 
       // update styles we aren’t able to hit with CSS
       document
