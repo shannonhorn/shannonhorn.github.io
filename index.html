@@ -16,7 +16,7 @@
       gtag("config", "UA-142996472-1");
     </script>
     <meta charset="utf-8" />
-    <title>Allied Jiu Jitsu</title>
+    <title>Allied Jiu Jitsu: Home</title>
     <meta name="description" content="" />
     <meta
       name="viewport"
@@ -42,6 +42,7 @@
         --color-reverse-light: hsla(83, 5%, 96%, 0.54);
         --color-input: hsl(0, 0%, 33.3%);
         --color-black: hsla(0, 0%, 0%, 0.8);
+        --program-margin: 0.618rem;
       }
 
       @keyframes ball-scale {
@@ -501,10 +502,28 @@
         font-size: 2.618rem;
       }
 
-      .blurb--copy {
+      .blurb--copy,
+      .newsletter—-confirmation {
         line-height: 1.8;
         margin-bottom: 0.382rem;
         font-size: 0.875rem;
+        flex-grow: 1;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+      }
+
+      .newsletter—-confirmation {
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 300ms ease-in-out, visibility 300ms ease-in-out;
+      }
+
+      .newsletter—-confirmation-show {
+        opacity: 1;
+        visibility: visible;
       }
 
       input {
@@ -519,7 +538,8 @@
         border-radius: 0.125rem;
         padding: 0.375rem 0.75rem;
         line-height: 1.42857143;
-        width: 100%;
+        flex-grow: 1;
+        flex-shrink: 0;
         outline: none;
         transition: all 0.3s cubic-bezier(0.3, 0.1, 0.58, 1);
         box-shadow: none;
@@ -570,11 +590,16 @@
         align-items: center;
       }
 
-      .newsletter--sign-up {
+      .newsletter--sign-up-wrapper {
         display: flex;
+        flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
-        max-width: calc(100vw - 1.236rem);
+        width: 100%;
+      }
+
+      .newsletter--sign-up {
+        display: flex;
         width: 100%;
       }
 
@@ -586,6 +611,12 @@
       .program {
         width: 100%;
         margin: 1.618rem 0;
+      }
+
+      .program--left,
+      .program--right {
+        margin-left: 0;
+        margin-right: 0;
       }
 
       .program--marquee {
@@ -629,6 +660,7 @@
 
       .program-headline-sub {
         font-family: var(--font-headline);
+        color: var(--color-light);
         text-transform: uppercase;
         letter-spacing: 0.188rem;
         font-size: 0.75rem;
@@ -765,13 +797,12 @@
         }
 
         .newsletter--container {
-          flex-direction: row;
+          flex-direction: column;
           justify-content: space-between;
         }
 
         .newsletter--sign-up {
           flex: 1;
-          margin-left: 1rem;
         }
 
         .programs {
@@ -779,7 +810,15 @@
         }
 
         .program {
-          margin: 1.618rem 0.618rem;
+          margin: 1.618rem 0;
+        }
+
+        .program--left {
+          margin-left: var(--program-margin);
+        }
+
+        .program--right {
+          margin-right: var(--program-margin);
         }
 
         .program--marquee {
@@ -788,91 +827,6 @@
 
         .programs--footer {
           margin-left: 1.25rem;
-        }
-
-        h1 {
-          font-size: 1.625rem;
-          letter-spacing: 1.5rem !important;
-        }
-
-        .headline-sub {
-          font-size: 1rem;
-          letter-spacing: 0.5rem;
-        }
-      }
-
-      @media only screen and (min-width: 48rem) and (max-width: 64rem) and (orientation: landscape) {
-        .logo--a:after {
-          content: "llied Jiu Jitsu & Fitness";
-        }
-
-        nav {
-          margin: 1rem 2.618rem;
-        }
-
-        .nav-links {
-          display: block;
-          list-style-type: none;
-          margin-right: 1rem;
-          transform: translateY(0);
-          transition: all 0.4s ease;
-          transition-delay: 0.2s;
-        }
-
-        .nav-link {
-          display: inline;
-          margin: 0 1rem;
-          font-family: var(--font-copy);
-          color: var(--color);
-          text-transform: uppercase;
-          letter-spacing: 0.136rem;
-        }
-
-        .nav-link a,
-        .nav-link a:hover,
-        .nav-link a:focus,
-        .nav-link a:active,
-        .nav-link a:visited {
-          font-size: 0.618rem;
-          padding: 0.618rem;
-        }
-
-        .marquee {
-          justify-content: flex-start;
-        }
-
-        .marquee:before {
-          background-image: url("https://i.ibb.co/dKS9bC2/marquee-tablet-landscape-2x.jpg");
-        }
-
-        .marquee--copy {
-          margin-left: 0.618rem;
-        }
-
-        .module {
-          margin: 2.618rem;
-        }
-
-        .newsletter--container {
-          flex-direction: row;
-          justify-content: space-between;
-        }
-
-        .newsletter--sign-up {
-          flex: 1;
-          margin-left: 1rem;
-        }
-
-        .programs {
-          flex-direction: row;
-        }
-
-        .program {
-          margin: 1.618rem 0.618rem;
-        }
-
-        .program--marquee {
-          height: 29.03rem;
         }
 
         h1 {
@@ -964,12 +918,20 @@
 
         .newsletter--container {
           flex-direction: row;
+          align-items: flex-start;
           justify-content: space-between;
         }
 
         .newsletter--sign-up {
           flex: 1;
+        }
+
+        .newsletter--sign-up-wrapper {
           margin-left: 1rem;
+        }
+
+        .blurb--copy {
+          width: auto;
         }
 
         .programs {
@@ -977,7 +939,15 @@
         }
 
         .program {
-          margin: 1.618rem 0.618rem;
+          margin: 1.618rem 0;
+        }
+
+        .program--left {
+          margin-left: var(--program-margin);
+        }
+
+        .program--right {
+          margin-right: var(--program-margin);
         }
 
         .program--link {
@@ -1051,6 +1021,106 @@
           grid-template-columns: repeat(4, 11.089rem);
           grid-template-rows: 1fr;
           width: auto;
+        }
+      }
+
+      @media only screen and (min-width: 48rem) and (max-width: 64rem) and (orientation: landscape) {
+        .logo--a:after {
+          content: "llied Jiu Jitsu & Fitness";
+        }
+
+        nav {
+          margin: 1rem 2.618rem;
+        }
+
+        .nav-links {
+          display: block;
+          list-style-type: none;
+          margin-right: 1rem;
+          transform: translateY(0);
+          transition: all 0.4s ease;
+          transition-delay: 0.2s;
+        }
+
+        .nav-link {
+          display: inline;
+          margin: 0 1rem;
+          font-family: var(--font-copy);
+          color: var(--color);
+          text-transform: uppercase;
+          letter-spacing: 0.136rem;
+        }
+
+        .nav-link a,
+        .nav-link a:hover,
+        .nav-link a:focus,
+        .nav-link a:active,
+        .nav-link a:visited {
+          font-size: 0.618rem;
+          padding: 0.618rem;
+        }
+
+        .marquee {
+          justify-content: flex-start;
+        }
+
+        .marquee:before {
+          background-image: url("https://i.ibb.co/dKS9bC2/marquee-tablet-landscape-2x.jpg");
+        }
+
+        .marquee--copy {
+          margin-left: 0.618rem;
+        }
+
+        .module {
+          margin: 2.618rem;
+        }
+
+        .newsletter--container {
+          flex-direction: row;
+          justify-content: space-between;
+        }
+
+        .newsletter--sign-up {
+          flex: 1;
+        }
+
+        .newsletter--sign-up-wrapper {
+          margin-left: 1rem;
+        }
+
+        .blurb--copy {
+          width: auto;
+        }
+
+        .programs {
+          flex-direction: row;
+        }
+
+        .program {
+          margin: 1.618rem 0;
+        }
+
+        .program--left {
+          margin-left: var(--program-margin);
+        }
+
+        .program--right {
+          margin-right: var(--program-margin);
+        }
+
+        .program--marquee {
+          height: 29.03rem;
+        }
+
+        h1 {
+          font-size: 1.625rem;
+          letter-spacing: 1.5rem !important;
+        }
+
+        .headline-sub {
+          font-size: 1rem;
+          letter-spacing: 0.5rem;
         }
       }
 
@@ -1219,6 +1289,14 @@
                   >
                 </li>
                 <li class="item">
+                  <a
+                    href=""
+                    class="nav-link nav-link—-disabled"
+                    title="Coming Soon"
+                    >Good To Know</a
+                  >
+                </li>
+                <li class="item">
                   <a href="../contact.html" class="nav-link">Contact</a>
                 </li>
               </ul>
@@ -1271,7 +1349,12 @@
                     title="Provide a valid email address."
                     pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$"
                   />
-                  <button class="btn btn-default" type="submit">Submit</button>
+                  <button
+                    class="btn btn-default newsletter--sign-up-button"
+                    type="submit"
+                  >
+                    Submit
+                  </button>
                 </div>
                 <div class="newsletter—-confirmation">
                   You’re all signed up, thank you!
@@ -1284,7 +1367,7 @@
           <div class="module--icon"><span class="lnr lnr-cog"></span></div>
           <div class="headline headline-sub module--headline">Programs</div>
           <div class="programs">
-            <div class="program">
+            <div class="program program--right">
               <a class="program--link" href="../programs.html#bjj">
                 <div class="program--marquee program--bjj"></div>
                 <div class="program-marquee--copy">
@@ -1311,7 +1394,7 @@
               </p>
               <a href="../programs.html#bjj" class="program-link">Read More</a>
             </div>
-            <div class="program">
+            <div class="program program--left">
               <a class="program--link" href="../programs.html#fitness">
                 <div class="program--marquee program--fitness"></div>
                 <div class="program-marquee--copy">
@@ -1328,7 +1411,7 @@
                 </div>
               </a>
               <div class="program-headline-sub">
-                Cardio Kickboxing / Weight Lifting / Private Training
+                Cardio Kickboxing / Private Training
               </div>
               <a href="../programs.html#fitness" class="program-headline"
                 >Fitness &amp; Personal Training</a
@@ -1389,6 +1472,11 @@
 
     <script>
       document.addEventListener("DOMContentLoaded", () => {
+        const postEmailAddress = function(emailAddress) {
+          let path = `https://gem.godaddy.com/signups/subscribe/485b8312912441fcab1bad5eb66ce330.json?callback=jsonp_callback_null=&signup[email]=${emailAddress}&utf8=%E2%9C%93`;
+          fetch(path, { method: "POST", mode: "no-cors" });
+        };
+
         document.querySelector(".nav-toggle").checked = false;
         document.querySelector(".logo").classList.remove("logo--close");
         document.querySelector(".nav-links").classList.remove("logo--close");
@@ -1396,45 +1484,67 @@
         document
           .querySelector(".page-loader")
           .classList.add("page-loader--hidden");
-      });
 
-      document
-        .querySelector(".newsletter--form")
-        .addEventListener("submit", event => {
-          event.preventDefault();
-          const emailAddressInput = document.querySelector("#signup_email");
-          const emailAddress = emailAddressInput.value;
-          emailAddressInput.value = "";
+        document.addEventListener("unload", () => {
+          document.querySelector(".nav-toggle").checked = false;
+          document.querySelector(".logo").classList.remove("logo--close");
+          document.querySelector(".nav-links").classList.remove("logo--close");
+          document.body.classList.remove("nav-displayed");
         });
 
-      // update styles we aren’t able to hit with CSS
-      document
-        .querySelector(".nav-toggle")
-        .addEventListener("change", function(event) {
-          const navDisplayed = document.querySelector(".nav-toggle").checked;
-          document.querySelector(".logo").classList.toggle("logo--close");
-          document.querySelector(".nav-links").classList.toggle("logo--close");
-          document.body.classList.toggle("nav-displayed", navDisplayed);
-        });
-
-      // update display when scrolling down
-      const navContainer = document.querySelector(".nav-—container");
-      const scrollUp = document.querySelector(".scroll-up");
-      const marquee = document.querySelector(".marquee");
-      const marqueeObserverOptions = { rootMargin: "-98% 0px 0px 0px" };
-      const marqueeObserver = new IntersectionObserver(
-        (entries, marqueeObserver) => {
-          entries.forEach(entry => {
-            navContainer.classList.toggle(
-              "nav-—container-light",
-              !entry.isIntersecting
-            );
-            scrollUp.classList.toggle("scroll-up--show", !entry.isIntersecting);
+        document
+          .querySelector(".newsletter--form")
+          .addEventListener("submit", event => {
+            event.preventDefault();
+            const emailAddressInput = document.querySelector("#signup_email");
+            const emailAddress = emailAddressInput.value;
+            emailAddressInput.value = "";
+            document.activeElement.blur();
+            document
+              .querySelector(".newsletter—-confirmation")
+              .classList.add("newsletter—-confirmation-show");
+            postEmailAddress(encodeURIComponent(emailAddress));
+            window.setTimeout(() => {
+              document
+                .querySelector(".newsletter—-confirmation")
+                .classList.remove("newsletter—-confirmation-show");
+            }, 3000);
           });
-        },
-        marqueeObserverOptions
-      );
-      marqueeObserver.observe(marquee);
+
+        // update styles we aren’t able to hit with CSS
+        document
+          .querySelector(".nav-toggle")
+          .addEventListener("change", function(event) {
+            const navDisplayed = document.querySelector(".nav-toggle").checked;
+            document.querySelector(".logo").classList.toggle("logo--close");
+            document
+              .querySelector(".nav-links")
+              .classList.toggle("logo--close");
+            document.body.classList.toggle("nav-displayed", navDisplayed);
+          });
+
+        // update display when scrolling down
+        const navContainer = document.querySelector(".nav-—container");
+        const scrollUp = document.querySelector(".scroll-up");
+        const marquee = document.querySelector(".marquee");
+        const marqueeObserverOptions = { rootMargin: "-98% 0px 0px 0px" };
+        const marqueeObserver = new IntersectionObserver(
+          (entries, marqueeObserver) => {
+            entries.forEach(entry => {
+              navContainer.classList.toggle(
+                "nav-—container-light",
+                !entry.isIntersecting
+              );
+              scrollUp.classList.toggle(
+                "scroll-up--show",
+                !entry.isIntersecting
+              );
+            });
+          },
+          marqueeObserverOptions
+        );
+        marqueeObserver.observe(marquee);
+      });
     </script>
   </body>
 </html>
