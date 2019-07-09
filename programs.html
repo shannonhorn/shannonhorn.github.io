@@ -484,6 +484,108 @@
         margin: 1.618rem 0.618rem;
       }
 
+      .module {
+        margin: 2.618rem 0.618rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .module--headline {
+        margin: 1rem;
+        font-size: 0.875rem;
+        letter-spacing: 0.375rem;
+        line-height: 1.4;
+      }
+
+      .lnr {
+        font-size: 2.618rem;
+      }
+
+      .programs {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .program {
+        width: 100%;
+        margin: 1.618rem 0;
+      }
+
+      .program--left,
+      .program--right {
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+      .program--marquee {
+        height: 13.625rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom center;
+        width: 100%;
+        margin-bottom: 1.25rem;
+      }
+
+      .program-marquee--copy-headline,
+      .program-marquee--copy-tags {
+        display: none;
+      }
+
+      .program-bjj-kids--in-school {
+        background-image: url("https://i.ibb.co/jkSd2Qv/program-bjj-kids-in-school-mobile-portrait-2x.jpg");
+      }
+
+      .program-headline,
+      .program-headline:focus,
+      .program-headline:active,
+      .program-headline:visited {
+        font-family: var(--font-headline);
+        color: var(--color);
+        margin: 1.618rem 0;
+        margin-top: 0;
+        text-transform: uppercase;
+        letter-spacing: 0.236rem;
+        transition: all 0.3s cubic-bezier(0.3, 0.1, 0.58, 1);
+      }
+
+      .program-headline:hover {
+        color: var(--color-light);
+      }
+
+      .program-headline-sub {
+        font-family: var(--font-headline);
+        color: var(--color-light);
+        text-transform: uppercase;
+        letter-spacing: 0.188rem;
+        font-size: 0.75rem;
+        margin: 0 0 0.625rem;
+      }
+
+      .program-copy {
+        color: var(--color-light);
+        line-height: 1.8;
+        font-size: 0.875rem;
+        margin: 1.25rem 0;
+      }
+
+      .program-link,
+      .program-link:focus,
+      .program-link:active,
+      .program-link:visited {
+        font-family: var(--font-headline);
+        color: var(--color-light);
+        letter-spacing: 0.236rem;
+        line-height: 1.8;
+        display: block;
+        font-size: 0.875rem;
+      }
+
+      .program-link:hover {
+        color: var(--color);
+      }
+
       footer {
         background-color: var(--background-color);
         color: var(--color-light);
@@ -589,7 +691,43 @@
       </nav>
     </div>
     <section class="container">
-      <section class="content"><section class="marquee"></section></section>
+      <section class="content">
+        <section class="marquee">
+          <div class="marquee--copy">
+            <h1 class="headline animate-pop-in">Programs</h1>
+            <h2 class="headline headline-sub animate-pop-in">What we offer</h2>
+          </div>
+        </section>
+        <section class="module" id="bjj">
+          <div class="module--icon"><span class="lnr lnr-users"></span></div>
+          <div class="headline headline-sub module--headline">
+            Kids Jiu Jitsu
+          </div>
+          <div class="programs">
+            <div class="program program--right">
+              <div class="program--link">
+                <div class="program--marquee program-bjj-kids--in-school"></div>
+                <div class="program-marquee--copy">
+                  <div
+                    class="program-marquee--copy-headline program-bjj-in-school--copy-headline"
+                  >
+                    Train While At School
+                  </div>
+                  <div
+                    class="program-marquee--copy-tags program-bjj-in-school--copy-tags"
+                  >
+                    Self Defense / Anti-Bully
+                  </div>
+                </div>
+              </div>
+              <div class="program-headline-sub">Self Defense / Anti-Bully</div>
+              <div class="program-headline">Train While At School</div>
+              <p class="program-copy">blah, blah</p>
+              <a href="#" class="program-link">Are We At Your School?</a>
+            </div>
+          </div>
+        </section>
+      </section>
       <footer>
         <div class="social-media-links">
           <a
