@@ -523,7 +523,7 @@
         height: 13.625rem;
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: bottom center;
+        background-position: top center;
         width: 100%;
         margin-bottom: 1.25rem;
       }
@@ -539,6 +539,22 @@
 
       .program-bjj-kids {
         background-image: url("https://i.ibb.co/KWmBjqt/program-bjj-kids-mobile-portrait-2x.jpg");
+      }
+
+      .program-bjj-adults {
+        background-image: url("https://i.ibb.co/7yktvzj/program-bjj-adults-mobile-portrait-2x.jpg");
+      }
+
+      .program-striking {
+        background-image: url("https://i.ibb.co/YX3qkZk/program-striking-mobile-portrait-2x.jpg");
+      }
+
+      .program-strength-conditioning {
+        background-image: url("https://i.ibb.co/f0JkGk0/card-image-personal-training-2x.jpg");
+      }
+
+      .program-private-instruction {
+        background-image: url("https://i.ibb.co/rF2JmC7/program-bjj-private-training-mobile-portrait-2x.jpg");
       }
 
       .program-headline,
@@ -630,6 +646,516 @@
         font-size: 0.618rem;
         margin-top: 1rem;
       }
+
+      @media only screen and (min-width: 33.75rem) and (max-width: 50rem) and (orientation: landscape) {
+        .logo--a:after {
+          content: "llied Jiu Jitsu & Fitness";
+        }
+
+        .marquee {
+          justify-content: flex-start;
+        }
+
+        .marquee:before {
+          background-image: url("https://i.ibb.co/PZDZBL1/programs-marquee-mobile-landscape-2x.jpg");
+        }
+
+        .marquee--copy {
+          margin-left: 0.618rem;
+        }
+
+        .program--marquee {
+          height: 29.03rem;
+        }
+      }
+
+      @media only screen and (min-width: 48rem) and (max-width: 64rem) and (orientation: portrait) {
+        .logo--a:after {
+          content: "llied Jiu Jitsu & Fitness";
+        }
+
+        nav {
+          margin: 1rem 2.618rem;
+        }
+
+        .marquee:before {
+          background-image: url("https://i.ibb.co/SNb8zf8/programs-marquee-tablet-portrait-2x.jpg");
+        }
+
+        .module {
+          margin: 2.618rem;
+        }
+
+        .programs {
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+
+        .program {
+          margin: 1.618rem 0;
+          flex-basis: calc(50% - 0.625rem);
+        }
+
+        .program--left {
+          margin-left: var(--program-margin);
+        }
+
+        .program--right {
+          margin-right: var(--program-margin);
+        }
+
+        .program--marquee {
+          height: 13.625rem;
+        }
+
+        .programs--footer {
+          margin-left: 1.25rem;
+        }
+
+        h1 {
+          font-size: 1.625rem;
+          letter-spacing: 1.5rem !important;
+        }
+
+        .headline-sub {
+          font-size: 1rem;
+          letter-spacing: 0.5rem;
+        }
+      }
+
+      @media only screen and (min-width: 64rem) {
+        .logo--a:after {
+          content: "llied Jiu Jitsu & Fitness";
+        }
+
+        .nav-—container {
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          width: auto;
+          margin: 0;
+          height: 4rem;
+          transition: all 0.3s cubic-bezier(0.3, 0.1, 0.58, 1);
+        }
+
+        .nav-—container-light {
+          background: rgba(255, 255, 255, 0.95);
+          box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+        }
+
+        .nav-—container-light nav {
+          padding: 0.313rem 0;
+        }
+
+        nav {
+          margin: 1rem 2.618rem;
+          position: fixed;
+          transition: all 0.4s ease;
+        }
+
+        .nav-links {
+          display: block;
+          list-style-type: none;
+          margin-right: 1rem;
+          transform: translateY(0);
+          transition: all 0.4s ease;
+          transition-delay: 0.2s;
+        }
+
+        .nav-link {
+          display: inline;
+          margin: 0 1rem;
+          font-family: var(--font-copy);
+          color: var(--color);
+          text-transform: uppercase;
+          letter-spacing: 0.136rem;
+        }
+
+        .nav-link a,
+        .nav-link a:hover,
+        .nav-link a:focus,
+        .nav-link a:active,
+        .nav-link a:visited {
+          font-size: 0.618rem;
+          padding: 0.618rem;
+        }
+
+        .marquee {
+          justify-content: center;
+        }
+
+        .marquee:before {
+          background-image: url("https://i.ibb.co/ZHP0BDZ/programs-desktop-2x.jpg");
+          background-attachment: fixed;
+          background-position: top right;
+        }
+
+        .marquee--copy {
+          width: calc(100vw - 2.618rem);
+        }
+
+        .module {
+          margin: 2.618rem;
+        }
+
+        .newsletter--container {
+          flex-direction: row;
+          align-items: flex-start;
+          justify-content: space-between;
+        }
+
+        .newsletter--sign-up {
+          flex: 1;
+        }
+
+        .newsletter--sign-up-wrapper {
+          margin-left: 1rem;
+        }
+
+        .blurb--copy {
+          width: auto;
+        }
+
+        .programs {
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+
+        .program {
+          margin: 1.618rem 0;
+          flex-basis: calc(50% - 0.625rem);
+        }
+
+        .program--left {
+          margin-left: var(--program-margin);
+        }
+
+        .program--right {
+          margin-right: var(--program-margin);
+        }
+
+        .program--link {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          pointer-events: none;
+        }
+
+        .program--marquee {
+          height: 29.03rem;
+          transition: opacity 200ms ease-in-out;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          pointer-events: auto;
+        }
+
+        .program--marquee:hover {
+          opacity: 0.25;
+          cursor: pointer;
+        }
+
+        .program-marquee--copy {
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          transition: all 200ms ease-in-out;
+          transform: translateY(14rem);
+          opacity: 0;
+        }
+
+        .program--link:hover .program-marquee--copy {
+          opacity: 1;
+          cursor: pointer;
+          transform: none;
+        }
+
+        .program-marquee--copy-headline,
+        .program-marquee--copy-tags {
+          display: block;
+          font-family: var(--font-headline);
+          text-transform: uppercase;
+          letter-spacing: 3px;
+          transition: all 0.3s cubic-bezier(0.3, 0.1, 0.58, 1);
+          color: var(--color);
+          line-height: 1.4;
+          font-weight: 400;
+        }
+
+        .program-marquee--copy-tags {
+          font-size: 0.688rem;
+          opacity: 0.75;
+        }
+
+        h1 {
+          font-size: 1.875rem;
+          letter-spacing: 2.925rem !important;
+        }
+
+        .headline-sub {
+          font-size: 1rem;
+          letter-spacing: 0.625rem;
+        }
+
+        .social-media-links {
+          grid-template-columns: repeat(4, 11.089rem);
+          grid-template-rows: 1fr;
+          width: auto;
+        }
+      }
+
+      @media only screen and (min-width: 48rem) and (max-width: 64rem) and (orientation: landscape) {
+        .logo--a:after {
+          content: "llied Jiu Jitsu & Fitness";
+        }
+
+        nav {
+          margin: 1rem 2.618rem;
+        }
+
+        .nav-links {
+          display: block;
+          list-style-type: none;
+          margin-right: 1rem;
+          transform: translateY(0);
+          transition: all 0.4s ease;
+          transition-delay: 0.2s;
+        }
+
+        .nav-link {
+          display: inline;
+          margin: 0 1rem;
+          font-family: var(--font-copy);
+          color: var(--color);
+          text-transform: uppercase;
+          letter-spacing: 0.136rem;
+        }
+
+        .nav-link a,
+        .nav-link a:hover,
+        .nav-link a:focus,
+        .nav-link a:active,
+        .nav-link a:visited {
+          font-size: 0.618rem;
+          padding: 0.618rem;
+        }
+
+        .marquee {
+          justify-content: flex-start;
+        }
+
+        .marquee:before {
+          background-image: url("https://i.ibb.co/C1ZZsXK/programs-marquee-tablet-landscape-2x.jpg");
+        }
+
+        .marquee--copy {
+          margin-left: 0.618rem;
+        }
+
+        .module {
+          margin: 2.618rem;
+        }
+
+        .newsletter--container {
+          flex-direction: row;
+          justify-content: space-between;
+        }
+
+        .newsletter--sign-up {
+          flex: 1;
+        }
+
+        .newsletter--sign-up-wrapper {
+          margin-left: 1rem;
+        }
+
+        .blurb--copy {
+          width: auto;
+          align-self: flex-start;
+        }
+
+        .programs {
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+
+        .program {
+          margin: 1.618rem 0;
+          flex-basis: calc(50% - 0.625rem);
+        }
+
+        .program--left {
+          margin-left: var(--program-margin);
+        }
+
+        .program--right {
+          margin-right: var(--program-margin);
+        }
+
+        .program--marquee {
+          height: 29.03rem;
+        }
+
+        h1 {
+          font-size: 1.625rem;
+          letter-spacing: 1.5rem !important;
+        }
+
+        .headline-sub {
+          font-size: 1rem;
+          letter-spacing: 0.5rem;
+        }
+      }
+
+      @media only screen and (min-width: 85.375rem) {
+        nav {
+          margin: 1rem auto;
+          max-width: 87.5rem;
+        }
+
+        .marquee--copy {
+          max-width: 75rem;
+        }
+
+        .module {
+          margin: 4.236rem auto;
+          max-width: 87.5rem;
+        }
+      }
+
+      @media only screen and (min-width: 64rem) and (max-height: 85.375rem) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+        .logo--a:after {
+          content: "llied Jiu Jitsu & Fitness";
+        }
+
+        nav {
+          position: absolute;
+        }
+
+        .marquee:before {
+          background-image: url("https://i.ibb.co/SNb8zf8/programs-marquee-tablet-portrait-2x.jpg");
+          background-attachment: scroll;
+        }
+
+        .marquee--copy {
+          margin-left: 0.618rem;
+        }
+
+        .programs {
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+
+        .program {
+          margin: 1.618rem 0;
+          flex-basis: calc(50% - 0.625rem);
+        }
+
+        .program--left {
+          margin-left: var(--program-margin);
+        }
+
+        .program--right {
+          margin-right: var(--program-margin);
+        }
+
+        .program:hover .program-marquee--copy {
+          opacity: 0;
+          cursor: none;
+          transform: translateY(22rem);
+        }
+
+        .program--marquee:hover {
+          opacity: 1;
+          cursor: none;
+        }
+
+        .program-marquee--copy {
+          display: none;
+        }
+
+        h1 {
+          font-size: 1.625rem;
+          letter-spacing: 1.5rem !important;
+        }
+
+        .headline-sub {
+          font-size: 1rem;
+          letter-spacing: 0.5rem;
+        }
+      }
+
+      @media only screen and (min-width: 64rem) and (max-height: 85.375rem) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5) {
+        .logo--a:after {
+          content: "llied Jiu Jitsu & Fitness";
+        }
+
+        nav {
+          margin: 1rem 2.618rem;
+          position: absolute;
+        }
+
+        .marquee:before {
+          background-image: url("https://i.ibb.co/C1ZZsXK/programs-marquee-tablet-landscape-2x.jpg");
+          background-attachment: scroll;
+        }
+
+        .marquee--copy {
+          margin-left: 0.618rem;
+        }
+
+        .programs {
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+
+        .program {
+          margin: 1.618rem 0;
+          flex-basis: calc(50% - 0.625rem);
+        }
+
+        .program--left {
+          margin-left: var(--program-margin);
+        }
+
+        .program--right {
+          margin-right: var(--program-margin);
+        }
+
+        .program:hover .program-marquee--copy {
+          opacity: 0;
+          cursor: none;
+          transform: translateY(22rem);
+        }
+
+        .module {
+          margin: 2.618rem;
+        }
+
+        .program--marquee:hover {
+          opacity: 1;
+          cursor: none;
+        }
+
+        .program-marquee--copy {
+          display: none;
+        }
+
+        h1 {
+          font-size: 1.625rem;
+          letter-spacing: 1.5rem !important;
+        }
+
+        .headline-sub {
+          font-size: 1rem;
+          letter-spacing: 0.5rem;
+        }
+      }
     </style>
   </head>
 
@@ -713,12 +1239,12 @@
                 <div class="program--marquee program-bjj-kids--in-school"></div>
                 <div class="program-marquee--copy">
                   <div
-                    class="program-marquee--copy-headline program-bjj-in-school--copy-headline"
+                    class="program-marquee--copy-headline program-bjj-kids-in-school--copy-headline"
                   >
                     Train While At School
                   </div>
                   <div
-                    class="program-marquee--copy-tags program-bjj-in-school--copy-tags"
+                    class="program-marquee--copy-tags program-bjj-kids-in-school--copy-tags"
                   >
                     Self Defense / Anti-Bully
                   </div>
@@ -735,43 +1261,168 @@
                 >Find Out If We’re At Your School</a
               >
             </div>
-          </div>
-          <div class="program program--right">
-            <div class="program--link">
-              <div class="program--marquee program-bjj-kids"></div>
-              <div class="program-marquee--copy">
-                <div
-                  class="program-marquee--copy-headline program-bjj--copy-headline"
-                >
-                  Kids Brazilian Jiu Jitsu
-                </div>
-                <div
-                  class="program-marquee--copy-tags program-bjj-in-school--copy-tags"
-                >
-                  Self Defense / Grappling / Competition
+            <div class="program program--left">
+              <div class="program--link">
+                <div class="program--marquee program-bjj-kids"></div>
+                <div class="program-marquee--copy">
+                  <div
+                    class="program-marquee--copy-headline program-bjj-kids--copy-headline"
+                  >
+                    Kids Brazilian Jiu Jitsu
+                  </div>
+                  <div
+                    class="program-marquee--copy-tags program-bjj-kids--copy-tags"
+                  >
+                    Self Defense / Grappling / Competition
+                  </div>
                 </div>
               </div>
+              <div class="program-headline-sub">
+                Self Defense / Grappling / Competition
+              </div>
+              <div class="program-headline">Kids Brazilian Jiu Jitsu</div>
+              <p class="program-copy">
+                Our kids jiu jitsu program teaches fundamental and advanced
+                techniques. Kids who train regularly are able to exercise and
+                socialize, develop a strong sense of confiendce and self-esteem,
+                learn the value of hard work and teamwork, and learn to
+                communicate and defend themselves.
+              </p>
+              <p class="program-copy">
+                Bring your kids in today to get them started!
+              </p>
             </div>
-            <div class="program-headline-sub">
-              Self Defense / Grappling / Competition
-            </div>
-            <div class="program-headline">Kids Brazilian Jiu Jitsu</div>
-            <p class="program-copy">
-              Our kids jiu jitsu program teaches fundamental and advanced
-              techniques. Kids who train regularly are able to exercise and
-              socialize, develop a strong sense of confiendce and self-esteem,
-              learn the value of hard work and teamwork, and learn to
-              communicate and defend themselves.
-            </p>
-            <p class="program-copy">
-              Bring your kids in today to get them started!
-            </p>
           </div>
+        </section>
+        <section class="module">
           <div class="module--icon"><span class="lnr lnr-users"></span></div>
           <div class="headline headline-sub module--headline">
             Adult Programs
           </div>
-          <div class="programs"></div>
+          <div class="programs">
+            <div class="program program--right">
+              <div class="program--link">
+                <div class="program--marquee program-bjj-adults"></div>
+                <div class="program-marquee--copy">
+                  <div
+                    class="program-marquee--copy-headline program-bjj-adults--copy-headline"
+                  >
+                    Adult Brazilian Jiu Jitsu
+                  </div>
+                  <div
+                    class="program-marquee--copy-tags program-bjj-adults--copy-tags"
+                  >
+                    Self Defense / Grappling / Competition
+                  </div>
+                </div>
+              </div>
+              <div class="program-headline-sub">
+                Self Defense / Grappling / Competition
+              </div>
+              <div class="program-headline">Adult Brazilian Jiu Jitsu</div>
+              <p class="program-copy">
+                We are experts in the art of Gracie Brazilian Jiu Jitsu
+                and&nbsp;&nbsp;&nbsp;&nbsp;<a
+                  href="../instructors.html"
+                  class="program-link"
+                  style="display:inline;"
+                  >our instructors</a
+                >&nbsp;&nbsp;&nbsp;&nbsp;have the pedigree to prove it! Jiu
+                Jitsu develops mental toughness, is a intense physical workout,
+                and is widely regarded as the best martial art for self-defense.
+              </p>
+              <a href="../contact.html" class="program-link"
+                >Contact us today or come in to get started!</a
+              >
+            </div>
+            <div class="program program--left" id="fitness">
+              <div class="program--link">
+                <div class="program--marquee program-striking"></div>
+                <div class="program-marquee--copy">
+                  <div
+                    class="program-marquee--copy-headline program-striking--copy-headline"
+                  >
+                    Striking
+                  </div>
+                  <div
+                    class="program-marquee--copy-tags program-striking--copy-tags"
+                  >
+                    Self Defense / Boxing / Muay Thai
+                  </div>
+                </div>
+              </div>
+              <div class="program-headline-sub">
+                Self Defense / Boxing / Muay Thai
+              </div>
+              <div class="program-headline">Striking</div>
+              <p class="program-copy">
+                Our striking program combines proper instrucion in boxing,
+                kicking, and muay thai techniques with a great standing workout.
+              </p>
+              <a href="../contact.html" class="program-link"
+                >Contact us today or come in to get started!</a
+              >
+            </div>
+            <div class="program program--right">
+              <div class="program--link">
+                <div
+                  class="program--marquee program-strength-conditioning"
+                ></div>
+                <div class="program-marquee--copy">
+                  <div
+                    class="program-marquee--copy-headline program-strength-conditioning--copy-headline"
+                  >
+                    Strength & Conditioning
+                  </div>
+                  <div
+                    class="program-marquee--copy-tags program-strength-conditioning-in-school--copy-tags"
+                  >
+                    Fitness / Health / Strength
+                  </div>
+                </div>
+              </div>
+              <div class="program-headline-sub">
+                Fitness / Health / Strength
+              </div>
+              <div class="program-headline">Strength & Conditioning</div>
+              <p class="program-copy">
+                Our certified trainers direct this program to help you get
+                stronger, fit, and in the best shape of your life!
+              </p>
+              <a href="../contact.html" class="program-link"
+                >Contact us today or come in to get started!</a
+              >
+            </div>
+            <div class="program program--left">
+              <div class="program--link">
+                <div class="program--marquee program-private-instruction"></div>
+                <div class="program-marquee--copy">
+                  <div
+                    class="program-marquee--copy-headline program-private-instruction--copy-headline"
+                  >
+                    Private Instruction
+                  </div>
+                  <div
+                    class="program-marquee--copy-tags program-private-instruction--copy-tags"
+                  >
+                    Jiu Jitsu / Fitness / Striking
+                  </div>
+                </div>
+              </div>
+              <div class="program-headline-sub">
+                Jiu Jitsu / Fitness / Striking
+              </div>
+              <div class="program-headline">Private Instruction</div>
+              <p class="program-copy">
+                Appointments for private instruction from our world class
+                coaches are available. Private lessons allow students to focus
+                on the details of a technique.
+              </p>
+              <a href="../contact.html" class="program-link"
+                >Contact us today or come in to get started!</a
+              >
+            </div>
+          </div>
         </section>
       </section>
       <footer>
