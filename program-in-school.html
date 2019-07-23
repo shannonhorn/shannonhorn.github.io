@@ -505,6 +505,94 @@
         font-size: 2.618rem;
       }
 
+      .programs {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .program {
+        width: 100%;
+        margin: 1.618rem 0;
+      }
+
+      .program--marquee {
+        height: 13.625rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top center;
+        width: 100%;
+        margin-bottom: 1.25rem;
+      }
+
+      .program-marquee--copy-headline,
+      .program-marquee--copy-tags {
+        display: none;
+      }
+
+      .program-bjj-kids--in-school {
+        background-image: url("https://i.ibb.co/3N2TH17/train-in-school-marquee-mobile-portrait-2x.jpg");
+      }
+
+      .program-headline,
+      .program-headline:focus,
+      .program-headline:active,
+      .program-headline:visited {
+        font-family: var(--font-headline);
+        color: var(--color);
+        margin: 1.618rem 0;
+        margin-top: 0;
+        text-transform: uppercase;
+        letter-spacing: 0.236rem;
+        transition: all 0.3s cubic-bezier(0.3, 0.1, 0.58, 1);
+      }
+
+      .program-headline:hover {
+        color: var(--color-light);
+      }
+
+      .program-headline-sub {
+        font-family: var(--font-headline);
+        color: var(--color-light);
+        text-transform: uppercase;
+        letter-spacing: 0.188rem;
+        font-size: 0.75rem;
+        margin: 0 0 0.625rem;
+      }
+
+      .program-copy {
+        color: var(--color-light);
+        line-height: 1.8;
+        font-size: 0.875rem;
+        margin: 1.25rem 0;
+      }
+
+      .program-copy-ul {
+        padding-left: 0.625rem;
+        margin-left: 1rem;
+      }
+
+      .program-link,
+      .program-link:focus,
+      .program-link:active,
+      .program-link:visited {
+        font-family: var(--font-headline);
+        color: var(--color-light);
+        letter-spacing: 0.236rem;
+        line-height: 1.8;
+        display: block;
+        font-size: 0.875rem;
+      }
+
+      .program-link:hover {
+        color: var(--color);
+      }
+
+      .caption {
+        font-size: 84%;
+        color: var(--color-light);
+      }
+
       footer {
         background-color: var(--background-color);
         color: var(--color-light);
@@ -900,6 +988,117 @@
             </h2>
           </div>
         </section>
+      </section>
+      <section class="module">
+        <div class="module--icon"><span class="lnr lnr-users"></span></div>
+        <div class="headline headline-sub module--headline">
+          School Programs
+        </div>
+        <div class="programs">
+          <div class="program">
+            <div class="program--link">
+              <div class="program--marquee program-bjj-kids--in-school"></div>
+              <div class="program-marquee--copy">
+                <div
+                  class="program-marquee--copy-headline program-bjj-kids-in-school--copy-headline"
+                >
+                  Train While At School
+                </div>
+                <div
+                  class="program-marquee--copy-tags program-bjj-kids-in-school--copy-tags"
+                >
+                  Self Defense / Anti-Bully
+                </div>
+              </div>
+            </div>
+            <div class="program-headline-sub">Self Defense / Anti-Bully</div>
+            <div class="program-headline">Train While At School</div>
+            <p class="program-copy">
+              Brazilian jiu jitsu for boys &amp; girls ages 3 and older!
+            </p>
+            <p class="program-copy">
+              Children need consistency to feel comfortable and learn quickly.
+              <a
+                href="../instructors.html#thomas"
+                class="program-link"
+                style="display:inline;"
+                >Coach Thomas</a
+              >
+              is an owner of Allied Jiu Jitsu and is the only coach who will be
+              teaching classes at your school. This will help build a bond so
+              that your child will thrive.
+            </p>
+            <h2>
+              Your child will learn the fundamentals of Jiu Jitsu and
+              self-defense!
+            </h2>
+            <p class="program-copy">
+              Classes are held once per week at your child's school (see the
+              list below to determine if we already provide classes at your
+              school). Each 30 minute class begins with a fundamental warmup
+              followed by Jiu Jitsu techniques. The class finishes with a fun
+              game that drives home the technique taught that day.
+            </p>
+            <p class="program-copy">Fundamentals include:</p>
+            <ul class="program-copy program-copy-ul">
+              <li>
+                Submissions
+              </li>
+              <li>
+                Escapes
+              </li>
+              <li>
+                Transitions
+              </li>
+              <li>
+                Takedowns
+              </li>
+              <li>
+                Control positions
+              </li>
+            </ul>
+            <h2>Message From Jocko</h2>
+            <p class="program-copy">
+              Recently,&nbsp;&nbsp;
+              <a
+                href="https://en.wikipedia.org/wiki/Jocko_Willink"
+                class="program-link"
+                style="display:inline;"
+                >Jocko Willink</a
+              >&nbsp;&nbsp;sent an encouraging message to one of our students!
+            </p>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/Ve5z5sC8DKM"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <span class="caption">
+              <a href="http://jockopodcast.com">Jocko Podcast</a
+              >&nbsp;&nbsp;|&nbsp;&nbsp;
+              <a href="https://originmaine.com/nutrition/jocko-fuel/"
+                >Jocko Nutrition</a
+              >
+            </span>
+            <br />
+            <br />
+            <h2>Schools Where We Offer Classes</h2>
+            <br />
+            <h3>Valley Child Care</h3>
+            <address>
+              3300 E Union Hills Dr<br />
+              Phoenix, AZ 85050
+            </address>
+            <br />
+            <h3>Valley Child Care</h3>
+            <address>
+              21468 N 75th Ave<br />
+              Glendale, AZ 85308
+            </address>
+          </div>
+        </div>
       </section>
       <footer>
         <div class="social-media-links">
