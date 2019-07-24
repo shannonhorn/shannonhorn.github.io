@@ -604,6 +604,7 @@
         width: calc(100vw - 1.25rem);
         grid-template-columns: 2.625rem 1fr;
         grid-template-rows: 1fr 2fr 1fr 2fr;
+        margin-top: 1rem;
       }
 
       .contact-us--contact-info .lnr {
@@ -1052,9 +1053,7 @@
                   <a href="../schedule.html" class="nav-link">Schedule</a>
                 </li>
                 <li class="item">
-                  <a class="nav-link nav-link—-disabled" title="Coming Soon"
-                    >Instructors</a
-                  >
+                  <a class="nav-link" href="../instructors.html">Instructors</a>
                 </li>
                 <li class="item">
                   <a class="nav-link nav-link—-disabled" title="Coming Soon"
@@ -1137,7 +1136,7 @@
                 Submit
               </button>
               <div class="contact-us--confirmation">
-                You’re all signed up, thank you!
+                Your message was sent, thank you!
               </div>
             </div>
           </form>
@@ -1248,6 +1247,18 @@
           document.body.classList.remove("nav-displayed");
         });
 
+        // update styles we aren’t able to hit with CSS
+        document
+          .querySelector(".nav-toggle")
+          .addEventListener("change", function(event) {
+            const navDisplayed = document.querySelector(".nav-toggle").checked;
+            document.querySelector(".logo").classList.toggle("logo--close");
+            document
+              .querySelector(".nav-links")
+              .classList.toggle("logo--close");
+            document.body.classList.toggle("nav-displayed", navDisplayed);
+          });
+
         document
           .querySelector(".contact-us--form")
           .addEventListener("submit", event => {
@@ -1267,23 +1278,11 @@
             }, 3000);
           });
 
-        // update styles we aren’t able to hit with CSS
-        document
-          .querySelector(".nav-toggle")
-          .addEventListener("change", function(event) {
-            const navDisplayed = document.querySelector(".nav-toggle").checked;
-            document.querySelector(".logo").classList.toggle("logo--close");
-            document
-              .querySelector(".nav-links")
-              .classList.toggle("logo--close");
-            document.body.classList.toggle("nav-displayed", navDisplayed);
-          });
-
         // update display when scrolling down
         const navContainer = document.querySelector(".nav-—container");
         const scrollUp = document.querySelector(".scroll-up");
         const marquee = document.querySelector(".marquee");
-        const marqueeObserverOptions = { rootMargin: "-98% 0px 0px 0px" };
+        const marqueeObserverOptions = { rootMargin: "-78% 0px 0px 0px" };
         const marqueeObserver = new IntersectionObserver(
           (entries, marqueeObserver) => {
             entries.forEach(entry => {
