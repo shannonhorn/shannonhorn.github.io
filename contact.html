@@ -443,6 +443,7 @@
         text-transform: uppercase;
         letter-spacing: 0.236rem;
         padding: 0 1rem;
+        height: 1.75rem;
       }
 
       .marquee {
@@ -460,7 +461,7 @@
         animation: fade-in 2s 0.5s cubic-bezier(0, 0.5, 0, 1) forwards;
         content: "";
         background-color: var(--background-color);
-        background-image: url("https://i.ibb.co/VxsZBzq/contact-us-2x.jpg");
+        background-image: url("https://i.ibb.co/w7rfFrg/contact-us-2x.jpg");
         background-repeat: no-repeat;
         background-position: top right;
         background-size: cover;
@@ -505,6 +506,178 @@
 
       .lnr {
         font-size: 2.618rem;
+      }
+
+      .blurb--copy,
+      .contact-us--confirmation {
+        line-height: 1.8;
+        margin-bottom: 0.382rem;
+        font-size: 0.875rem;
+        flex-grow: 1;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+      }
+
+      .contact-us--confirmation {
+        opacity: 0;
+        visibility: hidden;
+        margin-top: 0.625rem;
+        transition: opacity 300ms ease-in-out, visibility 300ms ease-in-out;
+      }
+
+      .contact-us--confirmation-show {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      input,
+      textarea {
+        border-color: var(--border-color-input);
+        font-family: var(--font-headline);
+        color: var(--color-input);
+        text-transform: uppercase;
+        letter-spacing: 0.125rem;
+        font-size: 0.688rem;
+        border-style: solid;
+        border-width: 0.125rem;
+        border-radius: 0.125rem;
+        padding: 0.375rem 0.75rem;
+        line-height: 1.42857143;
+        flex-grow: 1;
+        flex-shrink: 0;
+        outline: none;
+        transition: all 0.3s cubic-bezier(0.3, 0.1, 0.58, 1);
+        box-shadow: none;
+        margin: 0;
+        width: calc(100vw - 1.25rem);
+        margin: 0.325rem 0;
+      }
+
+      input:focus,
+      textarea:focus {
+        border-color: var(--color);
+      }
+
+      .btn-default {
+        background-color: var(--background-color-button);
+        color: var(--color-reverse);
+        text-transform: uppercase;
+        font-family: var(--font-copy);
+        letter-spacing: 0.125rem;
+        border-radius: 0.125rem;
+        box-shadow: none;
+        transition: all 0.3s cubic-bezier(0.3, 0.1, 0.58, 1);
+        font-weight: normal;
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+        touch-action: manipulation;
+        cursor: pointer;
+        border: none;
+        white-space: nowrap;
+        user-select: none;
+        font-size: 0.688rem;
+        padding: 0.5rem 2.313rem;
+        margin: 0;
+        line-height: 1.42857143;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        width: calc(100vw - 1.25rem);
+      }
+
+      .contact-us--form {
+        margin-top: 1rem;
+        width: 100%;
+      }
+
+      .contact-us--container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .contact-us--contact-info {
+        display: grid;
+        width: calc(100vw - 1.25rem);
+        grid-template-columns: 2.625rem 1fr;
+        grid-template-rows: 1fr 2fr 1fr 2fr;
+      }
+
+      .contact-us--contact-info .lnr {
+        font-weight: bold;
+        font-size: 1.625rem;
+        margin: 0.625rem;
+      }
+
+      .contact-us-contact-info-headline {
+        font-family: var(--font-headline);
+        font-size: 0.875rem;
+        text-transform: uppercase;
+        letter-spacing: 0.188rem;
+        margin-bottom: 1.125rem;
+        margin-left: 0.625rem;
+      }
+
+      .contact-us-contact-info-data,
+      .contact-us-contact-info-data a,
+      .contact-us-contact-info-data a:hover,
+      .contact-us-contact-info-data a:focus,
+      .contact-us-contact-info-data a:active,
+      .contact-us-contact-info-data a:visited {
+        color: var(--color-light);
+        line-height: 1.8;
+        font-size: 0.875rem;
+        margin-left: 0.625rem;
+        text-transform: unset;
+      }
+
+      .contact-us-contact-info-data address {
+        font-style: normal;
+      }
+
+      .contact-us-contact-info-lnr-phone {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 3;
+      }
+
+      .contact-us-contact-info-headline-say-hello {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+      }
+
+      .contact-us-contact-info-data-say-hello {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+      }
+
+      .contact-us-contact-info-lnr-map {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 5;
+      }
+
+      .contact-us-contact-info-headline-where-to-meet {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+      }
+
+      .contact-us-contact-info-data-where-to-meet {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 5;
       }
 
       footer {
@@ -621,7 +794,7 @@
           content: "llied Jiu Jitsu & Fitness";
         }
 
-        .nav-—container {
+        .nav--container {
           position: fixed;
           top: 0;
           left: 0;
@@ -920,6 +1093,101 @@
             </h2>
           </div>
         </section>
+        <section class="module">
+          <div class="module--icon"><span class="lnr lnr-phone"></span></div>
+          <div class="headline headline-sub module--headline">Get In Touch</div>
+          <form
+            class="contact-us--form"
+            action=""
+            method="post"
+            accept-charset="UTF-8"
+          >
+            <div class="contact-us--container">
+              <input
+                type="text"
+                required
+                id="contact_name"
+                name="contact_name"
+                placeholder="Name*"
+                title="Provide your name."
+              />
+              <input
+                type="email"
+                required
+                id="contact_email"
+                name="contact_email"
+                placeholder="Email address*"
+                title="Provide a valid email address."
+                pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$"
+              />
+              <input
+                type="phone"
+                id="contact_phone"
+                name="contact_phone"
+                placeholder="Phone number"
+                title="Provide a valid phone number."
+              />
+              <textarea
+                name="contact_message"
+                id="contact_message"
+                rows="8"
+                placeholder="Message"
+              ></textarea>
+              <button class="btn btn-default contact-us--button" type="submit">
+                Submit
+              </button>
+              <div class="contact-us--confirmation">
+                You’re all signed up, thank you!
+              </div>
+            </div>
+          </form>
+          <div class="contact-us--contact-info">
+            <span
+              class="lnr lnr-phone-handset contact-us-contact-info-lnr-phone"
+            ></span>
+            <div
+              class="contact-us-contact-info-headline contact-us-contact-info-headline-say-hello"
+            >
+              Say Hello
+            </div>
+            <div
+              class="contact-us-contact-info-data contact-us-contact-info-data-say-hello"
+            >
+              <div>
+                Email:
+                <a href="mailto:thomas@alliedjiujitsu.com"
+                  >thomas@alliedjiujitsu.com</a
+                >
+              </div>
+              <div>Phone: <a href="tel:6027033067">(602) 703-3067</a></div>
+            </div>
+            <span
+              class="lnr lnr-map-marker contact-us-contact-info-lnr-map"
+            ></span>
+            <div
+              class="contact-us-contact-info-headline contact-us-contact-info-headline-where-to-meet"
+            >
+              Where To Meet
+            </div>
+            <div
+              class="contact-us-contact-info-data contact-us-contact-info-where-to-meet"
+            >
+              <div>
+                Allied Jiu Jitsu
+                <a
+                  href="https://duckduckgo.com/?q=10100+w+lake+pleasant+pkwy%2C+peoria%2C+az+85382&atb=v133-3_i&ia=web&iaxm=maps&strict_bbox=0&bbox=38.58593220370754%2C-80.94208747635541%2C38.58093220370756%2C-80.93145492364458"
+                  target="_blank"
+                  class="address"
+                >
+                  <address>
+                    10120 E Bell Rd<br />
+                    Scottsdale, AZ 85260
+                  </address>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
       </section>
       <footer>
         <div class="social-media-links">
@@ -965,11 +1233,6 @@
 
     <script>
       document.addEventListener("DOMContentLoaded", () => {
-        const postEmailAddress = function(emailAddress) {
-          let path = `https://gem.godaddy.com/signups/subscribe/485b8312912441fcab1bad5eb66ce330.json?callback=jsonp_callback_null=&signup[email]=${emailAddress}&utf8=%E2%9C%93`;
-          fetch(path, { method: "POST", mode: "no-cors" });
-        };
-
         document.querySelector(".nav-toggle").checked = false;
         document.querySelector(".logo").classList.remove("logo--close");
         document.querySelector(".nav-links").classList.remove("logo--close");
@@ -986,21 +1249,21 @@
         });
 
         document
-          .querySelector(".newsletter--form")
+          .querySelector(".contact-us--form")
           .addEventListener("submit", event => {
             event.preventDefault();
-            const emailAddressInput = document.querySelector("#signup_email");
-            const emailAddress = emailAddressInput.value;
-            emailAddressInput.value = "";
+            document.querySelector("#contact_name").value = "";
+            document.querySelector("#contact_email").value = "";
+            document.querySelector("#contact_phone").value = "";
+            document.querySelector("#contact_message").value = "";
             document.activeElement.blur();
             document
-              .querySelector(".newsletter—-confirmation")
-              .classList.add("newsletter—-confirmation-show");
-            postEmailAddress(encodeURIComponent(emailAddress));
+              .querySelector(".contact-us--confirmation")
+              .classList.add("contact-us--confirmation-show");
             window.setTimeout(() => {
               document
-                .querySelector(".newsletter—-confirmation")
-                .classList.remove("newsletter—-confirmation-show");
+                .querySelector(".contact-us--confirmation")
+                .classList.remove("contact-us--confirmation-show");
             }, 3000);
           });
 
