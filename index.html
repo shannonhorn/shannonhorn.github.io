@@ -1472,7 +1472,7 @@
     <script>
       document.addEventListener("DOMContentLoaded", () => {
         const postEmailAddress = function(emailAddress) {
-          let path = `https://shantheman-email-notify.herokuapp.com/notify/no-name/${emailAddress}/no-number/no-msg`;
+          let path = `https://shantheman-email-notify.herokuapp.com/notify/no-name/${emailAddress}/no-number/Someone registered for our newsletter!`;
           fetch(path, { method: "GET", mode: "no-cors" });
         };
 
@@ -1496,7 +1496,7 @@
           .addEventListener("submit", event => {
             event.preventDefault();
             const emailAddressInput = document.querySelector("#signup_email");
-            const emailAddress = emailAddressInput.value;
+            let emailAddress = emailAddressInput.value;
             emailAddressInput.value = "";
             document.activeElement.blur();
             document

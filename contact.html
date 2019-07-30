@@ -1513,6 +1513,16 @@
 
     <script>
       document.addEventListener("DOMContentLoaded", () => {
+        const postContactData = function(
+          name,
+          emailAddress,
+          phoneNumber,
+          message
+        ) {
+          let path = `https://shantheman-email-notify.herokuapp.com/notify/${name}/${emailAddress}/${number}/${message}`;
+          fetch(path, { method: "GET", mode: "no-cors" });
+        };
+
         document.querySelector(".nav-toggle").checked = false;
         document.querySelector(".logo").classList.remove("logo--close");
         document.querySelector(".nav-links").classList.remove("logo--close");
@@ -1544,14 +1554,24 @@
           .querySelector(".contact-us--form")
           .addEventListener("submit", event => {
             event.preventDefault();
-            document.querySelector("#contact_name").value = "";
-            document.querySelector("#contact_email").value = "";
-            document.querySelector("#contact_phone").value = "";
-            document.querySelector("#contact_message").value = "";
+            let name = document.querySelector("#contact_name");
+            let emailAddress = document.querySelector("#contact_email");
+            let phoneNumber = document.querySelector("#contact_phone");
+            let message = document.querySelector("#contact_message");
             document.activeElement.blur();
             document
               .querySelector(".contact-us--confirmation")
               .classList.add("contact-us--confirmation-show");
+            postContactData(
+              name.value || "no-name",
+              emailAddress.value || "no-email",
+              phoneNumber.value || "no-number",
+              message.value || "no-message"
+            );
+            name.value = "";
+            emailAddress.value = "";
+            phoneNumber.value = "";
+            message.value = "";
             window.setTimeout(() => {
               document
                 .querySelector(".contact-us--confirmation")
