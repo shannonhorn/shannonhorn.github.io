@@ -1472,8 +1472,8 @@
     <script>
       document.addEventListener("DOMContentLoaded", () => {
         const postEmailAddress = function(emailAddress) {
-          let path = `https://gem.godaddy.com/signups/subscribe/485b8312912441fcab1bad5eb66ce330.json?callback=jsonp_callback_null=&signup[email]=${emailAddress}&utf8=%E2%9C%93`;
-          fetch(path, { method: "POST", mode: "no-cors" });
+          let path = `https://shantheman-email-notify.herokuapp.com/notify/no-name/${emailAddress}/no-number/no-msg`;
+          fetch(path, { method: "GET", mode: "no-cors" });
         };
 
         document.querySelector(".nav-toggle").checked = false;
