@@ -840,6 +840,62 @@
           margin: 1.618rem 0;
         }
 
+        .program--link {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          pointer-events: none;
+        }
+
+        .program--marquee {
+          height: 29.03rem;
+          transition: opacity 200ms ease-in-out;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          pointer-events: auto;
+        }
+
+        .program--marquee:hover {
+          opacity: 0.25;
+        }
+
+        .program-marquee--copy {
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          transition: all 200ms ease-in-out;
+          transform: translateY(14rem);
+          opacity: 0;
+        }
+
+        .program--link:hover .program-marquee--copy {
+          opacity: 1;
+          cursor: pointer;
+          transform: none;
+        }
+
+        .program-marquee--copy-headline,
+        .program-marquee--copy-tags {
+          display: block;
+          font-family: var(--font-headline);
+          text-transform: uppercase;
+          letter-spacing: 3px;
+          transition: all 0.3s cubic-bezier(0.3, 0.1, 0.58, 1);
+          color: var(--color);
+          line-height: 1.4;
+          font-weight: 400;
+        }
+
+        .program-marquee--copy-tags {
+          font-size: 0.688rem;
+          opacity: 0.75;
+        }
+
         .program-copy--quote {
           max-width: 60%;
         }
@@ -1148,11 +1204,13 @@
                   <div
                     class="program-marquee--copy-tags program-thomas--copy-tags"
                   >
-                    Head Instructor
+                    Head Instructor / All Around Cool Dude :)
                   </div>
                 </div>
               </div>
-              <div class="program-headline-sub">Head Instructor</div>
+              <div class="program-headline-sub">
+                Head Instructor / All Around Cool Dude :)
+              </div>
               <div class="program-headline">Coach Thomas</div>
               <ul class="program-copy program-copy-ul">
                 <li>
