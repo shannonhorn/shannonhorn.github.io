@@ -508,6 +508,114 @@
         font-size: 2.618rem;
       }
 
+      .programs {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .program {
+        width: 100%;
+        margin: 1.618rem 0;
+      }
+
+      .program--marquee {
+        height: 13.625rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top center;
+        width: 100%;
+        margin-bottom: 1.25rem;
+      }
+
+      .program-marquee--copy-headline,
+      .program-marquee--copy-tags {
+        display: none;
+      }
+
+      .program-marquee--thomas {
+        background-image: url("https://i.ibb.co/tB15BSh/instructors-card-thomas-mobile-portrait-2x.jpg");
+      }
+
+      .program-headline,
+      .program-headline:focus,
+      .program-headline:active,
+      .program-headline:visited {
+        font-family: var(--font-headline);
+        color: var(--color);
+        margin: 1.618rem 0;
+        margin-top: 0;
+        text-transform: uppercase;
+        letter-spacing: 0.236rem;
+        transition: all 0.3s cubic-bezier(0.3, 0.1, 0.58, 1);
+      }
+
+      .program-headline:hover {
+        color: var(--color-light);
+      }
+
+      .program-headline-sub {
+        font-family: var(--font-headline);
+        color: var(--color-light);
+        text-transform: uppercase;
+        letter-spacing: 0.188rem;
+        font-size: 0.75rem;
+        margin: 0 0 0.625rem;
+      }
+
+      .program-copy {
+        color: var(--color-light);
+        line-height: 1.8;
+        font-size: 0.875rem;
+        margin: 1.25rem 0;
+      }
+
+      .program-copy--quote {
+        position: relative;
+        font-style: italic;
+        quotes: "\201C""\201D""\2018""\2019";
+        padding: 0 1rem;
+      }
+
+      .program-copy--quote:before {
+        color: var(--color);
+        position: absolute;
+        content: open-quote;
+        left: -0.063rem;
+        font-size: 155%;
+        top: -0.625rem;
+      }
+
+      .program-copy--quote:after {
+        color: var(--color);
+        position: absolute;
+        content: close-quote;
+        font-size: 155%;
+        margin-left: 0.325rem;
+        margin-top: -0.325rem;
+      }
+
+      .program-copy-ul {
+        padding-left: 0.625rem;
+        margin-left: 1rem;
+      }
+
+      .program-link,
+      .program-link:focus,
+      .program-link:active,
+      .program-link:visited {
+        font-family: var(--font-headline);
+        color: var(--color-light);
+        letter-spacing: 0.236rem;
+        line-height: 1.8;
+        display: block;
+        font-size: 0.875rem;
+      }
+
+      .program-link:hover {
+        color: var(--color);
+      }
+
       footer {
         background-color: var(--background-color);
         color: var(--color-light);
@@ -903,6 +1011,64 @@
             <h2 class="headline headline-sub animate-pop-in">
               Learn more about the experts
             </h2>
+          </div>
+        </section>
+        <section class="module">
+          <div class="module--icon"><span class="lnr lnr-users"></span></div>
+          <div class="headline headline-sub module--headline">
+            Our Team
+          </div>
+          <div class="programs">
+            <div class="program" id="thomas">
+              <div class="program--link">
+                <div class="program--marquee program-marquee--thomas"></div>
+                <div class="program-marquee--copy">
+                  <div
+                    class="program-marquee--copy-headline program-thomas--copy-headline"
+                  >
+                    Coach Thomas
+                  </div>
+                  <div
+                    class="program-marquee--copy-tags program-thomas--copy-tags"
+                  >
+                    Head Instructor
+                  </div>
+                </div>
+              </div>
+              <div class="program-headline-sub">Head Instructor</div>
+              <div class="program-headline">Coach Thomas</div>
+              <ul class="program-copy program-copy-ul">
+                <li>
+                  Brazilian Jiu Jitsu <strong>black belt</strong> under
+                  <a
+                    href="https://www.bjjheroes.com/bjj-fighters/john-crouch"
+                    target="_blank"
+                    >Professor John Crouch</a
+                  >
+                  from
+                  <a href="https://mmalab.com/" target="_blank">the MMA Lab</a>
+                </li>
+                <li>
+                  Started training BJJ in 2009
+                </li>
+                <li>
+                  Instructor, active competitor, enthusiast
+                </li>
+                <li>
+                  CPR, first aid, AED certified
+                </li>
+                <li>
+                  Fingerprint clearance
+                </li>
+                <li>Licensed to teach in childcard facilities</li>
+              </ul>
+              <p class="program-copy program-copy--quote">
+                I promise to not only teach Jiu Jitsu and self-defense but to
+                also help students develop self-esteem and confidence that will
+                benefit every aspect of the lives of my students. I create a
+                positive environment that encourages personal growth.
+              </p>
+            </div>
           </div>
         </section>
       </section>

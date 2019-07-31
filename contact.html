@@ -1519,7 +1519,6 @@
           phoneNumber,
           message
         ) {
-          console.log(name, emailAddress, phoneNumber, message);
           let path = `https://shantheman-email-notify.herokuapp.com/notify/${name}/${emailAddress}/${phoneNumber}/${message}`;
           fetch(path, { method: "GET", mode: "no-cors" });
         };
