@@ -1,0 +1,1601 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-142996472-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-142996472-1");
+    </script>
+    <meta charset="utf-8" />
+    <title>Allied Jiu Jitsu: Contact</title>
+    <meta
+      name="description"
+      content="Allied Jiu Jitsu is the premiere Gracie Jiu Jitsu academy in the Phoenix, AZ 85383 far northwest valley!"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Dosis:300,400,600|Open+Sans:400,600");
+
+      :root {
+        --background-color: hsl(83, 5%, 96%);
+        --background-color-overlay: hsla(0, 0%, 0%, 0.85);
+        --background-color-button: hsla(0, 0%, 7%, 0.8);
+        --border-color-input: hsl(0, 0%, 93.3%);
+        --font-headline: "Dosis", sans-serif;
+        --font-copy: "Open Sans", sans-serif;
+        --color: hsla(0, 0%, 7%, 0.9);
+        --color-light: hsla(0, 0%, 7%, 0.6);
+        --color-reverse: hsl(83, 5%, 96%);
+        --color-reverse-light: hsla(83, 5%, 96%, 0.54);
+        --color-input: hsl(0, 0%, 33.3%);
+        --color-black: hsla(0, 0%, 0%, 0.8);
+        --program-margin: 0.618rem;
+      }
+
+      @keyframes ball-scale {
+        0% {
+          transform: scale(0);
+        }
+
+        100% {
+          opacity: 0;
+          transform: scale(1);
+        }
+      }
+
+      @keyframes fade-slide-down {
+        0% {
+          opacity: 0;
+          transform: translateY(-4rem);
+        }
+        100% {
+          opacity: 1;
+          transform: none;
+        }
+      }
+
+      @keyframes pop-in {
+        0% {
+          opacity: 0;
+          transform: translateY(-4rem) scale(0.8);
+        }
+        100% {
+          opacity: 0.8;
+          transform: none;
+        }
+      }
+
+      @keyframes fade-in {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      @keyframes fade-out {
+        100% {
+          opacity: 0;
+          visibility: hidden;
+        }
+      }
+
+      .animate-pop-in {
+        opacity: 0;
+        animation: pop-in 0.6s cubic-bezier(0, 0.9, 0.3, 1.2) forwards;
+      }
+
+      .page-loader {
+        background: hsl(0, 0%, 100%);
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: 9998;
+      }
+
+      .page-loader--hidden {
+        animation: fade-out 1s forwards;
+      }
+
+      .loader {
+        background: hsl(0, 0%, 86.7%);
+        position: absolute;
+        display: inline-block;
+        height: 2.5rem;
+        width: 2.5rem;
+        left: 50%;
+        top: 50%;
+        margin: -1.25rem 0 0 -1.25rem;
+        text-indent: -9999em;
+        border-radius: 100%;
+        animation-fill-mode: both;
+        animation: ball-scale 1s 0s ease-in-out infinite;
+      }
+
+      html {
+        box-sizing: border-box;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        font-size: 1em;
+        font-family: inherit;
+        box-sizing: inherit;
+        scroll-behavior: smooth;
+        line-height: 1.45;
+      }
+
+      *:before,
+      *:after {
+        box-sizing: inherit;
+      }
+
+      .scroll-up {
+        background-color: hsla(100, 100%, 100%, 1);
+        position: fixed;
+        bottom: 1rem;
+        z-index: -1;
+        opacity: 0;
+        transition: all 0.4s ease;
+        right: 0.618rem;
+        display: flex;
+        justify-content: center;
+        width: 2rem;
+        padding: 0.116rem;
+        outline: none;
+      }
+
+      .scroll-up a {
+        border-radius: 0.125rem;
+        height: 2rem;
+        width: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .scroll-up a::selection {
+        background-color: hsla(100, 100%, 100%, 1);
+      }
+
+      .scroll-up .chevron {
+        width: 0.618rem;
+        outline: none;
+      }
+
+      .scroll-up--show {
+        opacity: 0.6;
+        z-index: 999;
+      }
+
+      body {
+        font-family: var(--font-copy);
+        color: var(--color);
+        background-color: var(--background-color);
+        line-height: 1.45;
+        overflow-x: hidden;
+      }
+
+      a,
+      a:hover,
+      a:focus,
+      a:active,
+      a:visited {
+        color: var(--color);
+        cursor: pointer;
+        text-decoration: none;
+        text-transform: uppercase;
+        outline: none;
+        transition: all 0.3s cubic-bezier(0.3, 0.1, 0.58, 1);
+      }
+
+      a:hover {
+        color: hsl(180, 6.7%, 53.3%);
+      }
+
+      a:visited {
+        color: hsl(180, 20.3%, 25.1%);
+      }
+
+      .nav-—container {
+        z-index: 1;
+        background-color: transparent;
+      }
+
+      nav {
+        background-color: transparent;
+        display: flex;
+        -ms-align-items: center;
+        align-items: center;
+        margin: 1rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: auto;
+        z-index: 1;
+        opacity: 0;
+        animation: fade-in 0.6s ease-in forwards;
+        padding: 0.938rem 0;
+      }
+
+      .nav-displayed {
+        overflow: hidden;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .container {
+        position: relative;
+        background-color: hsl(0, 0%, 100%);
+        overflow: hidden;
+        margin: 0 auto;
+        width: 100%;
+      }
+
+      .headline {
+        font-family: var(--font-headline);
+        color: var(--color);
+        text-transform: uppercase;
+        letter-spacing: 0.136rem;
+        animation-delay: 0.6s;
+      }
+
+      .headline-sub {
+        font-weight: 400;
+        font-size: 0.75rem;
+        letter-spacing: 0.25rem;
+        animation-delay: 0.8s;
+        max-width: 80vw;
+        text-align: center;
+      }
+
+      .logo {
+        flex: 1;
+        transform: translateY(0);
+        transition: all 0.4s ease;
+        transition-delay: 0.2s;
+      }
+
+      .logo--a {
+        letter-spacing: 0.236rem;
+      }
+
+      .logo--a:after {
+        content: "llied Jiu Jitsu";
+      }
+
+      .logo-a--cap {
+        background-color: var(--background-color-overlay);
+        color: var(--color-reverse);
+        padding-left: 0.618rem;
+        padding-right: 0.382rem;
+        padding-top: 0.382rem;
+        padding-bottom: 0.382rem;
+        margin-right: 0.236rem;
+      }
+
+      .logo--close {
+        transform: translateY(-10rem) !important;
+      }
+
+      .nav-toggle {
+        position: absolute;
+        right: 0;
+        z-index: 2;
+        width: 1.618rem;
+        height: 1.618rem;
+        opacity: 0;
+      }
+
+      .hamburger {
+        width: 1.618rem;
+        height: 1.618rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .hamburger .lines {
+        position: relative;
+        width: 100%;
+        height: 0.116rem;
+        background-color: var(--color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.4s ease;
+      }
+
+      .hamburger .lines:before,
+      .hamburger .lines:after {
+        content: "";
+        position: absolute;
+        top: -0.618rem;
+        z-index: 1;
+        width: 100%;
+        height: 0.116rem;
+        background-color: inherit;
+      }
+
+      .hamburger .lines:after {
+        top: 0.618rem;
+      }
+
+      .nav-toggle:checked {
+        z-index: 12;
+      }
+
+      .nav-toggle:checked ~ .hamburger {
+        z-index: 11;
+      }
+
+      .nav-toggle:checked + .hamburger .lines {
+        background-color: var(--background-color);
+        transform: rotate(135deg);
+      }
+
+      .nav-toggle:checked + .hamburger .lines:before,
+      .nav-toggle:checked + .hamburger .lines:after {
+        top: 0;
+        transform: rotate(90deg);
+      }
+
+      .nav-toggle:checked:hover + .hamburger .lines {
+        transform: rotate(225deg);
+      }
+
+      .nav-toggle:checked ~ .menu {
+        visibility: visible;
+      }
+
+      .nav-toggle:checked ~ .menu .overlay {
+        opacity: 1;
+        transition: all 0.4s ease;
+      }
+
+      .menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        visibility: hidden;
+      }
+
+      .menu .items .item {
+        list-style: none;
+      }
+
+      .menu .items .item .nav-link,
+      .menu .items .item .nav-link:hover,
+      .menu .items .item .nav-link:focus,
+      .menu .items .item .nav-link:active,
+      .menu .items .item .nav-link:visited {
+        color: var(--color-reverse);
+        font-family: var(--font-headline);
+        font-size: 1.618rem;
+        letter-spacing: 0.236rem;
+      }
+
+      .menu .items .item .nav-link—-disabled,
+      .menu .items .item .nav-link—-disabled:hover,
+      .menu .items .item .nav-link—-disabled:focus,
+      .menu .items .item .nav-link—-disabled:visited,
+      .menu .items .item .nav-link—-disabled:active {
+        cursor: auto;
+        color: var(--color-reverse-light);
+      }
+
+      .menu .overlay {
+        background-color: var(--background-color-overlay);
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.4s ease;
+        opacity: 0;
+      }
+
+      .menu .overlay .overlay-inner {
+        vertical-align: middle;
+        text-align: center;
+        transition: opacity 0.4s ease;
+        min-height: 21.25rem;
+      }
+
+      nav footer {
+        color: var(--color-reverse-light);
+        font-family: var(--font-headline);
+        position: fixed;
+        bottom: 1.618rem;
+        text-align: center;
+        font-size: 0.628rem;
+        background-color: transparent;
+        text-transform: uppercase;
+        letter-spacing: 0.236rem;
+        padding: 0 1rem;
+        height: 1.75rem;
+      }
+
+      .marquee {
+        color: var(--color-light);
+        height: 80vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform-style: preserve-3d;
+        position: relative;
+      }
+
+      .marquee:before {
+        animation: fade-in 2s 0.5s cubic-bezier(0, 0.5, 0, 1) forwards;
+        content: "";
+        background-color: var(--background-color);
+        background-image: url("https://i.ibb.co/vqvc4sr/contact-us-2x.jpg");
+        background-repeat: no-repeat;
+        background-position: center right;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        opacity: 0;
+      }
+
+      .marquee--copy {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0.238rem;
+        border-radius: 0.238rem;
+      }
+
+      h1 {
+        font-weight: 400;
+        font-size: 1.618rem;
+        letter-spacing: 0.382rem !important;
+        margin: 1.618rem 0.618rem;
+      }
+
+      .module {
+        margin: 2.618rem 0.618rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .module--headline {
+        margin: 1rem;
+        font-size: 0.875rem;
+        letter-spacing: 0.375rem;
+        line-height: 1.4;
+      }
+
+      .lnr {
+        font-size: 2.618rem;
+      }
+
+      .blurb--copy,
+      .contact-us--confirmation {
+        line-height: 1.8;
+        margin-bottom: 0.382rem;
+        font-size: 0.875rem;
+        flex-grow: 1;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+      }
+
+      .contact-us--confirmation {
+        opacity: 0;
+        visibility: hidden;
+        margin-top: 0.625rem;
+        transition: opacity 300ms ease-in-out, visibility 300ms ease-in-out;
+      }
+
+      .contact-us--confirmation-show {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      input,
+      textarea {
+        border-color: var(--border-color-input);
+        font-family: var(--font-headline);
+        color: var(--color-input);
+        text-transform: uppercase;
+        letter-spacing: 0.125rem;
+        font-size: 0.688rem;
+        border-style: solid;
+        border-width: 0.125rem;
+        border-radius: 0.125rem;
+        padding: 0.375rem 0.75rem;
+        line-height: 1.42857143;
+        flex-grow: 1;
+        flex-shrink: 0;
+        outline: none;
+        transition: all 0.3s cubic-bezier(0.3, 0.1, 0.58, 1);
+        box-shadow: none;
+        margin: 0;
+        width: calc(100vw - 1.25rem);
+        margin: 0.325rem 0;
+      }
+
+      input:focus,
+      textarea:focus {
+        border-color: var(--color);
+      }
+
+      .btn-default {
+        background-color: var(--background-color-button);
+        color: var(--color-reverse);
+        text-transform: uppercase;
+        font-family: var(--font-copy);
+        letter-spacing: 0.125rem;
+        border-radius: 0.125rem;
+        box-shadow: none;
+        transition: all 0.3s cubic-bezier(0.3, 0.1, 0.58, 1);
+        font-weight: normal;
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+        touch-action: manipulation;
+        cursor: pointer;
+        border: none;
+        white-space: nowrap;
+        user-select: none;
+        font-size: 0.688rem;
+        padding: 0.5rem 2.313rem;
+        margin: 0;
+        line-height: 1.42857143;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        width: calc(100vw - 1.25rem);
+      }
+
+      .contact-us--form {
+        margin-top: 1rem;
+        width: 100%;
+      }
+
+      .contact-us--container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .contact-us--contact-info {
+        display: grid;
+        width: calc(100vw - 1.25rem);
+        grid-template-columns: 2.625rem 1fr;
+        grid-template-rows: 1fr 2fr 1fr 2fr;
+        margin-top: 1rem;
+      }
+
+      .contact-us--contact-info .lnr {
+        font-weight: bold;
+        font-size: 1.625rem;
+        margin: 0.625rem;
+      }
+
+      .contact-us-contact-info-headline {
+        font-family: var(--font-headline);
+        font-size: 0.875rem;
+        text-transform: uppercase;
+        letter-spacing: 0.188rem;
+        margin-bottom: 1.125rem;
+        margin-left: 0.625rem;
+      }
+
+      .contact-us-contact-info-data,
+      .contact-us-contact-info-data a,
+      .contact-us-contact-info-data a:hover,
+      .contact-us-contact-info-data a:focus,
+      .contact-us-contact-info-data a:active,
+      .contact-us-contact-info-data a:visited {
+        color: var(--color-light);
+        line-height: 1.8;
+        font-size: 0.875rem;
+        margin-left: 0.625rem;
+        text-transform: unset;
+      }
+
+      .contact-us-contact-info-data address {
+        font-style: normal;
+      }
+
+      .contact-us-contact-info-lnr-phone {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 3;
+      }
+
+      .contact-us-contact-info-headline-say-hello {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+      }
+
+      .contact-us-contact-info-data-say-hello {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+      }
+
+      .contact-us-contact-info-lnr-map {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 5;
+      }
+
+      .contact-us-contact-info-headline-where-to-meet {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+      }
+
+      .contact-us-contact-info-data-where-to-meet {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 5;
+      }
+
+      footer {
+        background-color: var(--background-color);
+        color: var(--color-light);
+        display: flex;
+        height: 11.089rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 1rem;
+        text-align: center;
+      }
+
+      .social-media-links {
+        flex: 1;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        width: 100vw;
+        align-items: center;
+      }
+
+      .social-media-link {
+        font-family: var(--font-headline);
+        color: var(--color-light);
+        letter-spacing: 0.136rem;
+        transition: all 0.4s ease;
+        outline: none;
+      }
+
+      .social-media-link:hover,
+      .social-media-link:focus,
+      .social-media-link:active,
+      .social-media-link:visited {
+        color: var(--color);
+      }
+
+      .copyright {
+        font-size: 0.618rem;
+        margin-top: 1rem;
+      }
+
+      @media only screen and (max-width: 33.75rem) and (orientation: landscape) {
+        .logo--a:after {
+          content: "llied Jiu Jitsu & Fitness";
+        }
+
+        .marquee {
+          justify-content: flex-start;
+        }
+
+        .marquee:before {
+          background-image: url("https://i.ibb.co/GJrzR6B/contact-us-marquee-mobile-landscape-2x.jpg");
+        }
+
+        .marquee--copy {
+          margin-left: 0.618rem;
+        }
+      }
+
+      @media only screen and (min-width: 33.75rem) and (max-width: 50rem) and (orientation: landscape) {
+        .logo--a:after {
+          content: "llied Jiu Jitsu & Fitness";
+        }
+
+        .marquee {
+          justify-content: flex-start;
+        }
+
+        .marquee:before {
+          background-image: url("https://i.ibb.co/GJrzR6B/contact-us-marquee-mobile-landscape-2x.jpg");
+        }
+
+        .marquee--copy {
+          margin-left: 0.618rem;
+        }
+
+        .contact-us--contact-info {
+          grid-template-columns: 2.625rem 1fr 2.625rem 1fr;
+          grid-template-rows: 1fr 2fr;
+        }
+
+        .contact-us-contact-info-lnr-phone {
+          grid-column-start: 1;
+          grid-column-end: 2;
+          grid-row-start: 1;
+          grid-row-end: 3;
+        }
+
+        .contact-us-contact-info-headline-say-hello {
+          grid-column-start: 2;
+          grid-column-end: 3;
+          grid-row-start: 1;
+          grid-row-end: 2;
+        }
+
+        .contact-us-contact-info-data-say-hello {
+          grid-column-start: 2;
+          grid-column-end: 3;
+          grid-row-start: 2;
+          grid-row-end: 3;
+        }
+
+        .contact-us-contact-info-lnr-map {
+          grid-column-start: 3;
+          grid-column-end: 4;
+          grid-row-start: 1;
+          grid-row-end: 3;
+        }
+
+        .contact-us-contact-info-headline-where-to-meet {
+          grid-column-start: 4;
+          grid-column-end: 5;
+          grid-row-start: 1;
+          grid-row-end: 2;
+        }
+
+        .contact-us-contact-info-data-where-to-meet {
+          grid-column-start: 4;
+          grid-column-end: 5;
+          grid-row-start: 2;
+          grid-row-end: 3;
+        }
+      }
+
+      @media only screen and (min-width: 48rem) and (max-width: 64rem) and (orientation: portrait) {
+        .logo--a:after {
+          content: "llied Jiu Jitsu & Fitness";
+        }
+
+        nav {
+          margin: 1rem 2.618rem;
+        }
+
+        .marquee:before {
+          background-image: url("https://i.ibb.co/TL5stwr/contact-us-marquee-tablet-portrait-2x.jpg");
+        }
+
+        .module {
+          margin: 2.618rem;
+        }
+
+        h1 {
+          font-size: 1.625rem;
+          letter-spacing: 1.5rem !important;
+        }
+
+        .headline-sub {
+          font-size: 1rem;
+          letter-spacing: 0.5rem;
+        }
+
+        .contact-us--contact-info {
+          grid-template-columns: 2.625rem 1fr 2.625rem 1fr;
+          grid-template-rows: 1fr 2fr;
+        }
+
+        .contact-us-contact-info-lnr-phone {
+          grid-column-start: 1;
+          grid-column-end: 2;
+          grid-row-start: 1;
+          grid-row-end: 3;
+        }
+
+        .contact-us-contact-info-headline-say-hello {
+          grid-column-start: 2;
+          grid-column-end: 3;
+          grid-row-start: 1;
+          grid-row-end: 2;
+        }
+
+        .contact-us-contact-info-data-say-hello {
+          grid-column-start: 2;
+          grid-column-end: 3;
+          grid-row-start: 2;
+          grid-row-end: 3;
+        }
+
+        .contact-us-contact-info-lnr-map {
+          grid-column-start: 3;
+          grid-column-end: 4;
+          grid-row-start: 1;
+          grid-row-end: 3;
+        }
+
+        .contact-us-contact-info-headline-where-to-meet {
+          grid-column-start: 4;
+          grid-column-end: 5;
+          grid-row-start: 1;
+          grid-row-end: 2;
+        }
+
+        .contact-us-contact-info-data-where-to-meet {
+          grid-column-start: 4;
+          grid-column-end: 5;
+          grid-row-start: 2;
+          grid-row-end: 3;
+        }
+      }
+
+      @media only screen and (min-width: 64rem) {
+        .logo--a:after {
+          content: "llied Jiu Jitsu & Fitness";
+        }
+
+        .nav--container {
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          width: auto;
+          margin: 0;
+          height: 4rem;
+          transition: all 0.3s cubic-bezier(0.3, 0.1, 0.58, 1);
+        }
+
+        .nav-—container-light {
+          background: rgba(255, 255, 255, 0.95);
+          box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+        }
+
+        .nav-—container-light nav {
+          padding: 0.313rem 0;
+        }
+
+        nav {
+          margin: 1rem 2.618rem;
+          position: fixed;
+          transition: all 0.4s ease;
+        }
+
+        .nav-links {
+          display: block;
+          list-style-type: none;
+          margin-right: 1rem;
+          transform: translateY(0);
+          transition: all 0.4s ease;
+          transition-delay: 0.2s;
+        }
+
+        .nav-link {
+          display: inline;
+          margin: 0 1rem;
+          font-family: var(--font-copy);
+          color: var(--color);
+          text-transform: uppercase;
+          letter-spacing: 0.136rem;
+        }
+
+        .nav-link a,
+        .nav-link a:hover,
+        .nav-link a:focus,
+        .nav-link a:active,
+        .nav-link a:visited {
+          font-size: 0.618rem;
+          padding: 0.618rem;
+        }
+
+        .marquee {
+          justify-content: center;
+        }
+
+        .marquee:before {
+          background-image: url("https://i.ibb.co/Tkwk2TF/contact-us-marquee-desktop-2x.jpg");
+          background-attachment: fixed;
+          background-position: top right;
+        }
+
+        .marquee--copy {
+          width: calc(100vw - 2.618rem);
+        }
+
+        .module {
+          margin: 2.618rem;
+        }
+
+        h1 {
+          font-size: 1.875rem;
+          letter-spacing: 2.925rem !important;
+        }
+
+        .headline-sub {
+          font-size: 1rem;
+          letter-spacing: 0.625rem;
+        }
+
+        input,
+        textarea,
+        button,
+        .contact-us--contact-info {
+          max-width: 100%;
+        }
+
+        .contact-us--contact-info {
+          grid-template-columns: 2.625rem 1fr 2.625rem 1fr;
+          grid-template-rows: 1fr 2fr;
+        }
+
+        .contact-us-contact-info-lnr-phone {
+          grid-column-start: 1;
+          grid-column-end: 2;
+          grid-row-start: 1;
+          grid-row-end: 3;
+        }
+
+        .contact-us-contact-info-headline-say-hello {
+          grid-column-start: 2;
+          grid-column-end: 3;
+          grid-row-start: 1;
+          grid-row-end: 2;
+        }
+
+        .contact-us-contact-info-data-say-hello {
+          grid-column-start: 2;
+          grid-column-end: 3;
+          grid-row-start: 2;
+          grid-row-end: 3;
+        }
+
+        .contact-us-contact-info-lnr-map {
+          grid-column-start: 3;
+          grid-column-end: 4;
+          grid-row-start: 1;
+          grid-row-end: 3;
+        }
+
+        .contact-us-contact-info-headline-where-to-meet {
+          grid-column-start: 4;
+          grid-column-end: 5;
+          grid-row-start: 1;
+          grid-row-end: 2;
+        }
+
+        .contact-us-contact-info-data-where-to-meet {
+          grid-column-start: 4;
+          grid-column-end: 5;
+          grid-row-start: 2;
+          grid-row-end: 3;
+        }
+
+        .social-media-links {
+          grid-template-columns: repeat(4, 11.089rem);
+          grid-template-rows: 1fr;
+          width: auto;
+        }
+      }
+
+      @media only screen and (min-width: 48rem) and (max-width: 64rem) and (orientation: landscape) {
+        .logo--a:after {
+          content: "llied Jiu Jitsu & Fitness";
+        }
+
+        nav {
+          margin: 1rem 2.618rem;
+        }
+
+        .nav-links {
+          display: block;
+          list-style-type: none;
+          margin-right: 1rem;
+          transform: translateY(0);
+          transition: all 0.4s ease;
+          transition-delay: 0.2s;
+        }
+
+        .nav-link {
+          display: inline;
+          margin: 0 1rem;
+          font-family: var(--font-copy);
+          color: var(--color);
+          text-transform: uppercase;
+          letter-spacing: 0.136rem;
+        }
+
+        .nav-link a,
+        .nav-link a:hover,
+        .nav-link a:focus,
+        .nav-link a:active,
+        .nav-link a:visited {
+          font-size: 0.618rem;
+          padding: 0.618rem;
+        }
+
+        .marquee:before {
+          background-image: url("https://i.ibb.co/prZPT8H/contact-us-marquee-tablet-landscape-2x.jpg");
+        }
+
+        .marquee--copy {
+          margin-left: 0.618rem;
+        }
+
+        .module {
+          margin: 2.618rem;
+        }
+
+        h1 {
+          font-size: 1.625rem;
+          letter-spacing: 1.5rem !important;
+        }
+
+        .headline-sub {
+          font-size: 1rem;
+          letter-spacing: 0.5rem;
+        }
+
+        .contact-us--contact-info {
+          grid-template-columns: 2.625rem 1fr 2.625rem 1fr;
+          grid-template-rows: 1fr 2fr;
+        }
+
+        .contact-us-contact-info-lnr-phone {
+          grid-column-start: 1;
+          grid-column-end: 2;
+          grid-row-start: 1;
+          grid-row-end: 3;
+        }
+
+        .contact-us-contact-info-headline-say-hello {
+          grid-column-start: 2;
+          grid-column-end: 3;
+          grid-row-start: 1;
+          grid-row-end: 2;
+        }
+
+        .contact-us-contact-info-data-say-hello {
+          grid-column-start: 2;
+          grid-column-end: 3;
+          grid-row-start: 2;
+          grid-row-end: 3;
+        }
+
+        .contact-us-contact-info-lnr-map {
+          grid-column-start: 3;
+          grid-column-end: 4;
+          grid-row-start: 1;
+          grid-row-end: 3;
+        }
+
+        .contact-us-contact-info-headline-where-to-meet {
+          grid-column-start: 4;
+          grid-column-end: 5;
+          grid-row-start: 1;
+          grid-row-end: 2;
+        }
+
+        .contact-us-contact-info-data-where-to-meet {
+          grid-column-start: 4;
+          grid-column-end: 5;
+          grid-row-start: 2;
+          grid-row-end: 3;
+        }
+      }
+
+      @media only screen and (min-width: 85.375rem) {
+        nav {
+          margin: 1rem auto;
+          max-width: 87.5rem;
+        }
+
+        .marquee--copy {
+          max-width: 75rem;
+        }
+
+        .module {
+          margin: 4.236rem auto;
+          max-width: 87.5rem;
+        }
+      }
+
+      @media only screen and (min-width: 64rem) and (max-height: 85.375rem) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+        .logo--a:after {
+          content: "llied Jiu Jitsu & Fitness";
+        }
+
+        nav {
+          position: absolute;
+        }
+
+        .marquee:before {
+          background-image: url("https://i.ibb.co/TL5stwr/contact-us-marquee-tablet-portrait-2x.jpg");
+          background-attachment: scroll;
+        }
+
+        .marquee--copy {
+          margin-left: 0.618rem;
+        }
+
+        h1 {
+          font-size: 1.625rem;
+          letter-spacing: 1.5rem !important;
+        }
+
+        .headline-sub {
+          font-size: 1rem;
+          letter-spacing: 0.5rem;
+        }
+
+        .contact-us--contact-info {
+          grid-template-columns: 2.625rem 1fr 2.625rem 1fr;
+          grid-template-rows: 1fr 2fr;
+        }
+
+        .contact-us-contact-info-lnr-phone {
+          grid-column-start: 1;
+          grid-column-end: 2;
+          grid-row-start: 1;
+          grid-row-end: 3;
+        }
+
+        .contact-us-contact-info-headline-say-hello {
+          grid-column-start: 2;
+          grid-column-end: 3;
+          grid-row-start: 1;
+          grid-row-end: 2;
+        }
+
+        .contact-us-contact-info-data-say-hello {
+          grid-column-start: 2;
+          grid-column-end: 3;
+          grid-row-start: 2;
+          grid-row-end: 3;
+        }
+
+        .contact-us-contact-info-lnr-map {
+          grid-column-start: 3;
+          grid-column-end: 4;
+          grid-row-start: 1;
+          grid-row-end: 3;
+        }
+
+        .contact-us-contact-info-headline-where-to-meet {
+          grid-column-start: 4;
+          grid-column-end: 5;
+          grid-row-start: 1;
+          grid-row-end: 2;
+        }
+
+        .contact-us-contact-info-data-where-to-meet {
+          grid-column-start: 4;
+          grid-column-end: 5;
+          grid-row-start: 2;
+          grid-row-end: 3;
+        }
+      }
+
+      @media only screen and (min-width: 64rem) and (max-height: 85.375rem) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5) {
+        .logo--a:after {
+          content: "llied Jiu Jitsu & Fitness";
+        }
+
+        nav {
+          margin: 1rem 2.618rem;
+          position: absolute;
+        }
+
+        .marquee:before {
+          background-image: url("https://i.ibb.co/prZPT8H/contact-us-marquee-tablet-landscape-2x.jpg");
+          background-attachment: scroll;
+        }
+
+        .marquee--copy {
+          margin-left: 0.618rem;
+        }
+
+        h1 {
+          font-size: 1.625rem;
+          letter-spacing: 1.5rem !important;
+        }
+
+        .headline-sub {
+          font-size: 1rem;
+          letter-spacing: 0.5rem;
+        }
+
+        .contact-us--contact-info {
+          grid-template-columns: 2.625rem 1fr 2.625rem 1fr;
+          grid-template-rows: 1fr 2fr;
+        }
+
+        .contact-us-contact-info-lnr-phone {
+          grid-column-start: 1;
+          grid-column-end: 2;
+          grid-row-start: 1;
+          grid-row-end: 3;
+        }
+
+        .contact-us-contact-info-headline-say-hello {
+          grid-column-start: 2;
+          grid-column-end: 3;
+          grid-row-start: 1;
+          grid-row-end: 2;
+        }
+
+        .contact-us-contact-info-data-say-hello {
+          grid-column-start: 2;
+          grid-column-end: 3;
+          grid-row-start: 2;
+          grid-row-end: 3;
+        }
+
+        .contact-us-contact-info-lnr-map {
+          grid-column-start: 3;
+          grid-column-end: 4;
+          grid-row-start: 1;
+          grid-row-end: 3;
+        }
+
+        .contact-us-contact-info-headline-where-to-meet {
+          grid-column-start: 4;
+          grid-column-end: 5;
+          grid-row-start: 1;
+          grid-row-end: 2;
+        }
+
+        .contact-us-contact-info-data-where-to-meet {
+          grid-column-start: 4;
+          grid-column-end: 5;
+          grid-row-start: 2;
+          grid-row-end: 3;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="page-loader"><div class="loader">Loading...</div></div>
+    <div class="nav-—container">
+      <nav>
+        <div class="logo headline">
+          <a href="../index.html">
+            <span class="logo--a"><span class="logo-a--cap">A</span></span>
+          </a>
+        </div>
+        <ul class="nav-links">
+          <li class="nav-link"><a href="../programs.html">Programs</a></li>
+          <li class="nav-link"><a href="../schedule.html">Schedule</a></li>
+          <li class="nav-link"><a href="../contact.html">Contact</a></li>
+        </ul>
+        <input type="checkbox" class="nav-toggle" />
+        <div class="hamburger"><div class="lines"></div></div>
+        <div class="menu">
+          <div class="overlay">
+            <div class="overlay-inner">
+              <ul class="items">
+                <li class="item">
+                  <a href="../index.html" class="nav-link">Home</a>
+                </li>
+                <li class="item">
+                  <a href="../programs.html" class="nav-link">Programs</a>
+                </li>
+                <li class="item">
+                  <a href="../schedule.html" class="nav-link">Schedule</a>
+                </li>
+                <li class="item">
+                  <a class="nav-link" href="../instructors.html">Instructors</a>
+                </li>
+                <li class="item">
+                  <a class="nav-link nav-link—-disabled" title="Coming Soon"
+                    >The Academy</a
+                  >
+                </li>
+                <li class="item">
+                  <a class="nav-link nav-link—-disabled" title="Coming Soon"
+                    >The Store</a
+                  >
+                </li>
+                <li class="item">
+                  <a href="../contact.html" class="nav-link">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <footer>
+              &copy; 2019 Allied Athletics, LLC. All rights reserved.
+            </footer>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <section class="container">
+      <section class="content">
+        <section class="marquee">
+          <div class="marquee--copy">
+            <h1 class="headline animate-pop-in">Contact Us</h1>
+            <h2 class="headline headline-sub animate-pop-in">
+              We will get back to you as soon as possible
+            </h2>
+          </div>
+        </section>
+        <section class="module">
+          <div class="module--icon"><span class="lnr lnr-phone"></span></div>
+          <div class="headline headline-sub module--headline">Get In Touch</div>
+          <form
+            class="contact-us--form"
+            action=""
+            method="post"
+            accept-charset="UTF-8"
+          >
+            <div class="contact-us--container">
+              <input
+                type="text"
+                required
+                id="contact_name"
+                name="contact_name"
+                placeholder="Name*"
+                title="Provide your name."
+              />
+              <input
+                type="email"
+                required
+                id="contact_email"
+                name="contact_email"
+                placeholder="Email address*"
+                title="Provide a valid email address."
+                pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$"
+              />
+              <input
+                type="phone"
+                id="contact_phone"
+                name="contact_phone"
+                placeholder="Phone number"
+                title="Provide a valid phone number."
+              />
+              <textarea
+                name="contact_message"
+                id="contact_message"
+                rows="8"
+                placeholder="Message"
+              ></textarea>
+              <button class="btn btn-default contact-us--button" type="submit">
+                Submit
+              </button>
+              <div class="contact-us--confirmation">
+                Your message was sent, thank you!
+              </div>
+            </div>
+          </form>
+          <div class="contact-us--contact-info">
+            <span
+              class="lnr lnr-phone-handset contact-us-contact-info-lnr-phone"
+            ></span>
+            <div
+              class="contact-us-contact-info-headline contact-us-contact-info-headline-say-hello"
+            >
+              Say Hello
+            </div>
+            <div
+              class="contact-us-contact-info-data contact-us-contact-info-data-say-hello"
+            >
+              <div>
+                Email:
+                <a href="mailto:thomas@alliedjiujitsu.com"
+                  >thomas@alliedjiujitsu.com</a
+                >
+              </div>
+              <div>Phone: <a href="tel:6027033067">(602) 703-3067</a></div>
+            </div>
+            <span
+              class="lnr lnr-map-marker contact-us-contact-info-lnr-map"
+            ></span>
+            <div
+              class="contact-us-contact-info-headline contact-us-contact-info-headline-where-to-meet"
+            >
+              Where To Meet
+            </div>
+            <div
+              class="contact-us-contact-info-data contact-us-contact-info-data-where-to-meet"
+            >
+              <div>
+                Allied Jiu Jitsu
+                <a
+                  href="https://duckduckgo.com/?q=10100+w+lake+pleasant+pkwy%2C+peoria%2C+az+85382&atb=v133-3_i&ia=web&iaxm=maps&strict_bbox=0&bbox=38.58593220370754%2C-80.94208747635541%2C38.58093220370756%2C-80.93145492364458"
+                  target="_blank"
+                  class="address"
+                >
+                  <address>
+                    10120 E Bell Rd<br />
+                    Scottsdale, AZ 85260
+                  </address>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <footer>
+        <div class="social-media-links">
+          <a
+            href="https://m.youtube.com/channel/UCgr4_wXYnki1vj6mgKKVxdQ"
+            class="social-media-link"
+            target="_blank"
+            >Youtube</a
+          >
+          <a
+            href="https://www.facebook.com/Allied-Jiu-Jitsu-307244583066838"
+            class="social-media-link"
+            target="_blank"
+            >Facebook</a
+          >
+          <a
+            href="https://www.instagram.com/alliedbjj/"
+            class="social-media-link"
+            target="_blank"
+            >Instagram</a
+          >
+          <a
+            href="https://twitter.com/AlliedJiu"
+            class="social-media-link"
+            target="_blank"
+            >Twitter</a
+          >
+        </div>
+        <div class="copyright">
+          &copy; 2019 Allied Athletics, LLC. All rights reserved.
+        </div>
+      </footer>
+    </section>
+
+    <div class="scroll-up">
+      <a href="#"
+        ><img
+          class="chevron"
+          src="https://i.ibb.co/c2ty0G7/chevron-up.png"
+          alt="Scroll to the top of the page."
+      /></a>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const postContactData = function(
+          name,
+          emailAddress,
+          phoneNumber,
+          message
+        ) {
+          let path = `https://shantheman-email-notify.herokuapp.com/notify/${name}/${emailAddress}/${phoneNumber}/${message}`;
+          fetch(path, { method: "GET", mode: "no-cors" });
+        };
+
+        document.querySelector(".nav-toggle").checked = false;
+        document.querySelector(".logo").classList.remove("logo--close");
+        document.querySelector(".nav-links").classList.remove("logo--close");
+        document.body.classList.remove("nav-displayed");
+        document
+          .querySelector(".page-loader")
+          .classList.add("page-loader--hidden");
+
+        document.addEventListener("unload", () => {
+          document.querySelector(".nav-toggle").checked = false;
+          document.querySelector(".logo").classList.remove("logo--close");
+          document.querySelector(".nav-links").classList.remove("logo--close");
+          document.body.classList.remove("nav-displayed");
+        });
+
+        // update styles we aren’t able to hit with CSS
+        document
+          .querySelector(".nav-toggle")
+          .addEventListener("change", function(event) {
+            const navDisplayed = document.querySelector(".nav-toggle").checked;
+            document.querySelector(".logo").classList.toggle("logo--close");
+            document
+              .querySelector(".nav-links")
+              .classList.toggle("logo--close");
+            document.body.classList.toggle("nav-displayed", navDisplayed);
+          });
+
+        document
+          .querySelector(".contact-us--form")
+          .addEventListener("submit", event => {
+            event.preventDefault();
+            let name = document.querySelector("#contact_name");
+            let emailAddress = document.querySelector("#contact_email");
+            let phoneNumber = document.querySelector("#contact_phone");
+            let message = document.querySelector("#contact_message");
+            document.activeElement.blur();
+            document
+              .querySelector(".contact-us--confirmation")
+              .classList.add("contact-us--confirmation-show");
+            postContactData(
+              name.value || "no-name",
+              emailAddress.value || "no-email",
+              phoneNumber.value || "no-number",
+              message.value || "no-message"
+            );
+            name.value = "";
+            emailAddress.value = "";
+            phoneNumber.value = "";
+            message.value = "";
+            window.setTimeout(() => {
+              document
+                .querySelector(".contact-us--confirmation")
+                .classList.remove("contact-us--confirmation-show");
+            }, 3000);
+          });
+
+        // update display when scrolling down
+        const navContainer = document.querySelector(".nav-—container");
+        const scrollUp = document.querySelector(".scroll-up");
+        const marquee = document.querySelector(".marquee");
+        const marqueeObserverOptions = { rootMargin: "-78% 0px 0px 0px" };
+        const marqueeObserver = new IntersectionObserver(
+          (entries, marqueeObserver) => {
+            entries.forEach(entry => {
+              navContainer.classList.toggle(
+                "nav-—container-light",
+                !entry.isIntersecting
+              );
+              scrollUp.classList.toggle(
+                "scroll-up--show",
+                !entry.isIntersecting
+              );
+            });
+          },
+          marqueeObserverOptions
+        );
+        marqueeObserver.observe(marquee);
+      });
+    </script>
+  </body>
+</html>
