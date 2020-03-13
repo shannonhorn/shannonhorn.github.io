@@ -969,7 +969,6 @@
               <ul>
                 <li><span>9:00 am</span>Adults Jiu Jitsu (Gi)</li>
                 <li><span>9:00 am</span>Cardio Kickboxing</li>
-                <li><span>4:00 pm</span>Wrestling</li>
                 <li><span>5:00 pm</span>Kids Jiu Jitsu (Gi)</li>
                 <li><span>5:00 pm</span>Cardio Kickboxing</li>
                 <li><span>6:00 pm</span>Adults Jiu Jitsu (Gi)</li>
@@ -1006,7 +1005,6 @@
                 <li><span>9:00 am</span>Kids Jiu Jitsu (Gi)</li>
                 <li><span>9:00 am</span>Cardio Kickboxing</li>
                 <li><span>10:00 am</span>Adults Jiu Jitsu (Gi)</li>
-                <li><span>10:00 am</span>Wrestling</li>
               </ul>
             </div>
             <div class="headline headline-sub module--headline schedule--day">
@@ -1063,170 +1061,6 @@
     </div>
 
     <script>
-      const schedule = [
-        {
-          name: 'Monday',
-          abbreviation: 'M',
-          classes: [
-            {
-              icon: 'https://i.ibb.co/yVQXF69/jiu-jitsu.png',
-              name: 'BJJ Gi Adult',
-              instructor: 'thomas',
-              'time-start': '9:00 am',
-              'time-end': '10:30 am',
-            },
-            {
-              icon: 'jiu-jitsu.svg',
-              name: 'BJJ Gi Juvenile',
-              instructor: 'thomas',
-              'time-start': '5:00 pm',
-              'time-end': '5:45 pm',
-            },
-            {
-              icon: 'jiu-jitsu.svg',
-              name: 'BJJ Gi Adult',
-              instructor: 'thomas',
-              'time-start': '6:00 pm',
-              'time-end': '7:30 pm',
-            },
-          ],
-        },
-        {
-          name: 'Tuesday',
-          abbreviation: 'T',
-          classes: [
-            {
-              icon: 'jiu-jitsu.svg',
-              name: 'BJJ Gi Adult (free for military)',
-              instructor: 'jeff',
-              'time-start': '6:00 am',
-              'time-end': '7:00 am',
-            },
-            {
-              icon: 'jiu-jitsu.svg',
-              name: 'BJJ No Gi Juvenile',
-              instructor: 'thomas',
-              'time-start': '5:00 pm',
-              'time-end': '5:45 pm',
-            },
-            {
-              icon: 'jiu-jitsu.svg',
-              name: 'BJJ No Gi Adult',
-              instructor: 'thomas',
-              'time-start': '6:00 pm',
-              'time-end': '7:30 pm',
-            },
-          ],
-        },
-        {
-          name: 'Wednesday',
-          abbreviation: 'W',
-          classes: [
-            {
-              icon: 'jiu-jitsu.svg',
-              name: 'BJJ Gi Adult',
-              instructor: 'thomas',
-              'time-start': '9:00 am',
-              'time-end': '10:30 am',
-            },
-            {
-              icon: 'jiu-jitsu.svg',
-              name: 'BJJ Gi Juvenile',
-              instructor: 'thomas',
-              'time-start': '5:00 pm',
-              'time-end': '5:45 pm',
-            },
-            {
-              icon: 'jiu-jitsu.svg',
-              name: 'BJJ Gi Adult',
-              instructor: 'thomas',
-              'time-start': '6:00 pm',
-              'time-end': '7:30 pm',
-            },
-          ],
-        },
-        {
-          name: 'Thursday',
-          abbreviation: 'T',
-          classes: [
-            {
-              icon: 'jiu-jitsu.svg',
-              name: 'BJJ Gi Adult (free for military)',
-              instructor: 'jeff',
-              'time-start': '6:00 am',
-              'time-end': '7:00 am',
-            },
-            {
-              icon: 'jiu-jitsu.svg',
-              name: 'BJJ No Gi Juvenile',
-              instructor: 'thomas',
-              'time-start': '5:00 pm',
-              'time-end': '5:45 pm',
-            },
-            {
-              icon: 'jiu-jitsu.svg',
-              name: 'BJJ No Gi Adult',
-              instructor: 'thomas',
-              'time-start': '6:00 pm',
-              'time-end': '7:30 pm',
-            },
-          ],
-        },
-        {
-          name: 'Friday',
-          abbreviation: 'F',
-          classes: [
-            {
-              icon: 'jiu-jitsu.svg',
-              name: 'BJJ Gi Adult',
-              instructor: 'thomas',
-              'time-start': '9:00 am',
-              'time-end': '10:30 am',
-            },
-          ],
-        },
-        {
-          name: 'Saturday',
-          abbreviation: 'S',
-          classes: [
-            {
-              icon: 'jiu-jitsu.svg',
-              name: 'BJJ Gi Juvenile',
-              instructor: 'thomas',
-              'time-start': '9:00 am',
-              'time-end': '9:45 am',
-            },
-            {
-              icon: 'jiu-jitsu.svg',
-              name: 'BJJ Gi Adult',
-              instructor: 'thomas',
-              'time-start': '10:00 am',
-              'time-end': '11:30 am',
-            },
-          ],
-        },
-        {
-          name: 'Sunday',
-          abbreviation: 'S',
-          classes: {},
-        },
-      ];
-
-      const instructors = [
-        {
-          name: 'thomas',
-          fullName: 'Thomas Reichenberger',
-          avatar: 'https://ibb.co/qxrdYNS',
-          link: '../instructors.html#thomas',
-        },
-        {
-          name: 'jeff',
-          fullName: 'Jeff Cook',
-          avatar: 'test',
-          link: '../instructors.html#jeff',
-        },
-      ];
-
       document.addEventListener('DOMContentLoaded', () => {
         document.querySelector('.nav-toggle').checked = false;
         document.querySelector('.logo').classList.remove('logo--close');
