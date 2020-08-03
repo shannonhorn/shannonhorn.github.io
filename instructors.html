@@ -522,6 +522,12 @@
         margin: 1.618rem 0;
       }
 
+      .program--left,
+      .program--right {
+        margin-left: 0;
+        margin-right: 0;
+      }
+
       .program#thomas,
       .program#jeff,
       .program#ninja,
@@ -532,7 +538,7 @@
 
       .program--image,
       .program--marquee {
-        height: 22rem;
+        height: 16rem;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: top center;
@@ -704,7 +710,7 @@
 
         .program--image,
         .program--marquee {
-          height: 32rem;
+         height: 16rem;
         }
       }
 
@@ -727,7 +733,7 @@
 
         .program--image,
         .program--marquee {
-          height: 32rem;
+          height: 16rem;
         }
       }
 
@@ -758,13 +764,27 @@
           letter-spacing: 0.5rem;
         }
 
+        .programs {
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+
         .program {
           margin: 1.618rem 0;
+          flex-basis: calc(50% - 0.625rem);
+        }
+
+        .program--left {
+          margin-left: var(--program-margin);
+        }
+
+        .program--right {
+          margin-right: var(--program-margin);
         }
 
         .program--image,
         .program--marquee {
-          height: 44rem;
+          height: 18rem;
         }
 
         .programs--footer {
@@ -865,6 +885,15 @@
 
         .program {
           margin: 1.618rem 0;
+          flex-basis: calc(50% - 0.625rem);
+        }
+
+        .program--left {
+          margin-left: var(--program-margin);
+        }
+
+        .program--right {
+          margin-right: var(--program-margin);
         }
 
         .program--link {
@@ -928,7 +957,7 @@
 
         .program--image,
         .program--marquee {
-          height: 56rem;
+          height: 24rem;
         }
 
         .programs--footer {
@@ -994,8 +1023,22 @@
           letter-spacing: 0.5rem;
         }
 
+        .programs {
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+
         .program {
           margin: 1.618rem 0;
+          flex-basis: calc(50% - 0.625rem);
+        }
+
+        .program--left {
+          margin-left: var(--program-margin);
+        }
+
+        .program--right {
+          margin-right: var(--program-margin);
         }
 
         .program-copy--quote {
@@ -1004,7 +1047,7 @@
 
         .program--image,
         .program--marquee {
-          height: 56rem;
+          height: 24rem;
         }
 
         .programs--footer {
@@ -1060,8 +1103,22 @@
           margin: 2.618rem;
         }
 
+        .programs {
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+
         .program {
           margin: 1.618rem 0;
+          flex-basis: calc(50% - 0.625rem);
+        }
+
+        .program--left {
+          margin-left: var(--program-margin);
+        }
+
+        .program--right {
+          margin-right: var(--program-margin);
         }
 
         .program-copy--quote {
@@ -1070,7 +1127,7 @@
 
         .program--image,
         .program--marquee {
-          height: 52rem;
+          height: 24rem;
         }
 
         .programs--footer {
@@ -1111,8 +1168,22 @@
           margin: 2.618rem;
         }
 
+        .programs {
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+
         .program {
           margin: 1.618rem 0;
+          flex-basis: calc(50% - 0.625rem);
+        }
+
+        .program--left {
+          margin-left: var(--program-margin);
+        }
+
+        .program--right {
+          margin-right: var(--program-margin);
         }
 
         .program-copy--quote {
@@ -1121,7 +1192,7 @@
 
         .program--image,
         .program--marquee {
-          height: 68rem;
+          height: 26rem;
         }
 
         .programs--footer {
@@ -1199,7 +1270,7 @@
             Our Team
           </div>
           <div class="programs">
-            <div class="program" id="thomas">
+            <div class="program program--right" id="thomas">
               <div class="program--link">
                 <div class="program--marquee program-marquee--thomas"></div>
                 <div class="program-marquee--copy">
@@ -1251,7 +1322,7 @@
                 positive environment that encourages personal growth.
               </p>
             </div>
-            <div class="program" id="jeff">
+            <div class="program program--left" id="jeff">
               <div class="program--link">
                 <div class="program--marquee program-marquee--jeff"></div>
                 <div class="program-marquee--copy">
@@ -1287,7 +1358,7 @@
                 </li>
               </ul>
             </div>
-            <div class="program" id="ninja">
+            <div class="program program--right" id="ninja">
               <div class="program--link">
                 <div class="program--marquee program-marquee--ninja"></div>
                 <div class="program-marquee--copy">
@@ -1320,7 +1391,7 @@
                 </li>
               </ul>
             </div>
-            <div class="program" id="london">
+            <div class="program program--left" id="london">
               <div class="program--link">
                 <div class="program--marquee program-marquee--london"></div>
                 <div class="program-marquee--copy">
@@ -1342,10 +1413,10 @@
               <div class="program-headline">London Horn</div>
               <ul class="program-copy program-copy-ul">
                 <li>Brazilian Jiu Jitsu <strong>blue belt</strong></li>
-								<li>Enjoys power lifting, wrestling, and rugby</li>
+                <li>Enjoys power lifting, wrestling, and rugby</li>
               </ul>
             </div>
-            <div class="program" id="frank">
+            <div class="program program--right" id="frank">
               <div class="program--link">
                 <div class="program--marquee program-marquee--frank"></div>
                 <div class="program-marquee--copy">
