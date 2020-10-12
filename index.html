@@ -1448,7 +1448,7 @@
 
     <script>
       document.addEventListener("DOMContentLoaded", () => {
-        const postEmailAddress = function(emailAddress) {
+        const postEmailAddress = function (emailAddress) {
           let path = `https://shantheman-email-notify.herokuapp.com/notify/no-name/${emailAddress}/no-number/Someone registered for our newsletter!`;
           fetch(path, { method: "GET", mode: "no-cors" });
         };
@@ -1470,7 +1470,7 @@
 
         document
           .querySelector(".newsletter--form")
-          .addEventListener("submit", event => {
+          .addEventListener("submit", (event) => {
             event.preventDefault();
             const emailAddressInput = document.querySelector("#signup_email");
             let emailAddress = emailAddressInput.value;
@@ -1490,7 +1490,7 @@
         // update styles we aren’t able to hit with CSS
         document
           .querySelector(".nav-toggle")
-          .addEventListener("change", function(event) {
+          .addEventListener("change", function (event) {
             const navDisplayed = document.querySelector(".nav-toggle").checked;
             document.querySelector(".logo").classList.toggle("logo--close");
             document
@@ -1506,7 +1506,7 @@
         const marqueeObserverOptions = { rootMargin: "-98% 0px 0px 0px" };
         const marqueeObserver = new IntersectionObserver(
           (entries, marqueeObserver) => {
-            entries.forEach(entry => {
+            entries.forEach((entry) => {
               navContainer.classList.toggle(
                 "nav-—container-light",
                 !entry.isIntersecting

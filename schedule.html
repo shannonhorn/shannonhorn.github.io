@@ -922,9 +922,7 @@
           <div class="module--icon">
             <span class="lnr lnr-calendar-full"></span>
           </div>
-          <div class="headline headline-sub module--headline">
-            When To Meet
-          </div>
+          <div class="headline headline-sub module--headline">When To Meet</div>
           <div class="schedule">
             <div class="headline headline-sub module--headline schedule--day">
               Monday
@@ -988,7 +986,9 @@
               <ul>
                 <li><span>9:00 am</span>Kids Jiu Jitsu (Gi)</li>
                 <li><span>10:00 am</span>Adults Jiu Jitsu (Gi)</li>
-                <li><span>11:00 am</span>Competition Jiu Jitsu Training (No Gi)</li>
+                <li>
+                  <span>11:00 am</span>Competition Jiu Jitsu Training (No Gi)
+                </li>
               </ul>
             </div>
             <div class="headline headline-sub module--headline schedule--day">
@@ -1064,7 +1064,7 @@
         // update styles we arent able to hit with CSS
         document
           .querySelector(".nav-toggle")
-          .addEventListener("change", function(event) {
+          .addEventListener("change", function (event) {
             const navDisplayed = document.querySelector(".nav-toggle").checked;
             document.querySelector(".logo").classList.toggle("logo--close");
             document
@@ -1080,7 +1080,7 @@
         const marqueeObserverOptions = { rootMargin: "-78% 0px 0px 0px" };
         const marqueeObserver = new IntersectionObserver(
           (entries, marqueeObserver) => {
-            entries.forEach(entry => {
+            entries.forEach((entry) => {
               navContainer.classList.toggle(
                 "nav-—container-light",
                 !entry.isIntersecting

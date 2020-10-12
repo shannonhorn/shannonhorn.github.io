@@ -1275,7 +1275,7 @@
                 and&nbsp;&nbsp;&nbsp;&nbsp;<a
                   href="../instructors.html"
                   class="program-link"
-                  style="display:inline;"
+                  style="display: inline"
                   >our instructors</a
                 >&nbsp;&nbsp;&nbsp;&nbsp;have the pedigree to prove it! Jiu
                 Jitsu develops mental toughness, is a intense physical workout,
@@ -1407,7 +1407,7 @@
         // update styles we aren’t able to hit with CSS
         document
           .querySelector(".nav-toggle")
-          .addEventListener("change", function(event) {
+          .addEventListener("change", function (event) {
             const navDisplayed = document.querySelector(".nav-toggle").checked;
             document.querySelector(".logo").classList.toggle("logo--close");
             document
@@ -1423,7 +1423,7 @@
         const marqueeObserverOptions = { rootMargin: "-78% 0px 0px 0px" };
         const marqueeObserver = new IntersectionObserver(
           (entries, marqueeObserver) => {
-            entries.forEach(entry => {
+            entries.forEach((entry) => {
               navContainer.classList.toggle(
                 "nav-—container-light",
                 !entry.isIntersecting
